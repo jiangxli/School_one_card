@@ -1,0 +1,69 @@
+商户校园卡支付渠道 API 对接说明（当前有效版本）
+
+业务定位
+商户系统创建消费交易并生成商户流水号；校园卡与微信、支付宝一样，作为商户的一种收款渠道。一卡通系统接受余额查询和扣款请求，在同一次HTTP响应中直接返回处理结果。无需先申请订单，不发送异步回调。
+后台入口：商户管理 → 对应商户“接口配置”。开发地址http://127.0.0.1:8084，目前只监听本机。真实机构对接需部署HTTPS入口。
+
+编号定义
+merchantSerialNo：商户系统生成的本地交易ID，同一商户内唯一，8至64位字母数字及_-。同一业务的所有重试必须保持此编号及原交易参数不变。
+campusOrderNo：一卡通系统受理消费或充值时生成的交易ID（DD开头），用于双方查单和对账；机构无需提前申请此号。
+一卡通内部资金记账ID仅用于内部账务关联，不作为商户流水号返回。历史两阶段接口的数据保留，但/orders和/execute不再作为对外业务接口。
+
+一、接口鉴权
+商户通过UUID v4唯一标识检索，不存在则失败。后台生成/重置共享密钥，只显示一次，重置会停用接口；双方换钥后需重新启用。商户停用或接口未启用时拒绝调用。
+所有请求为POST，Content-Type: application/json;charset=UTF-8，JSON字段均为字符串，最多16KB；未知字段、重复JSON键及无效格式会被拒绝。
+请求头：X-Merchant-Id（商户UUID）、X-Timestamp（当前Unix秒）、X-Nonce（本次通讯随机标识）、X-Signature。
+签名算法HMAC-SHA256，密钥先Base64解码，摘要输出小写十六进制；UTF-8签名原文：
+timestamp + "\n" + nonce + "\n" + path + "\n" + rawBody
+path例如/api/v1/merchant/pay，不含域名或查询字符串。签名后不能再改动JSON空格、换行和字段顺序。时间戳误差最多5分钟，每次通讯更换nonce。通讯nonce和商户业务流水号用途不同：nonce防止通讯重放，业务流水号防止重复扣款。
+经鉴权的响应同样带X-Timestamp、X-Nonce、X-Signature，用响应原文和原接口路径验签；鉴权失败响应不签名。
+
+二、余额查询
+POST /api/v1/merchant/balance
+请求：{"merchantId":"商户UUID","cardNo":"有效校园卡号"}
+响应data：cardNo、walletStatus（ACTIVE/LOST）、balance（账面余额）、availableBalance（可消费余额）、canPay。
+挂失或停用用户的可消费余额为0，canPay=false；挂失钱包仍保留账面余额并支持授权充值。注销卡号查询失败。余额查询不生成交易订单，也不预占余额。
+余额查询成功不保证随后扣款成功，最终以扣款API结果为准。
+
+三、消费扣款
+POST /api/v1/merchant/pay
+请求格式见pay-example.json：merchantId、merchantName、merchantSerialNo、cardNo、amount、occurredAt、location、description。
+merchantName必须与维护的商户名称一致；amount为0.01至100000元，最多两位小数；occurredAt为带时区ISO8601时间，须在服务器时间前后24小时内；location为实际发生地点（最多200字），description为实际业务内容（最多500字）。参数来自商户消费业务，不是由一卡通页面创建商户交易。
+一卡通受理时生成campusOrderNo，然后校验卡片绑定、人员状态、钱包挂失状态及余额，在事务内完成扣款和记录。成功响应在事务提交后返回。
+成功示例：
+{"code":"SUCCESS","message":"请求处理成功","traceId":"通讯追踪UUID","data":{"merchantSerialNo":"POS202611040001","campusOrderNo":"DD20261104160000随机唯一后缀","tradeType":"PAY","status":"SUCCESS","amount":"12.50","message":null,"balanceAfter":"87.50"}}
+余额不足、挂失或无效卡等业务失败，会保存FAILED的一卡通订单及失败原因并同步返回；不生成成功资金流水，不改变余额。
+同一商户流水号及相同参数重复请求，返回原订单和原结果；同一流水号金额、卡号或其他业务参数变化会拒绝。并发重试也只能扣一次。
+balanceAfter是这笔交易完成后的余额快照；当前余额须调用balance查询。
+
+四、交易结果查询
+POST /api/v1/merchant/query
+推荐按商户流水号查询：{"merchantId":"商户UUID","merchantSerialNo":"POS202611040001"}
+也可按一卡通订单号查询：{"merchantId":"商户UUID","campusOrderNo":"DD..."}
+两者同时提供时必须一致，只允许查询当前商户订单。
+网络超时、连接中断不代表交易失败。商户应先用原流水号查单，再决定后续操作。SUCCESS表示已完成；FAILED表示已记录失败；PROCESSING表示受理记录存在但尚无最终结果，可继续查询或使用原流水号及完全相同原参数重试。查不到时也只能保持原商户流水号重新提交，不能盲目新建流水号再次扣款。
+
+五、充值（独立授权）
+POST /api/v1/merchant/recharge
+字段与pay相同。仅向已建立可信收款关系并明确授予充值权限的机构开放；不能把商户消费自动视为充值。
+复用现有充值、身份信息校验和资金记账；挂失钱包允许充值，充值不会自动解挂。成功后同步返回merchantSerialNo、campusOrderNo、status、amount和balanceAfter。充值对应内部充值订单与一卡通订单保持关联。
+
+六、HTTP与业务结果
+HTTP200 / code SUCCESS：接口已处理，仍须读取data.status。余额查询通过canPay及availableBalance判断是否可支付。
+HTTP422 / TRADE_FAILED：已确定的交易失败；返回一卡通订单号及失败原因，商户不得标记支付成功。
+HTTP400 / INVALID_REQUEST：参数无效、原商户流水被用于不同内容或订单不属于商户。
+HTTP401 / AUTH_FAILED：商户未知、停用、接口未启用、签名错误、时间过期或nonce重放。
+HTTP500 / SYSTEM_ERROR：结果不明确，必须按原商户流水号查单，不可盲目重复创建业务。
+通讯失败、解析失败和交易失败均记录traceId、调用操作和原因。商户业务发生时间、地点、消费内容、卡号以及本地流水保存在接口订单；平台入账时间与内部账务记录保留在资金流水。
+
+七、后台展示
+商户接口配置包含：随机UUID、密钥生成/重置、消费与充值权限开关、商户端签名联调、订单及通讯日志。
+联调步骤：输入有效卡号及商户流水号 → 选择余额查询并生成请求 → 签名调用API → 选择消费扣款并生成请求 → 签名调用API → 查看同次响应 → 按原商户流水号查单。
+只有发生一笔新的商户业务时才点击“新建商户业务流水”；普通重试不要更换流水号，不要修改原发生时间。
+页面联调走同一签名校验、参数解析和资金逻辑，会改变开发库余额。
+无异步结果推送、回调地址或后台通知任务。旧通知表仅保留历史，不再新增通知记录。
+
+八、验证与部署
+CampusPaymentChannelIntegration在独立cc_api_test数据库21项通过，覆盖同步余额查询、一次请求消费、两个编号、重试与并发防重、超时查单、失败日志、挂失规则及充值；并验证不产生异步通知。
+旧tests/archive-api-v1及docs/payment-api/archive-v1仅为历史两阶段设计，不作为当前版本验收与对接依据。
+本地开发服务仍运行school_one_card2、8084端口及独立school_one_card2数据库。没有新增框架或支付SDK。真实支付方、HTTPS公网及完整浏览器交互仍需联调验收。

@@ -1,0 +1,18 @@
+package com.project.web.controller.system;
+import java.util.*;import javax.servlet.http.HttpSession;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.stereotype.Controller;import org.springframework.ui.Model;import org.springframework.web.bind.annotation.*;import org.apache.shiro.authz.annotation.RequiresPermissions;import com.project.common.utils.ShiroUtils;import com.project.system.service.RbacService;
+@Controller @RequestMapping("/system/permission") public class PermissionController{
+ @Autowired private RbacService service;
+ private void token(HttpSession s,String t){if(t==null||!t.equals(s.getAttribute("permissionToken")))throw new IllegalArgumentException("页面已过期，请刷新");}
+ @RequiresPermissions("system:permission:view") @GetMapping public String page(Model model,HttpSession session){if(session.getAttribute("permissionToken")==null)session.setAttribute("permissionToken",UUID.randomUUID().toString());model.addAttribute("token",session.getAttribute("permissionToken"));model.addAttribute("canRole",org.apache.shiro.SecurityUtils.getSubject().isPermitted("system:permission:role"));model.addAttribute("canGrant",org.apache.shiro.SecurityUtils.getSubject().isPermitted("system:permission:grant"));model.addAttribute("canAssign",org.apache.shiro.SecurityUtils.getSubject().isPermitted("system:permission:assign"));return "permission";}
+ @RequiresPermissions("system:permission:view") @GetMapping("/roles") @ResponseBody public Object roles(){return service.roles();}
+ @RequiresPermissions("system:permission:view") @GetMapping("/grants") @ResponseBody public Object grants(long role){return service.grants(role);}
+ @RequiresPermissions("system:permission:role") @PostMapping("/role") @ResponseBody public Object role(Long id,String name,String key,String status,String remark,String token,HttpSession session){token(session,token);return Collections.singletonMap("id",service.saveRole(id,name,key,status,remark,ShiroUtils.getUserId()));}
+ @RequiresPermissions("system:permission:grant") @PostMapping("/grant") @ResponseBody public Object grant(long role,@RequestParam(required=false)Long[] ids,String token,HttpSession session){token(session,token);service.grant(role,ids,ShiroUtils.getUserId());return Collections.singletonMap("ok",true);}
+ @RequiresPermissions("system:permission:assign") @GetMapping("/users") @ResponseBody public Object users(Long role,String keyword,String member,@RequestParam(defaultValue="1")int page){return service.users(role,keyword,member,page);}
+ @RequiresPermissions("system:permission:assign") @GetMapping("/userRoles") @ResponseBody public Object userRoles(long user){return service.userRoles(user);}
+ @RequiresPermissions("system:permission:assign") @PostMapping("/bind") @ResponseBody public Object bind(long user,@RequestParam(required=false)Long[] roles,String token,HttpSession session){token(session,token);service.bind(user,roles,ShiroUtils.getUserId());return Collections.singletonMap("ok",true);}
+ @RequiresPermissions("system:permission:assign") @PostMapping("/batch") @ResponseBody public Object batch(long role,@RequestParam Long[] users,boolean add,String token,HttpSession session){token(session,token);service.batch(role,users,add,ShiroUtils.getUserId());return Collections.singletonMap("ok",true);}
+ @RequiresPermissions("system:permission:view") @GetMapping("/audit") @ResponseBody public Object audit(){return service.audit();}
+ @ExceptionHandler(IllegalArgumentException.class) @ResponseBody @ResponseStatus(org.springframework.http.HttpStatus.BAD_REQUEST) public Object error(IllegalArgumentException e){return Collections.singletonMap("error",e.getMessage());}
+}
+

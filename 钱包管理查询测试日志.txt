@@ -1,0 +1,9 @@
+PASS student exact search
+PASS name search
+PASS identity exact search
+PASS identity masked
+PASS invalid identity rejected
+PASS ledger type filter
+PASS cancelled card tracing
+PASS combined filters
+PASS TOTAL 8

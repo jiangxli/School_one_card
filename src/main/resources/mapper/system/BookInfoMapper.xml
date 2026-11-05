@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.system.mapper.BookInfoMapper">
+    
+    <resultMap type="BookInfo" id="BookInfoResult">
+        <result property="bookId"    column="book_id"    />
+        <result property="bookName"    column="book_name"    />
+        <result property="author"    column="author"    />
+        <result property="publisher"    column="publisher"    />
+        <result property="publishDate"    column="publish_date"    />
+        <result property="kind"    column="kind"    />
+        <result property="bookNum"    column="book_num"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="borrowNum"    column="borrowNum"    />
+        <result property="millSeconds"    column="millSeconds"    />
+    </resultMap>
+	
+	<sql id="selectBookInfoVo">
+        select a.* from (select a.book_id, a.book_name, a.author, a.publisher, a.publish_date, a.kind, a.book_num, a.create_time,
+        (select count(*) from book_borrow_record b where b.book_id=a.book_id) borrowNum,
+        (SELECT CONVERT(avg((UNIX_TIMESTAMP(b.return_time)-UNIX_TIMESTAMP(b.borrow_time))*1000), UNSIGNED INTEGER)
+        from book_borrow_record b WHERE b.`status`=1 and b.book_id=a.book_id) millSeconds
+        from book_info a)a
+    </sql>
+	
+    <select id="selectBookInfoList" parameterType="BookInfo" resultMap="BookInfoResult">
+        select a.* from (select a.book_id, a.book_name, a.author, a.publisher, a.publish_date, a.kind, a.book_num, a.create_time,
+        (select count(*) from book_borrow_record b where b.book_id=a.book_id
+        <if test="params.nearlyDay != null">
+            and DATE_ADD(b.borrow_time,INTERVAL #{params.nearlyDay} DAY) &gt;= now()
+        </if>
+        ) borrowNum,
+        (SELECT CONVERT(avg((UNIX_TIMESTAMP(b.return_time)-UNIX_TIMESTAMP(b.borrow_time))*1000), UNSIGNED INTEGER)
+        from book_borrow_record b WHERE b.`status`=1 and b.book_id=a.book_id) millSeconds
+        from book_info a)a
+        <where>  
+            <if test="bookId != null "> and a.book_id = #{bookId}</if>
+             <if test="bookName != null  and bookName != '' "> and a.book_name like concat('%',#{bookName},'%') </if>
+             <if test="author != null  and author != '' "> and a.author like concat('%',#{author},'%')</if>
+             <if test="publisher != null  and publisher != '' "> and a.publisher = #{publisher}</if>
+             <if test="publishDate != null "> and a.publish_date = #{publishDate}</if>
+             <if test="kind != null  and kind != '' "> and a.kind = #{kind}</if>
+             <if test="bookNum != null "> and a.book_num = #{bookNum}</if>
+             <if test="createTime != null "> and a.create_time = #{createTime}</if>
+            <if test="params.minNum != null">
+                and a.borrowNum &gt;= #{params.minNum}
+            </if>
+            <if test="params.maxNum != null">
+                and a.borrowNum &lt;= #{params.maxNum}
+            </if>
+            <if test="params.minMillSec != null">
+                and a.millSeconds &gt;= #{params.minMillSec}
+            </if>
+            <if test="params.maxMillSec != null">
+                and a.millSeconds &lt;= #{params.maxMillSec}
+            </if>
+            <if test="params.nearlyDay != null">
+                and a.book_id in(
+                select DISTINCT book_id from book_borrow_record where DATE_ADD(borrow_time,INTERVAL #{params.nearlyDay} DAY) &gt;= now()
+                )
+            </if>
+         </where>
+    </select>
+    
+    <select id="selectBookInfoById" parameterType="Long" resultMap="BookInfoResult">
+        <include refid="selectBookInfoVo"/>
+        where a.book_id = #{bookId}
+    </select>
+        
+    <insert id="insertBookInfo" parameterType="BookInfo">
+        insert into book_info
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="bookId != null  ">book_id,</if>
+			<if test="bookName != null  and bookName != ''  ">book_name,</if>
+			<if test="author != null  and author != ''  ">author,</if>
+			<if test="publisher != null  and publisher != ''  ">publisher,</if>
+			<if test="publishDate != null  ">publish_date,</if>
+			<if test="kind != null  and kind != ''  ">kind,</if>
+			<if test="bookNum != null  ">book_num,</if>
+			<if test="createTime != null  ">create_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="bookId != null  ">#{bookId},</if>
+			<if test="bookName != null  and bookName != ''  ">#{bookName},</if>
+			<if test="author != null  and author != ''  ">#{author},</if>
+			<if test="publisher != null  and publisher != ''  ">#{publisher},</if>
+			<if test="publishDate != null  ">#{publishDate},</if>
+			<if test="kind != null  and kind != ''  ">#{kind},</if>
+			<if test="bookNum != null  ">#{bookNum},</if>
+			<if test="createTime != null  ">#{createTime},</if>
+         </trim>
+    </insert>
+	 
+    <update id="updateBookInfo" parameterType="BookInfo">
+        update book_info
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="bookName != null  and bookName != ''  ">book_name = #{bookName},</if>
+            <if test="author != null  and author != ''  ">author = #{author},</if>
+            <if test="publisher != null  and publisher != ''  ">publisher = #{publisher},</if>
+            <if test="publishDate != null  ">publish_date = #{publishDate},</if>
+            <if test="kind != null  and kind != ''  ">kind = #{kind},</if>
+            <if test="bookNum != null  ">book_num = #{bookNum},</if>
+            <if test="createTime != null  ">create_time = #{createTime},</if>
+        </trim>
+        where book_id = #{bookId}
+    </update>
+
+	<delete id="deleteBookInfoById" parameterType="Long">
+        delete from book_info where book_id = #{bookId}
+    </delete>
+	
+    <delete id="deleteBookInfoByIds" parameterType="String">
+        delete from book_info where book_id in 
+        <foreach item="bookId" collection="array" open="(" separator="," close=")">
+            #{bookId}
+        </foreach>
+    </delete>
+
+    <update id="updateBookNumAdd" parameterType="Long">
+        update book_info set book_num=book_num+1 where book_id = #{bookId}
+    </update>
+    <update id="updateBookNumMinus" parameterType="Long">
+        update book_info set book_num=book_num-1 where book_id = #{bookId}
+    </update>
+</mapper>

@@ -1,0 +1,58 @@
+<html lang="zh"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+	<!-- bootstrap-table 表格插件样式 -->
+	<link href="/ajax/libs/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+	<link href="/ajax/libs/bootstrap-treetable/bootstrap-treetable.css" rel="stylesheet">
+	<!--summernote-->
+	<link href="/ajax/libs/summernote/summernote.css" rel="stylesheet">
+	<link href="/ajax/libs/summernote/summernote-bs3.css" rel="stylesheet">
+
+	<link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/ajax/libs/select/select2.css" rel="stylesheet">
+	<link href="/project/css/ry-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/default/layer.css?v=3.1.1" id="layuicss-layer"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/moon/style.css" id="layuicss-thememoonstylecss"></head><body class="white-bg"><div class="wrapper wrapper-content"><h3>一卡通卡片管理</h3><p>用户：<strong>测试学生</strong>　学工号：<span>teststudent</span></p><div class="alert alert-info">当前写卡通过数据库模拟记录实现，未连接实体读卡器。写入内容格式：CAMPUS-CARD-V1 | 卡号 | 用户ID。其中 CAMPUS-CARD-V1 表示校园卡数据格式第1版，卡号标识该卡，用户ID关联持卡用户，竖线为字段分隔符。内容不包含密码或余额。</div><div><p>一卡通卡号：<strong>CC739918C71970410889B253701957DB9F</strong></p><p>写卡次数：<span>0</span>　最近写卡：<span>尚未写卡</span></p><button class="btn btn-primary" onclick="operate('write')">写卡</button><button class="btn btn-danger" onclick="operate('cancel')">注销卡片</button></div><p id="result" role="status"></p><h4>已注销卡片</h4><p><span>CCD0887F8A46EE4A9CA7AD574C3DF14F8F</span>　<span>2026-11-05 07:22:07.0</span></p><p><span>CCDAC03B5C97AF48A0B0A84CDD1CCA4D22</span>　<span>2026-11-05 07:20:04.0</span></p><p><span>CC814BE62EF7204A53BAF4388CE6E7289F</span>　<span>2026-11-05 07:17:53.0</span></p><p><span>CC47EEC7CFDB3A4B7DA998AE4E0D12A8DD</span>　<span>2026-11-05 07:15:20.0</span></p><p><span>CC568176E11C8040A1B256DAA767D9F9F1</span>　<span>2026-11-05 07:13:32.0</span></p><p><span>CC23EE330589DA47279138EE0DBBCE6B9E</span>　<span>2026-11-05 07:12:02.0</span></p><h4>最近20次写卡记录</h4><table class="table table-bordered"><thead><tr><th>编号</th><th>操作人ID</th><th>时间</th><th>写入内容</th></tr></thead><tbody><tr><td>240</td><td>1812120000000000</td><td>2026-11-05 07:22:04.0</td><td>CAMPUS-CARD-V1|CCD0887F8A46EE4A9CA7AD574C3DF14F8F|880001</td></tr><tr><td>239</td><td>1812120000000000</td><td>2026-11-05 07:20:02.0</td><td>CAMPUS-CARD-V1|CCDAC03B5C97AF48A0B0A84CDD1CCA4D22|880001</td></tr><tr><td>238</td><td>1812120000000000</td><td>2026-11-05 07:17:51.0</td><td>CAMPUS-CARD-V1|CC814BE62EF7204A53BAF4388CE6E7289F|880001</td></tr><tr><td>237</td><td>1812120000000000</td><td>2026-11-05 07:15:17.0</td><td>CAMPUS-CARD-V1|CC47EEC7CFDB3A4B7DA998AE4E0D12A8DD|880001</td></tr><tr><td>236</td><td>1812120000000000</td><td>2026-11-05 07:13:30.0</td><td>CAMPUS-CARD-V1|CC568176E11C8040A1B256DAA767D9F9F1|880001</td></tr><tr><td>235</td><td>1812120000000000</td><td>2026-11-05 07:12:02.0</td><td>CAMPUS-CARD-V1|CC23EE330589DA47279138EE0DBBCE6B9E|880001</td></tr></tbody></table></div><div>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- bootstrap-table 表格插件 -->
+	<script src="/ajax/libs/bootstrap-table/bootstrap-table.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+	<!-- jquery-validate 表单验证插件 -->
+	<script src="/ajax/libs/validate/jquery.validate.min.js"></script>
+	<script src="/ajax/libs/validate/messages_zh.min.js"></script>
+	<script src="/ajax/libs/validate/jquery.validate.extend.js"></script>
+	<!-- jquery-validate 表单树插件 -->
+	<script src="/ajax/libs/bootstrap-treetable/bootstrap-treetable.js"></script>
+	<!-- jquery-export 表格导出插件 -->
+	<script src="/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/export/tableExport.js"></script>
+	<!--summernote-->
+	<script src="/ajax/libs/summernote/summernote.min.js"></script>
+	<script src="/ajax/libs/summernote/summernote-zh-CN.js"></script>
+	<!-- form文件提交 -->
+	<script src="/ajax/libs/form/jquery.form.min.js"></script>
+	<!-- 遮罩层 -->
+	<script src="/ajax/libs/blockUI/jquery.blockUI.js"></script>
+	<script src="/ajax/libs/iCheck/icheck.min.js"></script>
+	<script src="/ajax/libs/layer/layer.min.js"></script>
+	<script src="/ajax/libs/layui/layui.js"></script>
+	<script src="/project/js/common.js?v=3.0.0"></script>
+	<script src="/project/js/ry-ui.js?v=3.0.0"></script>
+	<!--<script src="http://tajs.qq.com/stats?sId=62048022"></script>-->
+	<script> var ctx = "\/"; </script>
+</div><script>
+var endpoint="\/system\/user\/card\/880001";
+var token="60ece36e-92fe-4dd0-bd81-3f509b92ac67";var key="ae386886-3f79-4c70-8d9f-a8c7003882f6";
+function operate(action){var question=action==='cancel'?'确认注销当前卡片？钱包余额和流水保留。':action==='write'?'确认写入当前用户卡号？':'确认为该用户补充开卡？';layer.confirm(question,function(index){layer.close(index);$('button').prop('disabled',true);$.post(endpoint,{action:action,token:token,requestKey:key}).done(function(r){$('#result').text(r.msg);if(r.code===0){if(parent.$&&parent.$.table)parent.$.table.refresh();setTimeout(function(){location.reload();},700);}}).fail(function(){$('#result').text('操作结果未确认，请重试；同一页面重试不会重复写入。');}).always(function(){$('button').prop('disabled',false);});});}
+</script>
+</body></html>

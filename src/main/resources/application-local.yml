@@ -1,0 +1,10 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+project:
+  profile: ./.local/uploads/
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:13306/school_one_card?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: ${SCHOOL_DB_USERNAME:root}
+    password: ${SCHOOL_DB_PASSWORD}

@@ -1,0 +1,151 @@
+<html lang="zh" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"><head><meta charset="utf-8">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+	<!-- bootstrap-table 表格插件样式 -->
+	<link href="/ajax/libs/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+	<link href="/ajax/libs/bootstrap-treetable/bootstrap-treetable.css" rel="stylesheet">
+	<!--summernote-->
+	<link href="/ajax/libs/summernote/summernote.css" rel="stylesheet">
+	<link href="/ajax/libs/summernote/summernote-bs3.css" rel="stylesheet">
+
+	<link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/ajax/libs/select/select2.css" rel="stylesheet">
+	<link href="/project/css/ry-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/default/layer.css?v=3.1.1" id="layuicss-layer"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/moon/style.css" id="layuicss-thememoonstylecss"><link id="layuicss-laydate" rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layui/css/modules/laydate/default/laydate.css?v=5.0.9" media="all"></head>
+<body class="gray-bg">
+    <div class="container-div">
+        <div class="row">
+            <div class="col-sm-12 search-collapse">
+                <form id="user-form">
+                    <div class="select-list">
+                        <ul>
+                            <li>
+                                考勤项目：<input type="text" name="projectName">
+                            </li>
+                            <li>
+                                状态：<select name="status">
+                                <option value="">所有</option>
+                                <option value="0">正常</option>
+                                <option value="1">迟到</option>
+                            </select>
+                            </li>
+                            <li class="select-time">
+                                <label>时间： </label>
+                                <input type="text" class="time-input" name="params[beginTime]" lay-key="3">
+                                <span>-</span>
+                                <input type="text" class="time-input" name="params[endTime]" lay-key="4">
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                                <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            
+
+            <div class="col-sm-12 select-table table-striped">
+                <div class="bootstrap-table"><div class="fixed-table-toolbar"><div class="bs-bars pull-left"><div class="btn-group-sm hidden-xs" id="toolbar" role="group">
+                <a class="btn btn-success" onclick="$.operate.add()">
+                    <i class="fa fa-plus"></i> 添加考勤
+                </a>
+                <a class="btn btn-warning" onclick="$.table.exportExcel()">
+                    <i class="fa fa-download"></i> 导出
+                </a>
+            </div></div><div class="columns columns-right btn-group pull-right"><button class="btn btn-default btn-outline" type="button" name="refresh" title="刷新"><i class="glyphicon glyphicon-refresh icon-refresh"></i></button></div></div><div class="fixed-table-container" style="padding-bottom: 0px;"><div class="fixed-table-header" style="display: none;"><table></table></div><div class="fixed-table-body"><div class="fixed-table-loading" style="top: 42px; display: none;">正在努力地加载数据中，请稍候……</div><table id="bootstrap-table" data-mobile-responsive="true" class="table table-hover"><thead><tr><th style="" data-field="userName" tabindex="0"><div class="th-inner ">考勤人</div><div class="fht-cell"></div></th><th style="" data-field="status" tabindex="0"><div class="th-inner ">状态</div><div class="fht-cell"></div></th><th style="" data-field="createTime" tabindex="0"><div class="th-inner ">考勤时间</div><div class="fht-cell"></div></th><th style="" data-field="projectName" tabindex="0"><div class="th-inner ">考勤项目</div><div class="fht-cell"></div></th></tr></thead><tbody><tr data-index="0"><td style="">测试管理员</td><td style="">迟到</td><td style="">2026-11-05 07:21:57</td><td style="">JUnit考勤</td></tr><tr data-index="1"><td style="">测试管理员</td><td style="">迟到</td><td style="">2026-11-05 07:19:54</td><td style="">JUnit考勤</td></tr><tr data-index="2"><td style="">测试管理员</td><td style="">迟到</td><td style="">2026-11-05 07:17:43</td><td style="">JUnit考勤</td></tr><tr data-index="3"><td style="">测试管理员</td><td style="">迟到</td><td style="">2026-11-05 07:12:01</td><td style="">JUnit考勤</td></tr></tbody></table></div><div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div><div class="fixed-table-pagination" style="display: block;"><div class="pull-left pagination-detail"><span class="pagination-info">第 1 到 4 条，共  4 条记录。</span><span class="page-list" style="display: none;"><span class="btn-group dropup"><button type="button" class="btn btn-default btn-outline dropdown-toggle" data-toggle="dropdown"><span class="page-size">10</span> <span class="caret"></span></button><ul class="dropdown-menu" role="menu"><li class="active"><a href="javascript:void(0)">10</a></li></ul></span> 条记录每页</span></div><div class="pull-right pagination" style="display: none;"><ul class="pagination pagination-outline"><li class="page-pre"><a href="javascript:void(0)">‹</a></li><li class="page-number active"><a href="javascript:void(0)">1</a></li><li class="page-next"><a href="javascript:void(0)">›</a></li></ul></div></div></div></div><div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- bootstrap-table 表格插件 -->
+	<script src="/ajax/libs/bootstrap-table/bootstrap-table.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+	<!-- jquery-validate 表单验证插件 -->
+	<script src="/ajax/libs/validate/jquery.validate.min.js"></script>
+	<script src="/ajax/libs/validate/messages_zh.min.js"></script>
+	<script src="/ajax/libs/validate/jquery.validate.extend.js"></script>
+	<!-- jquery-validate 表单树插件 -->
+	<script src="/ajax/libs/bootstrap-treetable/bootstrap-treetable.js"></script>
+	<!-- jquery-export 表格导出插件 -->
+	<script src="/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/export/tableExport.js"></script>
+	<!--summernote-->
+	<script src="/ajax/libs/summernote/summernote.min.js"></script>
+	<script src="/ajax/libs/summernote/summernote-zh-CN.js"></script>
+	<!-- form文件提交 -->
+	<script src="/ajax/libs/form/jquery.form.min.js"></script>
+	<!-- 遮罩层 -->
+	<script src="/ajax/libs/blockUI/jquery.blockUI.js"></script>
+	<script src="/ajax/libs/iCheck/icheck.min.js"></script>
+	<script src="/ajax/libs/layer/layer.min.js"></script>
+	<script src="/ajax/libs/layui/layui.js"></script>
+	<script src="/project/js/common.js?v=3.0.0"></script>
+	<script src="/project/js/ry-ui.js?v=3.0.0"></script>
+	<!--<script src="http://tajs.qq.com/stats?sId=62048022"></script>-->
+	<script> var ctx = "\/"; </script>
+</div>
+    <script>
+        var editFlag = "";
+        var removeFlag = "";
+        var prefix = ctx + "system/projectAttend";
+
+        // var datas = [{"searchValue":null,"createBy":"admin","createTime":"2018-03-16 11:33:00","updateBy":null,"updateTime":null,"remark":"\u6B63\u5E38\u72B6\u6001","params":{},"dictCode":1812121212130005,"dictSort":1,"dictLabel":"\u6B63\u5E38","dictValue":"0","dictType":"sys_normal_disable","cssClass":"","listClass":"primary","isDefault":"Y","status":"0"},{"searchValue":null,"createBy":"admin","createTime":"2018-03-16 11:33:00","updateBy":null,"updateTime":null,"remark":"\u505C\u7528\u72B6\u6001","params":{},"dictCode":1812121212130006,"dictSort":2,"dictLabel":"\u505C\u7528","dictValue":"1","dictType":"sys_normal_disable","cssClass":"","listClass":"danger","isDefault":"N","status":"0"}];
+        // formatter: function(value, row, index) {
+        //     return $.table.selectDictLabel(datas, value);
+        // }
+        $(function() {
+            var options = {
+                url: prefix + "/listMy",
+                createUrl: prefix + "/add",
+                exportUrl: prefix + "/exportMy",
+                showRefresh:true,
+                modalName: "考勤记录",
+                columns: [
+				{
+					field : 'id', 
+					title : '主键',
+                    visible:false
+				},
+				{
+					field : 'userName',
+					title : '考勤人' 
+				},
+				{
+					field : 'status', 
+					title : '状态',
+                    formatter: function(value, row, index) {
+					    return value==1?"迟到":"正常";
+                    }
+				},
+				{
+					field : 'createTime', 
+					title : '考勤时间' 
+				},
+				{
+					field : 'projectName',
+					title : '考勤项目' 
+				}]
+            };
+            $.table.init(options);
+        });
+
+        function add() {
+            $.operate.submit(prefix+"/add","post","json",{});
+        }
+    </script>
+
+</body></html>

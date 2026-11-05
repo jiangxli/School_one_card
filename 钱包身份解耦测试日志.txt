@@ -1,0 +1,25 @@
+PASS issue idempotence
+PASS registration wallet without card
+PASS student number identifier
+PASS one active card
+PASS cancel removes active binding
+PASS cancel audit
+PASS old card cannot write
+PASS replacement card differs
+PASS wallet survives replacement
+PASS unknown user
+PASS duplicate request
+PASS conflicting retry
+PASS refund overflow
+PASS insufficient funds
+PASS invalid precision
+PASS negative amount
+PASS unknown merchant
+PASS lost card
+PASS concurrent overspend
+PASS final balance
+PASS no failed ledger rows
+PASS ledger reconciliation
+PASS ledger reconciliation
+PASS disabled account
+PASS TOTAL 24

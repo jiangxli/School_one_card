@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite tests="4" failures="0" time="14.826"><testcase classname="BridgeIntegrationTest" name="paymentSignatureIdempotenceAndConcurrency" time="4.2183919"></testcase>
+<testcase classname="BridgeIntegrationTest" name="thymeleafTemplates" time="1.9417541"></testcase>
+<testcase classname="BridgeIntegrationTest" name="financeImportDifferenceReviewArchive" time="5.7330063"></testcase>
+<testcase classname="BridgeIntegrationTest" name="multipleRolesRevocationAndServerGuard" time="2.9250144"></testcase></testsuite>

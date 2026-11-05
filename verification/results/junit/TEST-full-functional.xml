@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite tests="9" failures="0" time="1.892"><testcase classname="FullFunctionalTest" name="a_loginAndAuthentication" time="0.361818"></testcase>
+<testcase classname="FullFunctionalTest" name="b_userMaintenanceAndAutomaticWallet" time="0.2596388"></testcase>
+<testcase classname="FullFunctionalTest" name="c_excelTemplateImportExport" time="0.3637231"></testcase>
+<testcase classname="FullFunctionalTest" name="d_gateEntryExitAndExport" time="0.0605832"></testcase>
+<testcase classname="FullFunctionalTest" name="e_attendanceCodeAndSignIn" time="0.0831901"></testcase>
+<testcase classname="FullFunctionalTest" name="f_libraryBorrowReturnAndRepeatReturn" time="0.0700519"></testcase>
+<testcase classname="FullFunctionalTest" name="g_cardIssueWriteCancelReissue" time="0.1135711"></testcase>
+<testcase classname="FullFunctionalTest" name="h_walletRechargePayLostRestoreAndLedger" time="0.0958698"></testcase>
+<testcase classname="FullFunctionalTest" name="i_permissionAndCrossUserAccess" time="0.0287987"></testcase></testsuite>

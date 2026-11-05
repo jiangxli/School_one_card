@@ -1,0 +1,9 @@
+START paymentSignatureIdempotenceAndConcurrency
+PASS paymentSignatureIdempotenceAndConcurrency
+START thymeleafTemplates
+PASS thymeleafTemplates
+START financeImportDifferenceReviewArchive
+PASS financeImportDifferenceReviewArchive
+START multipleRolesRevocationAndServerGuard
+PASS multipleRolesRevocationAndServerGuard
+JUnit: tests=4 failures=0

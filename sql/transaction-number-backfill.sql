@@ -1,0 +1,1 @@
+UPDATE campus_ledger SET transaction_no=concat(case kind when 'RECHARGE' then 'CZ' when 'PAY' then 'XF' when 'REFUND' then 'TK' else 'JY' end,date_format(created_at,'%Y%m%d%H%i%s'),'-',lpad(cast(id as char),20,'0')) WHERE transaction_no IS NULL;

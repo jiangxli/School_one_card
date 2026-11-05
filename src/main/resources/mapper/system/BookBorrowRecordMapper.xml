@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.system.mapper.BookBorrowRecordMapper">
+    
+    <resultMap type="BookBorrowRecord" id="BookBorrowRecordResult">
+        <result property="id"    column="id"    />
+        <result property="bookId"    column="book_id"    />
+        <result property="bookName"    column="book_name"    />
+        <result property="userId"    column="user_id"    />
+        <result property="userName"    column="user_name"    />
+        <result property="borrowTime"    column="borrow_time"    />
+        <result property="returnTime"    column="return_time"    />
+        <result property="status"    column="status"    />
+    </resultMap>
+	
+	<sql id="selectBookBorrowRecordVo">
+        select a.id, a.book_id, a.user_id, a.borrow_time, a.return_time, a.status,
+        b.book_name,c.user_name
+        from book_borrow_record a left join book_info b on a.book_id=b.book_id
+        left join sys_user c on c.user_id=a.user_id
+    </sql>
+	
+    <select id="selectBookBorrowRecordList" parameterType="BookBorrowRecord" resultMap="BookBorrowRecordResult">
+        <include refid="selectBookBorrowRecordVo"/>
+        <where>  
+            <if test="id != null "> and a.id = #{id}</if>
+            <if test="bookName != null  and bookName != '' "> and b.book_name like concat('%',#{bookName},'%') </if>
+            <if test="author != null  and author != '' "> and b.author like concat('%',#{author},'%')</if>
+             <if test="bookId != null "> and a.book_id = #{bookId}</if>
+             <if test="userId != null "> and a.user_id = #{userId}</if>
+             <if test="borrowTime != null "> and a.borrow_time = #{borrowTime}</if>
+             <if test="returnTime != null "> and a.return_time = #{returnTime}</if>
+             <if test="status != null "> and a.status = #{status}</if>
+            <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+                and date_format(a.borrow_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+                and date_format(a.borrow_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+         </where>
+    </select>
+    
+    <select id="selectBookBorrowRecordById" parameterType="Long" resultMap="BookBorrowRecordResult">
+        <include refid="selectBookBorrowRecordVo"/>
+        where a.id = #{id}
+    </select>
+        
+    <insert id="insertBookBorrowRecord" parameterType="BookBorrowRecord">
+        insert into book_borrow_record
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null  ">id,</if>
+			<if test="bookId != null  ">book_id,</if>
+			<if test="userId != null  ">user_id,</if>
+			<if test="borrowTime != null  ">borrow_time,</if>
+			<if test="returnTime != null  ">return_time,</if>
+			<if test="status != null  ">status,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null  ">#{id},</if>
+			<if test="bookId != null  ">#{bookId},</if>
+			<if test="userId != null  ">#{userId},</if>
+			<if test="borrowTime != null  ">#{borrowTime},</if>
+			<if test="returnTime != null  ">#{returnTime},</if>
+			<if test="status != null  ">#{status},</if>
+         </trim>
+    </insert>
+	 
+    <update id="updateBookBorrowRecord" parameterType="BookBorrowRecord">
+        update book_borrow_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="bookId != null  ">book_id = #{bookId},</if>
+            <if test="userId != null  ">user_id = #{userId},</if>
+            <if test="borrowTime != null  ">borrow_time = #{borrowTime},</if>
+            <if test="returnTime != null  ">return_time = #{returnTime},</if>
+            <if test="status != null  ">status = #{status},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteBookBorrowRecordById" parameterType="Long">
+        delete from book_borrow_record where id = #{id}
+    </delete>
+	
+    <delete id="deleteBookBorrowRecordByIds" parameterType="String">
+        delete from book_borrow_record where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <select id="countTimesGroupByBookId" parameterType="BookBorrowRecord" resultType="java.util.HashMap">
+        select count(*) num,book_id bookId from book_borrow_record
+         <if test="params.nearlyDay!=null">
+             where DATE_ADD(borrow_time,INTERVAL #{params.nearlyDay} DAY) &gt;= now()
+         </if>
+         GROUP by book_id
+    </select>
+    <select id="selectGroupNumTimesGroup" parameterType="BookBorrowRecord" resultType="java.util.HashMap">
+        SELECT num from(select count(*) num from book_borrow_record
+        <if test="params.nearlyDay!=null">
+            where DATE_ADD(borrow_time,INTERVAL #{params.nearlyDay} DAY) &gt;= now()
+        </if>
+        GROUP by book_id)r GROUP BY r.num
+    </select>
+
+    <select id="countDurationGroupByBookId" resultType="java.util.HashMap">
+        SELECT CONVERT(avg((UNIX_TIMESTAMP(a.return_time)-UNIX_TIMESTAMP(a.borrow_time))*1000), UNSIGNED INTEGER)millSeconds,book_id
+        from book_borrow_record a WHERE a.`status`=1 GROUP BY book_id
+    </select>
+</mapper>

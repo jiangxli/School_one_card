@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+    <div class="wrapper wrapper-content animated fadeInRight ibox-content">
+        <form class="form-horizontal m" id="form-projectInfo-edit" th:object="${projectInfo}">
+            <input id="projectId" name="projectId" th:field="*{projectId}"  type="hidden">
+            <div class="form-group">	
+                <label class="col-sm-3 control-label">考勤项目：</label>
+                <div class="col-sm-8">
+                    <input id="projectName" name="projectName" th:field="*{projectName}" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="form-group">	
+                <label class="col-sm-3 control-label">考勤开始时间：</label>
+                <div class="col-sm-8">
+                    <input id="startTime" name="startTime" th:field="*{startTime}" class="form-control clock-input" readonly type="text">
+                </div>
+            </div>
+            <div class="form-group">	
+                <label class="col-sm-3 control-label">考勤结束时间：</label>
+                <div class="col-sm-8">
+                    <input id="endTime" name="endTime" th:field="*{endTime}" class="form-control clock-input" readonly type="text">
+                </div>
+            </div>
+            <div class="form-group">	
+                <label class="col-sm-3 control-label">项目介绍：</label>
+                <div class="col-sm-8">
+                    <textarea id="remark" name="remark" th:field="*{remark}" class="form-control"></textarea>
+                </div>
+            </div>
+		</form>
+    </div>
+    <div th:include="include::footer"></div>
+    <script th:inline="javascript">
+		var prefix = ctx + "system/projectInfo"
+		$("#form-projectInfo-edit").validate({
+			rules:{
+                projectName:{
+                    required:true,
+                },startTime:{
+                    required:true,
+                },endTime:{
+                    required:true,
+                },remark:{
+                    required:true,
+                },
+			}
+		});
+		
+		function submitHandler() {
+	        if ($.validate.form()) {
+	            $.operate.save(prefix + "/edit", $('#form-projectInfo-edit').serialize());
+	        }
+	    }
+	</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<html lang="zh" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"><head><meta charset="utf-8">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+	<!-- bootstrap-table 表格插件样式 -->
+	<link href="/ajax/libs/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+	<link href="/ajax/libs/bootstrap-treetable/bootstrap-treetable.css" rel="stylesheet">
+	<!--summernote-->
+	<link href="/ajax/libs/summernote/summernote.css" rel="stylesheet">
+	<link href="/ajax/libs/summernote/summernote-bs3.css" rel="stylesheet">
+
+	<link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/ajax/libs/select/select2.css" rel="stylesheet">
+	<link href="/project/css/ry-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/default/layer.css?v=3.1.1" id="layuicss-layer"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/moon/style.css" id="layuicss-thememoonstylecss"><link id="layuicss-laydate" rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layui/css/modules/laydate/default/laydate.css?v=5.0.9" media="all"></head>
+<body class="gray-bg">
+    <div class="container-div">
+        <div class="row">
+            <div class="col-sm-12 search-collapse">
+                <form id="user-form">
+                    <div class="select-list">
+                        <ul>
+                            <li>
+                                图书名称：<input type="text" name="bookName">
+                            </li>
+                            <li>
+                                作者：<input type="text" name="author">
+                            </li>
+                            <li class="select-time">
+                                <label>借书时间： </label>
+                                <input type="text" class="time-input" name="params[beginTime]" lay-key="3">
+                                <span>-</span>
+                                <input type="text" class="time-input" name="params[endTime]" lay-key="4">
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                                <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-12 select-table table-striped">
+                <div class="bootstrap-table"><div class="fixed-table-toolbar"><div class="bs-bars pull-left"></div></div><div class="fixed-table-container" style="padding-bottom: 0px;"><div class="fixed-table-header" style="display: none;"><table></table></div><div class="fixed-table-body"><div class="fixed-table-loading" style="top: 42px; display: none;">正在努力地加载数据中，请稍候……</div><table id="bootstrap-table" data-mobile-responsive="true" class="table table-hover"><thead><tr><th class="bs-checkbox " style="width: 36px; " data-field="0" tabindex="0"><div class="th-inner "><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th><th style="" data-field="bookName" tabindex="0"><div class="th-inner ">书籍</div><div class="fht-cell"></div></th><th style="" data-field="userName" tabindex="0"><div class="th-inner ">用户</div><div class="fht-cell"></div></th><th style="" data-field="borrowTime" tabindex="0"><div class="th-inner ">借书时间</div><div class="fht-cell"></div></th><th style="" data-field="returnTime" tabindex="0"><div class="th-inner ">还书时间</div><div class="fht-cell"></div></th><th style="" data-field="returnTime" tabindex="0"><div class="th-inner ">借书时长</div><div class="fht-cell"></div></th><th style="" data-field="status" tabindex="0"><div class="th-inner ">状态</div><div class="fht-cell"></div></th><th style="text-align: center; " data-field="8" tabindex="0"><div class="th-inner ">操作</div><div class="fht-cell"></div></th></tr></thead><tbody><tr data-index="0"><td class="bs-checkbox "><input data-index="0" name="btSelectItem" type="checkbox"></td><td style="">JUnit测试图书</td><td style="">测试管理员</td><td style="">2026-11-05 07:12:01</td><td style="">2026-11-05 07:12:01</td><td style="">0.0秒</td><td style=""><span class="badge badge-success">已还</span></td><td style="text-align: center; "><a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail('2611050712010010')"><i class="fa fa-eye"></i>查看</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050712010010')"><i class="fa fa-remove"></i>删除</a></td></tr><tr data-index="1"><td class="bs-checkbox "><input data-index="1" name="btSelectItem" type="checkbox"></td><td style="">JUnit测试图书</td><td style="">测试管理员</td><td style="">2026-11-05 07:13:27</td><td style="">2026-11-05 07:13:28</td><td style="">1.0秒</td><td style=""><span class="badge badge-success">已还</span></td><td style="text-align: center; "><a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail('2611050713270014')"><i class="fa fa-eye"></i>查看</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050713270014')"><i class="fa fa-remove"></i>删除</a></td></tr><tr data-index="2"><td class="bs-checkbox "><input data-index="2" name="btSelectItem" type="checkbox"></td><td style="">JUnit测试图书</td><td style="">测试管理员</td><td style="">2026-11-05 07:15:13</td><td style="">2026-11-05 07:15:14</td><td style="">1.0秒</td><td style=""><span class="badge badge-success">已还</span></td><td style="text-align: center; "><a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail('2611050715130018')"><i class="fa fa-eye"></i>查看</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050715130018')"><i class="fa fa-remove"></i>删除</a></td></tr><tr data-index="3"><td class="bs-checkbox "><input data-index="3" name="btSelectItem" type="checkbox"></td><td style="">JUnit测试图书</td><td style="">测试管理员</td><td style="">2026-11-05 07:17:46</td><td style="">2026-11-05 07:17:47</td><td style="">1.0秒</td><td style=""><span class="badge badge-success">已还</span></td><td style="text-align: center; "><a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail('2611050717460024')"><i class="fa fa-eye"></i>查看</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050717460024')"><i class="fa fa-remove"></i>删除</a></td></tr><tr data-index="4"><td class="bs-checkbox "><input data-index="4" name="btSelectItem" type="checkbox"></td><td style="">JUnit测试图书</td><td style="">测试管理员</td><td style="">2026-11-05 07:19:57</td><td style="">2026-11-05 07:19:58</td><td style="">1.0秒</td><td style=""><span class="badge badge-success">已还</span></td><td style="text-align: center; "><a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail('2611050719570031')"><i class="fa fa-eye"></i>查看</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050719570031')"><i class="fa fa-remove"></i>删除</a></td></tr><tr data-index="5"><td class="bs-checkbox "><input data-index="5" name="btSelectItem" type="checkbox"></td><td style="">JUnit测试图书</td><td style="">测试管理员</td><td style="">2026-11-05 07:22:00</td><td style="">2026-11-05 07:22:01</td><td style="">1.0秒</td><td style=""><span class="badge badge-success">已还</span></td><td style="text-align: center; "><a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail('2611050722000036')"><i class="fa fa-eye"></i>查看</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050722000036')"><i class="fa fa-remove"></i>删除</a></td></tr></tbody></table></div><div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div><div class="fixed-table-pagination" style="display: block;"><div class="pull-left pagination-detail"><span class="pagination-info">第 1 到 6 条，共  6 条记录。</span><span class="page-list" style="display: none;"><span class="btn-group dropup"><button type="button" class="btn btn-default btn-outline dropdown-toggle" data-toggle="dropdown"><span class="page-size">10</span> <span class="caret"></span></button><ul class="dropdown-menu" role="menu"><li class="active"><a href="javascript:void(0)">10</a></li></ul></span> 条记录每页</span></div><div class="pull-right pagination" style="display: none;"><ul class="pagination pagination-outline"><li class="page-pre"><a href="javascript:void(0)">‹</a></li><li class="page-number active"><a href="javascript:void(0)">1</a></li><li class="page-next"><a href="javascript:void(0)">›</a></li></ul></div></div></div></div><div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- bootstrap-table 表格插件 -->
+	<script src="/ajax/libs/bootstrap-table/bootstrap-table.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+	<!-- jquery-validate 表单验证插件 -->
+	<script src="/ajax/libs/validate/jquery.validate.min.js"></script>
+	<script src="/ajax/libs/validate/messages_zh.min.js"></script>
+	<script src="/ajax/libs/validate/jquery.validate.extend.js"></script>
+	<!-- jquery-validate 表单树插件 -->
+	<script src="/ajax/libs/bootstrap-treetable/bootstrap-treetable.js"></script>
+	<!-- jquery-export 表格导出插件 -->
+	<script src="/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/export/tableExport.js"></script>
+	<!--summernote-->
+	<script src="/ajax/libs/summernote/summernote.min.js"></script>
+	<script src="/ajax/libs/summernote/summernote-zh-CN.js"></script>
+	<!-- form文件提交 -->
+	<script src="/ajax/libs/form/jquery.form.min.js"></script>
+	<!-- 遮罩层 -->
+	<script src="/ajax/libs/blockUI/jquery.blockUI.js"></script>
+	<script src="/ajax/libs/iCheck/icheck.min.js"></script>
+	<script src="/ajax/libs/layer/layer.min.js"></script>
+	<script src="/ajax/libs/layui/layui.js"></script>
+	<script src="/project/js/common.js?v=3.0.0"></script>
+	<script src="/project/js/ry-ui.js?v=3.0.0"></script>
+	<!--<script src="http://tajs.qq.com/stats?sId=62048022"></script>-->
+	<script> var ctx = "\/"; </script>
+</div>
+    <script>
+        var editFlag = "";
+        var removeFlag = "";
+        var prefix = ctx + "system/bookBorrowRecord";
+
+        var datas = [{"searchValue":null,"createBy":"admin","createTime":"2020-02-14 11:32:26","updateBy":null,"updateTime":null,"remark":"","params":{},"dictCode":2002141132260001,"dictSort":0,"dictLabel":"\u5F85\u8FD8","dictValue":"0","dictType":"borrow_book_status","cssClass":"","listClass":"warning","isDefault":"Y","status":"0"},{"searchValue":null,"createBy":"admin","createTime":"2020-02-14 11:32:48","updateBy":null,"updateTime":null,"remark":"","params":{},"dictCode":2002141132480002,"dictSort":1,"dictLabel":"\u5DF2\u8FD8","dictValue":"1","dictType":"borrow_book_status","cssClass":"","listClass":"success","isDefault":"Y","status":"0"}];
+
+        $(function() {
+            var options = {
+                url: prefix + "/list",
+                createUrl: prefix + "/add",
+                updateUrl: prefix + "/edit/{id}",
+                detailUrl: prefix + "/detail/{id}",
+                removeUrl: prefix + "/remove",
+                search: false,
+                showSearch:false,
+                showRefresh:false,
+                showColumns:false,
+                showToggle:false,
+                showExport:false,
+                modalName: "借阅记录",
+                columns: [{
+		            checkbox: true
+		        },
+                {
+                    field : 'id',
+                    title : '编号',
+                    visible:false
+                },
+				{
+					field : 'bookName',
+					title : '书籍' 
+				},
+				{
+					field : 'userName',
+					title : '用户' 
+				},
+				{
+					field : 'borrowTime', 
+					title : '借书时间' 
+				},
+                {
+                    field : 'returnTime',
+                    title : '还书时间'
+                },
+				{
+					field : 'returnTime', 
+					title : '借书时长',
+                    formatter: function(value, row, index) {
+                        return showTimeStr(row.borrowTime,value,row.status);
+                    }
+				},
+				{
+					field : 'status', 
+					title : '状态',
+                    formatter: function(value, row, index) {
+                        return $.table.selectDictLabel(datas, value);
+                    }
+				},
+		        {
+		            title: '操作',
+		            align: 'center',
+		            formatter: function(value, row, index) {
+		            	var actions = [];
+                        actions.push('<a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail(\'' + row.id + '\')"><i class="fa fa-eye"></i>查看</a> ');
+                        if(row.status == 0){
+                            actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="returnBack(\'' + row.id + '\','+row.bookId+',\''+row.bookName+'\')"><i class="fa fa-edit"></i>还书</a> ');
+                        }
+                        actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.id + '\')"><i class="fa fa-remove"></i>删除</a>');
+						return actions.join('');
+		            }
+		        }]
+            };
+            $.table.init(options);
+        });
+
+        function returnBack(id,bookId,bookName) {
+            $.modal.confirm("确定还书【"+bookName+"】吗？",function () {
+               $.operate.submit(prefix+"/edit","post","json",{id:id,bookId:bookId});
+            });
+        }
+    </script>
+
+</body></html>

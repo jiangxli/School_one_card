@@ -1,0 +1,71 @@
+商户支付接口对接说明
+
+版本：v1。开发环境：http://127.0.0.1:8084。当前服务仅监听本机；真实外部对接需部署HTTPS入口及网络访问控制。本版本没有连接实际银行、微信或支付宝渠道。
+入口：一卡通钱包 → 商户管理 → 对应商户“接口配置”。需要campus:api:manage权限，可在系统管理 → 权限管理授权。默认接口关闭、消费权限开启、充值权限关闭。
+
+一、商户身份与密钥
+商户的SH编号用于后台管理；public_id为UUID v4，用于对接检索，商户详情和接口页均可查看。UUID不是支付凭证。调用还需要32字节随机密钥（Base64编码），页面“生成/重置签名密钥”只显示一次。重置后接口自动停用，需双方更换密钥后重新启用。密钥不通过普通查询返回。当前密钥由开发数据库权限保护，生产部署需另外落实数据库加密和密钥管理。
+只有授权可信收款方才应开放充值。充值指令表示系统信任该商户已经收到外部资金；本接口不能自行证明真实支付渠道已收款。
+
+二、请求签名
+POST，Content-Type: application/json;charset=UTF-8。所有JSON字段必须为字符串，未知字段、重复JSON键及错误格式会被拒绝；请求体最多16KB。
+请求头：
+X-Merchant-Id: 对接UUID
+X-Timestamp: 当前Unix秒
+X-Nonce: 本次通讯唯一随机字符串（16至64位字母数字或横杠）
+X-Signature: HMAC-SHA256结果的小写十六进制
+密钥先Base64解码；签名原文（UTF-8）为：
+timestamp + "\n" + nonce + "\n" + path + "\n" + 原始请求体
+例如path=/api/v1/merchant/orders，不包含域名、查询字符串。签名后不能再改变JSON空格、换行或字段顺序。时钟误差最多5分钟；nonce同一商户不能重复。业务重试保持requestId或原orderNo、本地流水号及交易参数，使用新的时间戳和nonce重新签名。
+经鉴权的结果响应也带X-Timestamp、X-Nonce、X-Signature，按相同路径和原始响应体验签；鉴权失败响应不签名。
+
+三、申请订单
+POST /api/v1/merchant/orders
+请求示例见orders-example.json。字段：merchantId、merchantName、requestId、tradeType、amount、occurredAt、location、cardNo、description。
+merchantId与请求头商户一致；merchantName必须与系统内商户名称一致；requestId是商户本次业务唯一标识，8至64位字母数字及_-。
+tradeType为RECHARGE（充值）或PAY（消费）；amount范围0.01至100000元，最多两位小数。
+occurredAt使用带时区ISO8601时间，例如2026-11-04T16:30:00+08:00，须在服务器当前时间前后24小时内；以真实发生时间填写，不要固定使用示例日期。
+cardNo为有效校园卡号；location为地点（最多200字），description为交易内容（最多500字）。
+接口先生成DD开头的平台订单号，业务状态NEW，不扣减或增加钱包余额。同一商户requestId相同且参数一致返回原订单；参数变化拒绝。
+
+四、提交交易
+POST /api/v1/merchant/execute
+携带申请订单时的全部原始字段，另外增加orderNo与localSerialNo。本地流水号8至64位字母数字及_-，同一商户唯一。不能在提交时更换金额、卡号、地点、业务发生时间等字段。
+服务端通过当前有效卡绑定检索人员钱包；消费检查余额和挂失状态，充值复用现有充值及身份信息校验。挂失钱包可以充值，不能消费。卡片注销、用户停用、商户停用或接口未授权会拒绝。人员与卡片关系在事务内复查。
+成功后订单SUCCESS，返回资金流水号transactionNo；充值同时关联原有充值订单表，订单号保持一致。资金、流水、接口订单和通知入队在同一事务中完成。外部接口资金流水actor_id=0表示接口入账，发起商户、地点、内容、本地流水和业务时间保存在接口订单中；平台流水时间为实际入账时间。
+交易失败后保存FAILED订单及原因，余额不变；失败订单不产生成功资金流水，重新办理须先确认原订单状态。重复提交成功订单不会重复入账；不同本地流水或不同参数不能复用原订单。
+
+五、查询订单
+POST /api/v1/merchant/query
+{"merchantId":"对接UUID","orderNo":"平台订单号"}
+只允许查询当前商户订单。网络超时、处理结果不明确时，优先查询原订单，不能直接换requestId重复办理。
+
+六、返回格式与状态
+{"code":"SUCCESS","message":"请求处理成功","traceId":"通讯追踪UUID","data":{"orderNo":"...","requestId":"...","localSerialNo":"...","tradeType":"PAY","amount":"1.00","status":"SUCCESS","transactionNo":"XF...","message":null}}
+HTTP200表示通讯处理成功，业务状态仍需看data.status：NEW为待提交，SUCCESS才是资金处理成功。
+HTTP401/AUTH_FAILED：未知商户、未启用、签名错误、时间过期或nonce重复。
+HTTP400/INVALID_REQUEST：参数错误、参数不一致或订单不属于商户。
+HTTP422/TRADE_FAILED：已记录交易失败，详见data.message。
+HTTP500/SYSTEM_ERROR：系统异常；先查原订单确定结果，不要盲目重复下单。
+失败通讯在campus_api_log记录traceId和原因，不记录密钥、签名或完整身份证资料。
+
+七、结果推送
+在接口配置中填写公网HTTPS 443回调地址。提交完成的SUCCESS或FAILED结果与通知事件一起落库。后台每10秒检查队列，失败最多尝试5次，等待时间逐步增加；重启后可恢复超时的发送中任务。不得依赖通知只有一次，接收方必须按orderNo去重。
+推送体是data对象，包含orderNo、localSerialNo、交易类型、金额、状态和平台资金流水号。头部包含X-Merchant-Id、X-Timestamp、X-Nonce、X-Signature；使用当前共享密钥，签名path为回调URL路径，body为原始通知体。
+接收端验签、校验订单及金额、持久保存结果后，以HTTP2xx及JSON {"code":"SUCCESS"}确认。否则自动重试，达到上限标记FAILED，后台“结果通知”标签可查看，主动查单可补偿。通知失败不回滚原资金交易。
+目前回调禁止本机、内网、非HTTPS及重定向地址；回调凭据与域名须由有权限的管理员配置。没有配置回调则不入通知队列，采用主动查询。
+
+八、后台联调演示
+进入商户接口配置 → 重置并保存密钥 → 启用接口及所需交易类型 → 接口联调 → 输入卡号、金额、地点和内容 → 选择申请订单并生成示例 → 签名发送 → 选择提交交易并生成示例（自动带入原参数及订单号） → 签名发送。查询可在第三步选择查询结果。联调工具使用同一鉴权、参数解析及入账代码，会真实改变开发数据库钱包余额，不是伪造成功结果。
+订单与通讯日志、结果通知标签支持展示办理过程。对接端Java请求示例见MerchantApiClientExample.java。
+
+九、验证与边界
+MerchantApiIntegration在独立cc_api_test库完成19项检查；通知重试、禁止内网回调及非HTTPS拒绝另有3项检查。测试未向外部地址发送通知。启动后HTTP未签名请求返回401 JSON；模板渲染与JS语法、构建通过。
+未完成真实支付平台、真实公网回调成功接收、多实例高负载及全部浏览器交互验收。接口调用目前未增加独立网关限流；公网使用前需在部署环境配套限流、TLS和监控。
+数据库迁移：sql/merchant-payment-api.sql已应用开发库。先前商户仍保留SH编号，首次启动会补齐独立随机UUID凭据；系统模拟划扣商户不开放接口。
+
+最终补充：另完成同订单并发防重、跨订单本地流水号冲突及重复JSON键3项检查。连同19项接口业务和3项通知重试检查，共25项。后台页面仍需真实支付方与浏览器完整验收。
+签名与JSON解析使用Java 8及Spring MVC既有能力，参考官方文档：
+https://docs.oracle.com/javase/8/docs/api/javax/crypto/Mac.html
+https://docs.oracle.com/javase/8/docs/api/java/security/MessageDigest.html
+https://docs.spring.io/spring-framework/docs/5.1.3.RELEASE/spring-framework-reference/web.html#mvc-ann-requestbody

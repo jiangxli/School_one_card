@@ -1,0 +1,727 @@
+2026-11-05 07:18:18,490 INFO o.a.j.u.JMeterUtils: Setting Locale to zh_CN
+2026-11-05 07:18:18,500 INFO o.a.j.JMeter: Loading user properties from: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-11-05 07:18:18,501 INFO o.a.j.JMeter: Loading system properties from: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-11-05 07:18:18,501 INFO o.a.j.JMeter: Setting JMeter property: users=200
+2026-11-05 07:18:18,506 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: java.version=1.8.0_512
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: os.name=Windows 11
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: os.arch=amd64
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: os.version=10.0
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: java.awt.headless=true
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: Max memory     =954728448
+2026-11-05 07:18:18,507 INFO o.a.j.JMeter: Available Processors =22
+2026-11-05 07:18:18,511 INFO o.a.j.JMeter: Default Locale=中文 (中国)
+2026-11-05 07:18:18,511 INFO o.a.j.JMeter: JMeter  Locale=中文 (中国)
+2026-11-05 07:18:18,511 INFO o.a.j.JMeter: JMeterHome=D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\tools\apache-jmeter-5.6.3
+2026-11-05 07:18:18,511 INFO o.a.j.JMeter: user.dir  =D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2
+2026-11-05 07:18:18,512 INFO o.a.j.JMeter: PWD       =D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2
+2026-11-05 07:18:18,513 INFO o.a.j.JMeter: IP: 192.168.1.5 Name: SUN FullName: SUN
+2026-11-05 07:18:18,525 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\dashboard'
+2026-11-05 07:18:18,528 INFO o.a.j.s.FileServer: Default base='D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2'
+2026-11-05 07:18:18,529 INFO o.a.j.s.FileServer: Set new base='D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification'
+2026-11-05 07:18:18,636 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-05 07:18:18,648 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-05 07:18:18,654 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-05 07:18:18,661 INFO o.a.j.s.SaveService: Loading file: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\full-feature.jmx
+2026-11-05 07:18:18,697 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-11-05 07:18:18,713 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-05 07:18:18,713 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-05 07:18:18,713 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-05 07:18:18,713 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-05 07:18:18,713 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-05 07:18:18,713 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-05 07:18:18,949 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-11-05 07:18:18,960 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-11-05 07:18:18,960 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\samples.jtl
+2026-11-05 07:18:18,960 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\tools\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-11-05 07:18:18,960 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-11-05 07:18:18,964 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-11-05 07:18:18,966 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-11-05 07:18:18,969 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,969 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,970 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-05 07:18:18,971 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-05 07:18:18,971 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-11-05 07:18:18,971 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-11-05 07:18:18,972 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-05 07:18:18,972 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-11-05 07:18:18,972 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-11-05 07:18:18,978 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-11-05 07:18:18,978 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-05 07:18:18,978 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-05 07:18:18,982 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-11-05 07:18:18,982 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-11-05 07:18:19,356 INFO o.a.j.JMeter: 正在运行的测试 (1793834299356)
+2026-11-05 07:18:19,429 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Authenticated users
+2026-11-05 07:18:19,430 INFO o.a.j.e.StandardJMeterEngine: Starting 200 threads for group Authenticated users.
+2026-11-05 07:18:19,430 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-11-05 07:18:19,430 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=200 ramp-up=10 delayedStart=false
+2026-11-05 07:18:19,438 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-1
+2026-11-05 07:18:19,459 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = SUN
+2026-11-05 07:18:19,468 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-11-05 07:18:19,470 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-05 07:18:19,470 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-05 07:18:19,470 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-05 07:18:19,470 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-11-05 07:18:19,484 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-2
+2026-11-05 07:18:19,487 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-11-05 07:18:19,487 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-11-05 07:18:19,533 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-3
+2026-11-05 07:18:19,583 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-4
+2026-11-05 07:18:19,632 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-5
+2026-11-05 07:18:19,682 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-6
+2026-11-05 07:18:19,732 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-7
+2026-11-05 07:18:19,782 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-8
+2026-11-05 07:18:19,833 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-9
+2026-11-05 07:18:19,883 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-10
+2026-11-05 07:18:19,932 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-11
+2026-11-05 07:18:19,982 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-12
+2026-11-05 07:18:20,032 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-13
+2026-11-05 07:18:20,086 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-14
+2026-11-05 07:18:20,132 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-15
+2026-11-05 07:18:20,165 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-4
+2026-11-05 07:18:20,165 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-4
+2026-11-05 07:18:20,169 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-3
+2026-11-05 07:18:20,169 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-1
+2026-11-05 07:18:20,169 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-3
+2026-11-05 07:18:20,169 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-1
+2026-11-05 07:18:20,181 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-8
+2026-11-05 07:18:20,181 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-8
+2026-11-05 07:18:20,185 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-7
+2026-11-05 07:18:20,185 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-7
+2026-11-05 07:18:20,188 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-16
+2026-11-05 07:18:20,195 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-9
+2026-11-05 07:18:20,195 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-9
+2026-11-05 07:18:20,201 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-10
+2026-11-05 07:18:20,201 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-10
+2026-11-05 07:18:20,206 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-12
+2026-11-05 07:18:20,206 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-12
+2026-11-05 07:18:20,211 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-13
+2026-11-05 07:18:20,211 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-13
+2026-11-05 07:18:20,212 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-6
+2026-11-05 07:18:20,212 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-6
+2026-11-05 07:18:20,217 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-5
+2026-11-05 07:18:20,217 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-5
+2026-11-05 07:18:20,217 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-14
+2026-11-05 07:18:20,217 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-14
+2026-11-05 07:18:20,218 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-11
+2026-11-05 07:18:20,218 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-11
+2026-11-05 07:18:20,224 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-2
+2026-11-05 07:18:20,224 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-2
+2026-11-05 07:18:20,225 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-15
+2026-11-05 07:18:20,225 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-15
+2026-11-05 07:18:20,230 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-17
+2026-11-05 07:18:20,253 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-16
+2026-11-05 07:18:20,253 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-16
+2026-11-05 07:18:20,278 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-17
+2026-11-05 07:18:20,278 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-17
+2026-11-05 07:18:20,283 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-18
+2026-11-05 07:18:20,328 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-18
+2026-11-05 07:18:20,328 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-18
+2026-11-05 07:18:20,332 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-19
+2026-11-05 07:18:20,381 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-20
+2026-11-05 07:18:20,383 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-19
+2026-11-05 07:18:20,383 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-19
+2026-11-05 07:18:20,432 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-21
+2026-11-05 07:18:20,441 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-20
+2026-11-05 07:18:20,441 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-20
+2026-11-05 07:18:20,480 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-22
+2026-11-05 07:18:20,483 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-21
+2026-11-05 07:18:20,483 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-21
+2026-11-05 07:18:20,524 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-22
+2026-11-05 07:18:20,524 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-22
+2026-11-05 07:18:20,531 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-23
+2026-11-05 07:18:20,580 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-23
+2026-11-05 07:18:20,580 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-23
+2026-11-05 07:18:20,582 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-24
+2026-11-05 07:18:20,627 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-24
+2026-11-05 07:18:20,627 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-24
+2026-11-05 07:18:20,631 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-25
+2026-11-05 07:18:20,675 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-25
+2026-11-05 07:18:20,675 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-25
+2026-11-05 07:18:20,681 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-26
+2026-11-05 07:18:20,723 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-26
+2026-11-05 07:18:20,723 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-26
+2026-11-05 07:18:20,730 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-27
+2026-11-05 07:18:20,773 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-27
+2026-11-05 07:18:20,773 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-27
+2026-11-05 07:18:20,781 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-28
+2026-11-05 07:18:20,821 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-28
+2026-11-05 07:18:20,821 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-28
+2026-11-05 07:18:20,832 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-29
+2026-11-05 07:18:20,876 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-29
+2026-11-05 07:18:20,876 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-29
+2026-11-05 07:18:20,881 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-30
+2026-11-05 07:18:20,931 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-31
+2026-11-05 07:18:20,942 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-30
+2026-11-05 07:18:20,942 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-30
+2026-11-05 07:18:20,973 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-31
+2026-11-05 07:18:20,973 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-31
+2026-11-05 07:18:20,980 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-32
+2026-11-05 07:18:21,029 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-32
+2026-11-05 07:18:21,029 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-32
+2026-11-05 07:18:21,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-33
+2026-11-05 07:18:21,079 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-33
+2026-11-05 07:18:21,079 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-33
+2026-11-05 07:18:21,082 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-34
+2026-11-05 07:18:21,121 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-34
+2026-11-05 07:18:21,121 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-34
+2026-11-05 07:18:21,130 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-35
+2026-11-05 07:18:21,170 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-35
+2026-11-05 07:18:21,170 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-35
+2026-11-05 07:18:21,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-36
+2026-11-05 07:18:21,219 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-36
+2026-11-05 07:18:21,219 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-36
+2026-11-05 07:18:21,231 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-37
+2026-11-05 07:18:21,267 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-37
+2026-11-05 07:18:21,268 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-37
+2026-11-05 07:18:21,280 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-38
+2026-11-05 07:18:21,323 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-38
+2026-11-05 07:18:21,324 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-38
+2026-11-05 07:18:21,331 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-39
+2026-11-05 07:18:21,370 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-39
+2026-11-05 07:18:21,370 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-39
+2026-11-05 07:18:21,381 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-40
+2026-11-05 07:18:21,428 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-40
+2026-11-05 07:18:21,428 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-40
+2026-11-05 07:18:21,431 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-41
+2026-11-05 07:18:21,468 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-41
+2026-11-05 07:18:21,468 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-41
+2026-11-05 07:18:21,481 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-42
+2026-11-05 07:18:21,517 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-42
+2026-11-05 07:18:21,517 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-42
+2026-11-05 07:18:21,532 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-43
+2026-11-05 07:18:21,569 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-43
+2026-11-05 07:18:21,569 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-43
+2026-11-05 07:18:21,580 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-44
+2026-11-05 07:18:21,618 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-44
+2026-11-05 07:18:21,618 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-44
+2026-11-05 07:18:21,631 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-45
+2026-11-05 07:18:21,672 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-45
+2026-11-05 07:18:21,672 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-45
+2026-11-05 07:18:21,681 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-46
+2026-11-05 07:18:21,720 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-46
+2026-11-05 07:18:21,720 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-46
+2026-11-05 07:18:21,732 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-47
+2026-11-05 07:18:21,771 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-47
+2026-11-05 07:18:21,771 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-47
+2026-11-05 07:18:21,782 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-48
+2026-11-05 07:18:21,818 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-48
+2026-11-05 07:18:21,818 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-48
+2026-11-05 07:18:21,830 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-49
+2026-11-05 07:18:21,866 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-49
+2026-11-05 07:18:21,866 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-49
+2026-11-05 07:18:21,881 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-50
+2026-11-05 07:18:21,927 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-50
+2026-11-05 07:18:21,927 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-50
+2026-11-05 07:18:21,932 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-51
+2026-11-05 07:18:21,967 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-51
+2026-11-05 07:18:21,967 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-51
+2026-11-05 07:18:21,981 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-52
+2026-11-05 07:18:22,015 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-52
+2026-11-05 07:18:22,015 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-52
+2026-11-05 07:18:22,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-53
+2026-11-05 07:18:22,069 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-53
+2026-11-05 07:18:22,069 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-53
+2026-11-05 07:18:22,081 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-54
+2026-11-05 07:18:22,119 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-54
+2026-11-05 07:18:22,119 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-54
+2026-11-05 07:18:22,130 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-55
+2026-11-05 07:18:22,166 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-55
+2026-11-05 07:18:22,166 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-55
+2026-11-05 07:18:22,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-56
+2026-11-05 07:18:22,225 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-56
+2026-11-05 07:18:22,225 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-56
+2026-11-05 07:18:22,231 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-57
+2026-11-05 07:18:22,267 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-57
+2026-11-05 07:18:22,267 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-57
+2026-11-05 07:18:22,281 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-58
+2026-11-05 07:18:22,316 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-58
+2026-11-05 07:18:22,316 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-58
+2026-11-05 07:18:22,331 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-59
+2026-11-05 07:18:22,367 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-59
+2026-11-05 07:18:22,367 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-59
+2026-11-05 07:18:22,380 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-60
+2026-11-05 07:18:22,415 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-60
+2026-11-05 07:18:22,415 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-60
+2026-11-05 07:18:22,430 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-61
+2026-11-05 07:18:22,467 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-61
+2026-11-05 07:18:22,468 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-61
+2026-11-05 07:18:22,481 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-62
+2026-11-05 07:18:22,519 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-62
+2026-11-05 07:18:22,519 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-62
+2026-11-05 07:18:22,532 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-63
+2026-11-05 07:18:22,569 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-63
+2026-11-05 07:18:22,569 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-63
+2026-11-05 07:18:22,581 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-64
+2026-11-05 07:18:22,618 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-64
+2026-11-05 07:18:22,618 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-64
+2026-11-05 07:18:22,630 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-65
+2026-11-05 07:18:22,666 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-65
+2026-11-05 07:18:22,666 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-65
+2026-11-05 07:18:22,682 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-66
+2026-11-05 07:18:22,719 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-66
+2026-11-05 07:18:22,719 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-66
+2026-11-05 07:18:22,733 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-67
+2026-11-05 07:18:22,769 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-67
+2026-11-05 07:18:22,769 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-67
+2026-11-05 07:18:22,783 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-68
+2026-11-05 07:18:22,818 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-68
+2026-11-05 07:18:22,819 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-68
+2026-11-05 07:18:22,831 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-69
+2026-11-05 07:18:22,866 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-69
+2026-11-05 07:18:22,866 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-69
+2026-11-05 07:18:22,882 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-70
+2026-11-05 07:18:22,919 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-70
+2026-11-05 07:18:22,919 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-70
+2026-11-05 07:18:22,931 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-71
+2026-11-05 07:18:22,968 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-71
+2026-11-05 07:18:22,968 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-71
+2026-11-05 07:18:22,982 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-72
+2026-11-05 07:18:23,018 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-72
+2026-11-05 07:18:23,018 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-72
+2026-11-05 07:18:23,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-73
+2026-11-05 07:18:23,066 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-73
+2026-11-05 07:18:23,067 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-73
+2026-11-05 07:18:23,082 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-74
+2026-11-05 07:18:23,118 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-74
+2026-11-05 07:18:23,119 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-74
+2026-11-05 07:18:23,132 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-75
+2026-11-05 07:18:23,165 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-75
+2026-11-05 07:18:23,166 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-75
+2026-11-05 07:18:23,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-76
+2026-11-05 07:18:23,218 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-76
+2026-11-05 07:18:23,218 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-76
+2026-11-05 07:18:23,231 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-77
+2026-11-05 07:18:23,267 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-77
+2026-11-05 07:18:23,267 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-77
+2026-11-05 07:18:23,283 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-78
+2026-11-05 07:18:23,318 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-78
+2026-11-05 07:18:23,318 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-78
+2026-11-05 07:18:23,332 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-79
+2026-11-05 07:18:23,367 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-79
+2026-11-05 07:18:23,368 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-79
+2026-11-05 07:18:23,381 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-80
+2026-11-05 07:18:23,417 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-80
+2026-11-05 07:18:23,417 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-80
+2026-11-05 07:18:23,431 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-81
+2026-11-05 07:18:23,467 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-81
+2026-11-05 07:18:23,467 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-81
+2026-11-05 07:18:23,481 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-82
+2026-11-05 07:18:23,516 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-82
+2026-11-05 07:18:23,516 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-82
+2026-11-05 07:18:23,530 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-83
+2026-11-05 07:18:23,566 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-83
+2026-11-05 07:18:23,566 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-83
+2026-11-05 07:18:23,580 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-84
+2026-11-05 07:18:23,619 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-84
+2026-11-05 07:18:23,619 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-84
+2026-11-05 07:18:23,630 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-85
+2026-11-05 07:18:23,670 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-85
+2026-11-05 07:18:23,670 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-85
+2026-11-05 07:18:23,681 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-86
+2026-11-05 07:18:23,719 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-86
+2026-11-05 07:18:23,719 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-86
+2026-11-05 07:18:23,732 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-87
+2026-11-05 07:18:23,767 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-87
+2026-11-05 07:18:23,767 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-87
+2026-11-05 07:18:23,781 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-88
+2026-11-05 07:18:23,820 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-88
+2026-11-05 07:18:23,820 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-88
+2026-11-05 07:18:23,832 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-89
+2026-11-05 07:18:23,867 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-89
+2026-11-05 07:18:23,867 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-89
+2026-11-05 07:18:23,881 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-90
+2026-11-05 07:18:23,919 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-90
+2026-11-05 07:18:23,919 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-90
+2026-11-05 07:18:23,932 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-91
+2026-11-05 07:18:23,970 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-91
+2026-11-05 07:18:23,970 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-91
+2026-11-05 07:18:23,981 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-92
+2026-11-05 07:18:24,015 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-92
+2026-11-05 07:18:24,015 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-92
+2026-11-05 07:18:24,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-93
+2026-11-05 07:18:24,068 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-93
+2026-11-05 07:18:24,068 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-93
+2026-11-05 07:18:24,081 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-94
+2026-11-05 07:18:24,117 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-94
+2026-11-05 07:18:24,117 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-94
+2026-11-05 07:18:24,131 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-95
+2026-11-05 07:18:24,165 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-95
+2026-11-05 07:18:24,165 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-95
+2026-11-05 07:18:24,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-96
+2026-11-05 07:18:24,218 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-96
+2026-11-05 07:18:24,218 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-96
+2026-11-05 07:18:24,231 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-97
+2026-11-05 07:18:24,266 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-97
+2026-11-05 07:18:24,266 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-97
+2026-11-05 07:18:24,281 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-98
+2026-11-05 07:18:24,319 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-98
+2026-11-05 07:18:24,319 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-98
+2026-11-05 07:18:24,331 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-99
+2026-11-05 07:18:24,366 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-99
+2026-11-05 07:18:24,366 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-99
+2026-11-05 07:18:24,381 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-100
+2026-11-05 07:18:24,417 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-100
+2026-11-05 07:18:24,417 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-100
+2026-11-05 07:18:24,431 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-101
+2026-11-05 07:18:24,471 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-101
+2026-11-05 07:18:24,472 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-101
+2026-11-05 07:18:24,485 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-102
+2026-11-05 07:18:24,520 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-102
+2026-11-05 07:18:24,520 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-102
+2026-11-05 07:18:24,531 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-103
+2026-11-05 07:18:24,569 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-103
+2026-11-05 07:18:24,569 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-103
+2026-11-05 07:18:24,582 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-104
+2026-11-05 07:18:24,618 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-104
+2026-11-05 07:18:24,618 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-104
+2026-11-05 07:18:24,631 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-105
+2026-11-05 07:18:24,668 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-105
+2026-11-05 07:18:24,668 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-105
+2026-11-05 07:18:24,680 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-106
+2026-11-05 07:18:24,717 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-106
+2026-11-05 07:18:24,717 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-106
+2026-11-05 07:18:24,731 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-107
+2026-11-05 07:18:24,768 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-107
+2026-11-05 07:18:24,768 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-107
+2026-11-05 07:18:24,781 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-108
+2026-11-05 07:18:24,816 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-108
+2026-11-05 07:18:24,816 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-108
+2026-11-05 07:18:24,831 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-109
+2026-11-05 07:18:24,865 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-109
+2026-11-05 07:18:24,865 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-109
+2026-11-05 07:18:24,882 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-110
+2026-11-05 07:18:24,918 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-110
+2026-11-05 07:18:24,919 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-110
+2026-11-05 07:18:24,932 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-111
+2026-11-05 07:18:24,967 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-111
+2026-11-05 07:18:24,968 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-111
+2026-11-05 07:18:24,981 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-112
+2026-11-05 07:18:25,019 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-112
+2026-11-05 07:18:25,019 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-112
+2026-11-05 07:18:25,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-113
+2026-11-05 07:18:25,067 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-113
+2026-11-05 07:18:25,068 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-113
+2026-11-05 07:18:25,081 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-114
+2026-11-05 07:18:25,117 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-114
+2026-11-05 07:18:25,118 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-114
+2026-11-05 07:18:25,130 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-115
+2026-11-05 07:18:25,175 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-115
+2026-11-05 07:18:25,175 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-115
+2026-11-05 07:18:25,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-116
+2026-11-05 07:18:25,221 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-116
+2026-11-05 07:18:25,221 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-116
+2026-11-05 07:18:25,231 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-117
+2026-11-05 07:18:25,269 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-117
+2026-11-05 07:18:25,269 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-117
+2026-11-05 07:18:25,282 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-118
+2026-11-05 07:18:25,323 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-118
+2026-11-05 07:18:25,323 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-118
+2026-11-05 07:18:25,330 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-119
+2026-11-05 07:18:25,375 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-119
+2026-11-05 07:18:25,375 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-119
+2026-11-05 07:18:25,382 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-120
+2026-11-05 07:18:25,418 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-120
+2026-11-05 07:18:25,418 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-120
+2026-11-05 07:18:25,432 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-121
+2026-11-05 07:18:25,472 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-121
+2026-11-05 07:18:25,472 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-121
+2026-11-05 07:18:25,482 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-122
+2026-11-05 07:18:25,520 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-122
+2026-11-05 07:18:25,520 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-122
+2026-11-05 07:18:25,531 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-123
+2026-11-05 07:18:25,570 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-123
+2026-11-05 07:18:25,570 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-123
+2026-11-05 07:18:25,581 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-124
+2026-11-05 07:18:25,619 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-124
+2026-11-05 07:18:25,619 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-124
+2026-11-05 07:18:25,632 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-125
+2026-11-05 07:18:25,673 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-125
+2026-11-05 07:18:25,673 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-125
+2026-11-05 07:18:25,681 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-126
+2026-11-05 07:18:25,723 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-126
+2026-11-05 07:18:25,723 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-126
+2026-11-05 07:18:25,732 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-127
+2026-11-05 07:18:25,772 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-127
+2026-11-05 07:18:25,772 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-127
+2026-11-05 07:18:25,781 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-128
+2026-11-05 07:18:25,826 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-128
+2026-11-05 07:18:25,826 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-128
+2026-11-05 07:18:25,831 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-129
+2026-11-05 07:18:25,870 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-129
+2026-11-05 07:18:25,871 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-129
+2026-11-05 07:18:25,880 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-130
+2026-11-05 07:18:25,922 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-130
+2026-11-05 07:18:25,922 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-130
+2026-11-05 07:18:25,931 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-131
+2026-11-05 07:18:25,975 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-131
+2026-11-05 07:18:25,975 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-131
+2026-11-05 07:18:25,982 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-132
+2026-11-05 07:18:26,024 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-132
+2026-11-05 07:18:26,024 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-132
+2026-11-05 07:18:26,033 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-133
+2026-11-05 07:18:26,081 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-134
+2026-11-05 07:18:26,081 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-133
+2026-11-05 07:18:26,081 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-133
+2026-11-05 07:18:26,122 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-134
+2026-11-05 07:18:26,122 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-134
+2026-11-05 07:18:26,132 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-135
+2026-11-05 07:18:26,173 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-135
+2026-11-05 07:18:26,173 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-135
+2026-11-05 07:18:26,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-136
+2026-11-05 07:18:26,226 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-136
+2026-11-05 07:18:26,226 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-136
+2026-11-05 07:18:26,230 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-137
+2026-11-05 07:18:26,274 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-137
+2026-11-05 07:18:26,274 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-137
+2026-11-05 07:18:26,280 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-138
+2026-11-05 07:18:26,322 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-138
+2026-11-05 07:18:26,322 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-138
+2026-11-05 07:18:26,331 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-139
+2026-11-05 07:18:26,381 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-140
+2026-11-05 07:18:26,389 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-139
+2026-11-05 07:18:26,389 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-139
+2026-11-05 07:18:26,415 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-140
+2026-11-05 07:18:26,415 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-140
+2026-11-05 07:18:26,432 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-141
+2026-11-05 07:18:26,468 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-141
+2026-11-05 07:18:26,468 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-141
+2026-11-05 07:18:26,482 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-142
+2026-11-05 07:18:26,520 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-142
+2026-11-05 07:18:26,520 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-142
+2026-11-05 07:18:26,532 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-143
+2026-11-05 07:18:26,575 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-143
+2026-11-05 07:18:26,575 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-143
+2026-11-05 07:18:26,582 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-144
+2026-11-05 07:18:26,626 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-144
+2026-11-05 07:18:26,626 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-144
+2026-11-05 07:18:26,631 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-145
+2026-11-05 07:18:26,674 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-145
+2026-11-05 07:18:26,674 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-145
+2026-11-05 07:18:26,681 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-146
+2026-11-05 07:18:26,720 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-146
+2026-11-05 07:18:26,720 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-146
+2026-11-05 07:18:26,732 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-147
+2026-11-05 07:18:26,772 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-147
+2026-11-05 07:18:26,772 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-147
+2026-11-05 07:18:26,782 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-148
+2026-11-05 07:18:26,819 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-148
+2026-11-05 07:18:26,819 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-148
+2026-11-05 07:18:26,832 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-149
+2026-11-05 07:18:26,870 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-149
+2026-11-05 07:18:26,870 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-149
+2026-11-05 07:18:26,881 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-150
+2026-11-05 07:18:26,919 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-150
+2026-11-05 07:18:26,919 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-150
+2026-11-05 07:18:26,932 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-151
+2026-11-05 07:18:26,974 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-151
+2026-11-05 07:18:26,974 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-151
+2026-11-05 07:18:26,982 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-152
+2026-11-05 07:18:27,016 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-152
+2026-11-05 07:18:27,016 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-152
+2026-11-05 07:18:27,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-153
+2026-11-05 07:18:27,066 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-153
+2026-11-05 07:18:27,067 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-153
+2026-11-05 07:18:27,081 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-154
+2026-11-05 07:18:27,120 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-154
+2026-11-05 07:18:27,120 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-154
+2026-11-05 07:18:27,132 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-155
+2026-11-05 07:18:27,174 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-155
+2026-11-05 07:18:27,174 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-155
+2026-11-05 07:18:27,182 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-156
+2026-11-05 07:18:27,222 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-156
+2026-11-05 07:18:27,222 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-156
+2026-11-05 07:18:27,232 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-157
+2026-11-05 07:18:27,270 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-157
+2026-11-05 07:18:27,270 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-157
+2026-11-05 07:18:27,281 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-158
+2026-11-05 07:18:27,317 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-158
+2026-11-05 07:18:27,317 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-158
+2026-11-05 07:18:27,332 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-159
+2026-11-05 07:18:27,366 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-159
+2026-11-05 07:18:27,366 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-159
+2026-11-05 07:18:27,382 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-160
+2026-11-05 07:18:27,416 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-160
+2026-11-05 07:18:27,416 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-160
+2026-11-05 07:18:27,432 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-161
+2026-11-05 07:18:27,464 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-161
+2026-11-05 07:18:27,465 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-161
+2026-11-05 07:18:27,481 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-162
+2026-11-05 07:18:27,515 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-162
+2026-11-05 07:18:27,515 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-162
+2026-11-05 07:18:27,531 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-163
+2026-11-05 07:18:27,566 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-163
+2026-11-05 07:18:27,566 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-163
+2026-11-05 07:18:27,581 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-164
+2026-11-05 07:18:27,615 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-164
+2026-11-05 07:18:27,615 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-164
+2026-11-05 07:18:27,631 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-165
+2026-11-05 07:18:27,666 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-165
+2026-11-05 07:18:27,666 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-165
+2026-11-05 07:18:27,682 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-166
+2026-11-05 07:18:27,717 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-166
+2026-11-05 07:18:27,717 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-166
+2026-11-05 07:18:27,731 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-167
+2026-11-05 07:18:27,768 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-167
+2026-11-05 07:18:27,768 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-167
+2026-11-05 07:18:27,780 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-168
+2026-11-05 07:18:27,821 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-168
+2026-11-05 07:18:27,822 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-168
+2026-11-05 07:18:27,830 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-169
+2026-11-05 07:18:27,880 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-169
+2026-11-05 07:18:27,880 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-169
+2026-11-05 07:18:27,880 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-170
+2026-11-05 07:18:27,930 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-171
+2026-11-05 07:18:27,934 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-170
+2026-11-05 07:18:27,934 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-170
+2026-11-05 07:18:27,971 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-171
+2026-11-05 07:18:27,971 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-171
+2026-11-05 07:18:27,982 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-172
+2026-11-05 07:18:28,022 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-172
+2026-11-05 07:18:28,022 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-172
+2026-11-05 07:18:28,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-173
+2026-11-05 07:18:28,069 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-173
+2026-11-05 07:18:28,069 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-173
+2026-11-05 07:18:28,080 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-174
+2026-11-05 07:18:28,124 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-174
+2026-11-05 07:18:28,124 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-174
+2026-11-05 07:18:28,131 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-175
+2026-11-05 07:18:28,165 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-175
+2026-11-05 07:18:28,165 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-175
+2026-11-05 07:18:28,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-176
+2026-11-05 07:18:28,222 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-176
+2026-11-05 07:18:28,222 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-176
+2026-11-05 07:18:28,231 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-177
+2026-11-05 07:18:28,273 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-177
+2026-11-05 07:18:28,273 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-177
+2026-11-05 07:18:28,281 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-178
+2026-11-05 07:18:28,318 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-178
+2026-11-05 07:18:28,318 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-178
+2026-11-05 07:18:28,331 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-179
+2026-11-05 07:18:28,366 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-179
+2026-11-05 07:18:28,366 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-179
+2026-11-05 07:18:28,380 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-180
+2026-11-05 07:18:28,420 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-180
+2026-11-05 07:18:28,420 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-180
+2026-11-05 07:18:28,430 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-181
+2026-11-05 07:18:28,464 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-181
+2026-11-05 07:18:28,464 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-181
+2026-11-05 07:18:28,481 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-182
+2026-11-05 07:18:28,518 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-182
+2026-11-05 07:18:28,518 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-182
+2026-11-05 07:18:28,531 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-183
+2026-11-05 07:18:28,564 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-183
+2026-11-05 07:18:28,564 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-183
+2026-11-05 07:18:28,580 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-184
+2026-11-05 07:18:28,616 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-184
+2026-11-05 07:18:28,616 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-184
+2026-11-05 07:18:28,632 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-185
+2026-11-05 07:18:28,671 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-185
+2026-11-05 07:18:28,671 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-185
+2026-11-05 07:18:28,682 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-186
+2026-11-05 07:18:28,718 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-186
+2026-11-05 07:18:28,718 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-186
+2026-11-05 07:18:28,730 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-187
+2026-11-05 07:18:28,771 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-187
+2026-11-05 07:18:28,771 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-187
+2026-11-05 07:18:28,780 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-188
+2026-11-05 07:18:28,819 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-188
+2026-11-05 07:18:28,819 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-188
+2026-11-05 07:18:28,831 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-189
+2026-11-05 07:18:28,871 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-189
+2026-11-05 07:18:28,871 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-189
+2026-11-05 07:18:28,881 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-190
+2026-11-05 07:18:28,920 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-190
+2026-11-05 07:18:28,921 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-190
+2026-11-05 07:18:28,931 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-191
+2026-11-05 07:18:28,963 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-191
+2026-11-05 07:18:28,963 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-191
+2026-11-05 07:18:28,980 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-192
+2026-11-05 07:18:29,016 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-192
+2026-11-05 07:18:29,016 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-192
+2026-11-05 07:18:29,031 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-193
+2026-11-05 07:18:29,067 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-193
+2026-11-05 07:18:29,067 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-193
+2026-11-05 07:18:29,080 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-194
+2026-11-05 07:18:29,113 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-194
+2026-11-05 07:18:29,113 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-194
+2026-11-05 07:18:29,131 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-195
+2026-11-05 07:18:29,166 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-195
+2026-11-05 07:18:29,166 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-195
+2026-11-05 07:18:29,181 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-196
+2026-11-05 07:18:29,214 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-196
+2026-11-05 07:18:29,214 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-196
+2026-11-05 07:18:29,231 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-197
+2026-11-05 07:18:29,267 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-197
+2026-11-05 07:18:29,267 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-197
+2026-11-05 07:18:29,280 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-198
+2026-11-05 07:18:29,314 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-198
+2026-11-05 07:18:29,314 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-198
+2026-11-05 07:18:29,330 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-199
+2026-11-05 07:18:29,370 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-199
+2026-11-05 07:18:29,370 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-199
+2026-11-05 07:18:29,381 INFO o.a.j.t.JMeterThread: Thread started: Authenticated users 1-200
+2026-11-05 07:18:29,414 INFO o.a.j.t.JMeterThread: Thread is done: Authenticated users 1-200
+2026-11-05 07:18:29,414 INFO o.a.j.t.JMeterThread: Thread finished: Authenticated users 1-200
+2026-11-05 07:18:29,414 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-11-05 07:18:29,417 INFO o.a.j.r.Summariser: summary =   2600 in 00:00:10 =  258.4/s Avg:     3 Min:     0 Max:    93 Err:     0 (0.00%)
+2026-11-05 07:18:29,418 INFO o.a.j.JMeter: Generating Dashboard
+2026-11-05 07:18:29,418 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-11-05 07:18:29,426 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-11-05 07:18:29,751 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-11-05 07:18:29,751 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-11-05 07:18:29,753 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-11-05 07:18:29,753 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-11-05 07:18:29,760 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-11-05 07:18:29,762 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-11-05 07:18:29,762 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-11-05 07:18:29,762 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-11-05 07:18:29,792 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-11-05 07:18:29,792 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-11-05 07:18:29,792 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-11-05 07:18:29,792 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-11-05 07:18:29,803 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-11-05 07:18:29,803 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 18200 samples
+2026-11-05 07:18:29,803 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-11-05 07:18:29,803 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-11-05 07:18:29,803 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-11-05 07:18:29,804 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-11-05 07:18:29,804 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-11-05 07:18:29,804 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-11-05 07:18:29,807 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-11-05 07:18:29,808 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-11-05 07:18:29,808 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-11-05 07:18:29,808 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-11-05 07:18:29,808 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 39000 samples
+2026-11-05 07:18:29,808 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 7800 samples
+2026-11-05 07:18:29,808 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 2600 samples
+2026-11-05 07:18:29,808 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 2600 samples produced in 363ms on channel 0
+2026-11-05 07:18:29,808 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-11-05 07:18:29,882 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-11-05 07:18:29,882 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-11-05 07:18:29,882 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-11-05 07:18:29,882 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-11-05 07:18:29,883 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\dashboard\statistics.json
+2026-11-05 07:18:29,921 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-11-05 07:18:29,923 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\dashboard
+2026-11-05 07:18:30,010 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\dashboard, creating folder structure
+2026-11-05 07:18:30,011 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\tools\apache-jmeter-5.6.3\bin\report-template' to 'D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\dashboard', got message: D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\dashboard, found non empty folder with following content [D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\results\jmeter\users-200-validated\dashboard\statistics.json], will be ignored
+2026-11-05 07:18:30,244 INFO o.a.j.JMeter: Dashboard generated

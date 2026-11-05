@@ -1,0 +1,11 @@
+{
+  "merchantId": "替换为商户对接UUID",
+  "merchantName": "替换为已维护的商户名称",
+  "requestId": "REQ20261104000001",
+  "tradeType": "PAY",
+  "amount": "1.00",
+  "occurredAt": "2026-11-04T16:30:00+08:00",
+  "location": "校园第一食堂",
+  "cardNo": "替换为有效CC卡号",
+  "description": "食堂消费"
+}

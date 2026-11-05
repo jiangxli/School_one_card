@@ -1,0 +1,20 @@
+PASS unguessable merchant UUID version 4
+PASS signed fixed JSON creates order
+PASS requesting order does not change balance
+PASS same request id returns original order
+PASS consumer balance debited and ledger returned
+PASS retries do not debit twice
+PASS nonce replay rejected
+PASS invalid signature rejected
+PASS unknown merchant rejected
+PASS expired timestamp rejected
+PASS order parameter tampering rejected
+PASS insufficient funds recorded as failed order
+PASS failed order leaves balance intact
+PASS recharge permission initially denied
+PASS authorized recharge works for lost wallet
+PASS recharge order links to existing recharge ledger
+PASS failed communications persisted
+PASS transaction result notification durably queued without sending
+PASS disabled interface rejected
+PASS TOTAL 19

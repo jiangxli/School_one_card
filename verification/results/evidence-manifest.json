@@ -1,0 +1,1522 @@
+{
+  "date": "2026-11-05",
+  "project": "school_one_card2",
+  "applicationPort": 18084,
+  "cpu": "Intel(R) Core(TM) Ultra 7 155H",
+  "logicalCpus": 22,
+  "totalMemoryGiB": 31,
+  "platform": "win32",
+  "osRelease": "10.0.26300",
+  "toolVersions": {
+    "junit": "4.13.2",
+    "selenium": "4.27.0",
+    "jmeter": "5.6.3",
+    "chrome": "156.0.8078.81"
+  },
+  "files": [
+    {
+      "path": "src/main/java/com/project/Application.java",
+      "sha256": "39c6f7d519403fc02ee2e80a68f447137c1054da0b0a170dc423aff5e00f3b46"
+    },
+    {
+      "path": "src/main/java/com/project/common/annotation/Excel.java",
+      "sha256": "f431cbf27238749cde1a94a38095397e74580276c6a88dbdb2a95724693a5608"
+    },
+    {
+      "path": "src/main/java/com/project/common/annotation/ExcelImport.java",
+      "sha256": "3e36653a2efccc409d81aa836b04750920c71ecee5ea77fc5c506d5501f90972"
+    },
+    {
+      "path": "src/main/java/com/project/common/base/AjaxResult.java",
+      "sha256": "202c9e3b18849ce84409e0f6d7b9749db84e681f8686acd7f58dc0c2bf827366"
+    },
+    {
+      "path": "src/main/java/com/project/common/base/BaseEntity.java",
+      "sha256": "96875fca7519b5adf611930a0b66f0c070c467cd9f63184c2428a93653119a10"
+    },
+    {
+      "path": "src/main/java/com/project/common/base/BaseServiceImpl.java",
+      "sha256": "9003b3b12907c25faf25fedf26d6df19f1cbaf8a79da799d3503bffc87a01961"
+    },
+    {
+      "path": "src/main/java/com/project/common/base/PageDomain.java",
+      "sha256": "c7e2cce2a855cbee8030da950f07278a2b648f87bffccd23036f0cd802232c8d"
+    },
+    {
+      "path": "src/main/java/com/project/common/base/TableDataInfo.java",
+      "sha256": "e4154a5092249b32ea2d56816944206f8a5c5004ceb2c67946accdc96ea55375"
+    },
+    {
+      "path": "src/main/java/com/project/common/base/TableSupport.java",
+      "sha256": "ae5b101ca8252701b124381f11240f67c93c966f276a0fc459e6e6488a05180c"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/CaptchaConfig.java",
+      "sha256": "46e75231c8351dfeb09455e787d265d715ab138b441ce20d4232070fed00a685"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/Global.java",
+      "sha256": "e51d7d326b53f0960d9b2da5bb030d522ae5d8504204c93fb02e548f9f389e5e"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/I18nConfig.java",
+      "sha256": "99e3fdd90099337a903f98d3f35c89e70666194d0a75a975fe8597084e3617eb"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/KaptchaTextCreator.java",
+      "sha256": "e4194a4fbd6d0288e84d09e14bf5ed8f42c0fc41fe504fedfe3732bc261cf27d"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/MerchantApiJobs.java",
+      "sha256": "52396ded217a71ece0195e2dc8e9e7638b68429d370089d288c0abc0f14a2c36"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/PermissionGuard.java",
+      "sha256": "6bdd22b7ebf6081dd594bf2739b7f7b1ff06182302d7343460afd184a564291e"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/ResourcesConfig.java",
+      "sha256": "a393d989edf2fa546dcd3624a4167bb25f0ed4c246db5e5d8f3f21b3a1cca9f7"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/ServerConfig.java",
+      "sha256": "4dce4903648444f87a7b730eae9ee0e36d56fc2ef342b30ad48eb4ec17eaddbb"
+    },
+    {
+      "path": "src/main/java/com/project/common/config/ShiroConfig.java",
+      "sha256": "3e450d311ac5a03a582d9cf66956c70e85020e36f2d0d3c187e778fc7cba7612"
+    },
+    {
+      "path": "src/main/java/com/project/common/constant/Constants.java",
+      "sha256": "a1f02d174a1c6526acc95130e9d984553c7e54a18867642af99f6ea21224fd13"
+    },
+    {
+      "path": "src/main/java/com/project/common/constant/PermissionConstants.java",
+      "sha256": "55cf56dfe8bd5fbf35f88f714fc4079024d26f5c7902eb7a252220b7c3eecbe3"
+    },
+    {
+      "path": "src/main/java/com/project/common/constant/ShiroConstants.java",
+      "sha256": "c289468334255e90afc256248118c0942edc2d76ce8e35fd31440121d6d1a0a9"
+    },
+    {
+      "path": "src/main/java/com/project/common/constant/UserConstants.java",
+      "sha256": "643a1351ebd9e515f7f7c0cd0406d8906aa214d84c6a563708d0d2101f15141b"
+    },
+    {
+      "path": "src/main/java/com/project/common/enums/OnlineStatus.java",
+      "sha256": "4202c191df8ef3fbfca0d1b692c09d77d48657ca03899bc3505f9725f183f7dd"
+    },
+    {
+      "path": "src/main/java/com/project/common/enums/UserStatus.java",
+      "sha256": "547e997722190af179fd00e3012006e09773683041f357b9553c64a3d6ce9bd5"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/base/BaseException.java",
+      "sha256": "9316273233f2bd5f8500f4fb21d234eef8a04a539e72f1bf29a876404cad112a"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/DefaultExceptionHandler.java",
+      "sha256": "ff10661e192af16d306d208beebedd57dcd0f9837aa1d0a14fc2c6f43be944ec"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/DemoModeException.java",
+      "sha256": "900cb4277e9bc0f3d7238fb3858077060f41743220fe871ed486ae01a282ee98"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/file/FileNameLengthLimitExceededException.java",
+      "sha256": "4714545cc0b243fc872e1d7ac327e6725ea948795f7d2b9c4050f77a152a4a70"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/file/InvalidExtensionException.java",
+      "sha256": "32ec3d17f78b3fbff78c416e4182caf43d82c0d78eb55cc6073d888467e4b2bf"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/CaptchaException.java",
+      "sha256": "c559659fe6fcd8192cbc96981ff74c23ea99791d812b3e21d812c9ac28442155"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/RoleBlockedException.java",
+      "sha256": "946bc25440237573cbe1d6497c1db4517040184b1074ee8c06a23217b946f6a4"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/UserBlockedException.java",
+      "sha256": "40eabcb50e76b4adaa04ace4951f1a838664ba73f3fd8098ad454e97cd623841"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/UserDeleteException.java",
+      "sha256": "a06a938121c9beef8d670681769f8ad849a88a96dd060d15d641267a0cedb57e"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/UserException.java",
+      "sha256": "f9d7c2185bb3f4d8b72ec3f10dbfeac61c50990cbf38592e3677d0d4826d0f0f"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/UserNotExistsException.java",
+      "sha256": "3c1a4bd967a5a317a560bf7b202b1dfa0121fbefd32637d5201e938cd440aa89"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/UserPasswordNotMatchException.java",
+      "sha256": "642d2dce9fd063f0062e9c734bf03f07040e62183c81962449d87d2b39dcc6fe"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/UserPasswordRetryLimitCountException.java",
+      "sha256": "2f36cf5b8831deb7d7c59b2546c5e2a48812d79852592e836c80374c56dc4fb1"
+    },
+    {
+      "path": "src/main/java/com/project/common/exception/user/UserPasswordRetryLimitExceedException.java",
+      "sha256": "1e6099a6cbcfd84cb7f24395f96be018b77256b29cd30cd4320e1c31f80769d1"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/realm/UserRealm.java",
+      "sha256": "b7fff5975546ada86cd9a445bcfdcad3273bf8ef0a5e8541bd81631f3bb9a95a"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/service/LoginService.java",
+      "sha256": "7bba3171c357936d47c15cdc127ed99ea49312b6e9f2d68113c030acc7e7c999"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/service/PasswordService.java",
+      "sha256": "ca25e6a283c84b46e5419e484339504cc0640e452c19c1c0daca4f73164af04e"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/session/OnlineSession.java",
+      "sha256": "31385ff61e41bc0b848f327b01c20191717fdc5e7b0f76bc34542a9033ab31d9"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/session/OnlineSessionDAO.java",
+      "sha256": "e4d3974186d5db1ad188c7b8685f5b7c229ae96532cb3ec562416911e517d2dc"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/session/OnlineSessionFactory.java",
+      "sha256": "34789d9848b247a5f6003dee05b1b8cd635509346ee8822962a5cad6c7d61f09"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/web/filter/CaptchaValidateFilter.java",
+      "sha256": "212e0e4b0c988012dac94781d1a3c7c56c005b2f392561a382e9de1762fcb17f"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/web/filter/LogoutFilter.java",
+      "sha256": "30ef22c337c0cfa88dfcdf4a0e3ca75f634e3e16947f277642294d8ec995b41a"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/web/filter/OnlineSessionFilter.java",
+      "sha256": "44fcca03a6a452e4013398dab02bb9cc520a60e1cac4dad5617cde655dd28893"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/web/session/OnlineWebSessionManager.java",
+      "sha256": "8216fb64bfb9a2bc9d6086ee66e9dd7e334afe649fb8c185cfb7912687d89ab4"
+    },
+    {
+      "path": "src/main/java/com/project/common/shiro/web/session/SpringSessionValidationScheduler.java",
+      "sha256": "f4c45575cfcba534495bba58c067dcbb371fd2d95d0a09615004defc9ce86105"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/bean/BeanUtils.java",
+      "sha256": "9287537e884eb3e95cb4060321354ba0055229070772020d6679cbd5b301607a"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/bean/SpringUtils.java",
+      "sha256": "b9159bbf0fa831ca602dd09964d5f20354794c9c95dc1e58cf11a7bb75137e92"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/DateUtils.java",
+      "sha256": "f25b51812ff36166282f57b31b713a32a1a7997c26712f0802650296b51edffd"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/ExcelUtil.java",
+      "sha256": "8d79fd90ee1352553392b84f4cd5a700483de9d4981c79920754e2db51a763b6"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/file/FileUploadUtils.java",
+      "sha256": "b3153fe678a2bf3677940a664172a096acfded05dc7d536d182e510781bf3256"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/file/FileUtils.java",
+      "sha256": "f44c41e2100b11b9d01fb2af84b5fc4778132526ea538785211d432d4da5caec"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/IpUtils.java",
+      "sha256": "6e8fa51d83b076ffdb0888e80ed43436cc99e6cdff010a481a028732a5142b1d"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/json/JSON.java",
+      "sha256": "42b5ba70a9c35dacd8326a13e19309e6804d5707537a5f33828b7c9c20e56397"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/json/JSONObject.java",
+      "sha256": "a4e24c630c76c6b4c95de8a042560ba22e9550d624e6efb6d7643ab7afaccd48"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/Md5Utils.java",
+      "sha256": "2ae2fbea2e68bf56c5457b14afbeba5523cb2525b86822acc28eba7f32c2fb2e"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/SendEmailUtil.java",
+      "sha256": "8a009b81c3c1acb46671daed62040d683776ef738745108abb63dbc489235c30"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/ShiroUtils.java",
+      "sha256": "501466d1eff36c9efffcf595e243c509eb6d09a5c15ccdc1550513a63eb360c2"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/str/CharsetKit.java",
+      "sha256": "c7f9ccec45aff11ddf2d126b98f2ae1b263c18ca3f07a0e0507b9e352b5be5be"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/str/Convert.java",
+      "sha256": "a49fccad05cc227450a76d366859a719452fba70fd1d9758e348a59090a18f1d"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/str/StrFormatter.java",
+      "sha256": "d3ac3111e9085bc070d3562eaeef0e41a5720e042e331f1a6c4e5d7b3938315b"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/str/StringUtils.java",
+      "sha256": "f1ef3cd1e6cb1e3f181f91ca688893dff1e6b0b691cb5d90b1d2f489a845dcc7"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/TimeUuidUtil.java",
+      "sha256": "75b5e1da227c273c154e6455d421658677a363a517f48407abf22f097b4e3b9a"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/web/MessageUtils.java",
+      "sha256": "3635a6986e2f281338b0e92437d2becaf17dc604c3f61df7c59a18c07bb442cb"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/web/ServletUtils.java",
+      "sha256": "4d8c5a9cc411a331159e2a0b84862143bb84e3e6ac79f401318646678bbc29aa"
+    },
+    {
+      "path": "src/main/java/com/project/common/utils/YamlUtil.java",
+      "sha256": "fc748c5e61984bb0c54bfe42b1c43c8e3827344d7302577b0b27265e68c705bb"
+    },
+    {
+      "path": "src/main/java/com/project/common/web/service/DictService.java",
+      "sha256": "5729149e3a794759bf810f58ed21116c1a2bf1d5a58e2231429554f39f22fffc"
+    },
+    {
+      "path": "src/main/java/com/project/common/web/service/PermissionService.java",
+      "sha256": "dbce4a19049743fa965111a5a71f4e31082d7f004de296c4eec6bbf3d4617e8f"
+    },
+    {
+      "path": "src/main/java/com/project/ServletInitializer.java",
+      "sha256": "d6670b761202a4cbdcf1d5f11b899d68ead7eca3e94c02bed1a848a0e79f6d4d"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/BookBorrowRecord.java",
+      "sha256": "ef694ce734d483dfcd1133f4fceea4801935a8bcc717a0bb2d2884316ded7d78"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/BookInfo.java",
+      "sha256": "b6f622746e87fe651b461e67f99f04cb4c8712ca6bc88660d07f7424bc4a4d38"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/GateInOut.java",
+      "sha256": "9cb390f17d4b823f6a78d27b4ed710098c4af0f659806c4f76653df8554ef78c"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/ImportExcelResult.java",
+      "sha256": "71c0d21c1091d0ee7292b4d27a689de758ad207e69875d8125fed173c57f7fde"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/ProjectAttend.java",
+      "sha256": "5cf2fc74ef947a59371fb2b308d1a406349b4798feaa77523245b8ecd9c0a9ce"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/ProjectInfo.java",
+      "sha256": "6ecc78fe90db6c88c06aebd14d4d1517a3a55d148f079f16c26c54a2d12b6dfb"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/SysDictData.java",
+      "sha256": "078f1e563a88e1d0cb3d026f6669c6ab1edff28e76c5c8c04b16ed594ea059b1"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/SysDictType.java",
+      "sha256": "079f9a4306858271d0869020e928be9584a87d5ae91864399e6c66afbe0079c9"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/SysMenu.java",
+      "sha256": "ffc2df2265f63de11cbe50a7488be163c05c4911fe647bb65839ac9712058da0"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/SysNotice.java",
+      "sha256": "e59a23424f9dfa56e25545312cd664766670fdbd216fdaa9e1c0410518f3830e"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/SysRole.java",
+      "sha256": "59a4c32a91235e7714b1bc145e1b7ccec7d8831b020ad99142eb3359a7684760"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/SysRoleMenu.java",
+      "sha256": "76b8fc9b8d01f418b29b3476c1b183bcda92a58d667b816295608a4f5e5dea30"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/SysUser.java",
+      "sha256": "fab5cda905415139ecf82f8a66817bce7fc2636367151a723e7fb170c08eb224"
+    },
+    {
+      "path": "src/main/java/com/project/system/domain/UserSecretProtect.java",
+      "sha256": "566f08442ae835be72e149fbac31dc543be8bb78cce1898061bd91f41d0eec82"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/BookBorrowRecordMapper.java",
+      "sha256": "a2a08b5aa8c12f07367ea921254a49b7d71ddeb3f384bc36113777158885fbaf"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/BookInfoMapper.java",
+      "sha256": "daf277cd521bae1a9bb1b4a9126494d166529d42b18c28625d2072323af66a89"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/GateInOutMapper.java",
+      "sha256": "15cc0be6bd542e66c3a234c9ae8141ac02d53f64fb52b5b6ca64ddaeaf4350ba"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/ProjectAttendMapper.java",
+      "sha256": "6035f8fab86e796fd40a4e8f893c415c598d981d1967a1603a26ec5d8b4baf50"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/ProjectInfoMapper.java",
+      "sha256": "b949788c4e9b5405dfdee74e544592c468e37684ef24a3b2c56b078a2b20f759"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/SysDictDataMapper.java",
+      "sha256": "fabf0597d3bc562f6b96d70a6fdaaf28290996eb79df4ddd1d083ef6e99bbb4a"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/SysDictTypeMapper.java",
+      "sha256": "49350687e022cf0ca83a91b16298d7b12d0b281753818c5de890d244d2ef873b"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/SysMenuMapper.java",
+      "sha256": "deb9146f76fa2930a2331a2273c787b5b02db9c1b55c674e701ccd3c72de9125"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/SysNoticeMapper.java",
+      "sha256": "98b59b443ad7ebefdc778b61b06d0dec9dcb7a92e2399e3389c7e3a82d5feb73"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/SysRoleMapper.java",
+      "sha256": "11fd40adf2e294fc8a8a185bcc44a0d73491555355399072ef07edafd541a44c"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/SysRoleMenuMapper.java",
+      "sha256": "864f7714106392d6c77557e2b48da7f97f77fc9af0da5dfa50b44c45cf947fd4"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/SysUserMapper.java",
+      "sha256": "2378cce553ba30507bffc69fe2298f451d422a40323d061a7104172e1fe3a0f4"
+    },
+    {
+      "path": "src/main/java/com/project/system/mapper/UserSecretProtectMapper.java",
+      "sha256": "f1bb99418bda2a20e88336be9bf32074fb6545480e990cef9c80b681b7194bff"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/ApiSecurity.java",
+      "sha256": "7af7f8cd14dd6fd56781a7a2fd2d0c08b45734400f31bf7a00d24547ea6f0882"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/CardService.java",
+      "sha256": "1e9779e7865b4dd6b67d8629acc10fbe4662c16b5442bd9583afdcb670dee5f3"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/FinanceService.java",
+      "sha256": "d0cf43737d48b87aa6ea6d3a181bec8c048fc6037cd663857ead772e0e7ea13e"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/IBookBorrowRecordService.java",
+      "sha256": "79b7fe46f6f5a63dddeaf2d4d5423f49f99f04f603a50f3f2e8b89fcc45e1a01"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/IBookInfoService.java",
+      "sha256": "6eb47aa2029cb8c82a7320e7eac147d80bb92644fe6b7330f6ad07e622b6bd9a"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/IExcelImportService.java",
+      "sha256": "9ce3074e16ce5d87839dcf851c2f53d5e88df569784d098e628a9792b631cafe"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/IGateInOutService.java",
+      "sha256": "40f57695dd6a7dc2d9c5d5dde115a4009af3e577f8e5872250809464f1f89d9a"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/BookBorrowRecordServiceImpl.java",
+      "sha256": "c45b33d0650c1450abce2c4fa91ae532e88cf8abc3614ab56d4d9120ce34d54f"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/BookInfoServiceImpl.java",
+      "sha256": "944a4824ca18768bdfc842bd109c967246dede49e989d6fd18f51c4dfcd12f78"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/ExcelImportServiceImpl.java",
+      "sha256": "ab5536b370a85bef9790bf778b7d15edd17f86e6da87d5fbd4023276e8b79a6b"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/GateInOutServiceImpl.java",
+      "sha256": "01f09268d065a8fef46667abc6b413d55d96950f33a86661315927d730a065f9"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/ProjectAttendServiceImpl.java",
+      "sha256": "9091d518a5bcfcf267b6c399d591a48552da7c15828ca28c486eccbcc287fe3a"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/ProjectInfoServiceImpl.java",
+      "sha256": "53b043b6718db1e40afbf918b79dec159dd731267939db3706de30212729b44f"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/SysDictDataServiceImpl.java",
+      "sha256": "732356a9e2f7c40d5cad67fc7368318fd2cba63fa418efee6ac3d4784b822e19"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/SysDictTypeServiceImpl.java",
+      "sha256": "18c67253213a0e7505524f740d7c51a60f9afadaf91e807bb8669eacea9d924e"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/SysMenuServiceImpl.java",
+      "sha256": "1668735d8fd0f801e41432bc5ccfdc68e1edd5fd98647a2b6f2d21741995cddf"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/SysNoticeServiceImpl.java",
+      "sha256": "400a423e5449e3ae580cba0b01a944d5981959104873633f1808e347da451d2e"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/SysRoleServiceImpl.java",
+      "sha256": "2b8804c3e6b22af0416bf6b4e6a75e72973557693fdc88c4e0234b95273c08cd"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/SysUserServiceImpl.java",
+      "sha256": "545c466e6d7a4db60e6e98ef682bc8cb38db7cc940d4fd7ae119c6ce4ef8189a"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/impl/UserSecretProtectServiceImpl.java",
+      "sha256": "1663444b2629456c07de01dbff63321b73b0cfc3600904483726a70055e17258"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/IProjectAttendService.java",
+      "sha256": "762c0decf9d3909ba4bed1e11a3b56cb35cdb651c0ca232a1e67269f7eedf1ec"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/IProjectInfoService.java",
+      "sha256": "cc8116c36b69f42aaee8d0eb658338427d0b31e6c3c9bd3f7e22113e61b76a64"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/ISysDictDataService.java",
+      "sha256": "c285fd515c6156fe5ec8b854dce49dbafcbc8fd47ba4186230a1c23e14d9b19e"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/ISysDictTypeService.java",
+      "sha256": "12c6c3939d1621be12a9fd98df59738ecb9671b2086bc44cdc3117fdb00ed74b"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/ISysMenuService.java",
+      "sha256": "deedb062380f0d9ec72abdcd93cb39b9a1200a6833480922b6c015e6ba3f615b"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/ISysNoticeService.java",
+      "sha256": "6d6dd764ae185ea339c14d7e87d36fa6f314ef128738523b91e0331824a9f6e9"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/ISysRoleService.java",
+      "sha256": "b2ee42b1df55876f4e39c038f3508ed3e049f16ee52996a7177da56e3d9214e1"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/ISysUserService.java",
+      "sha256": "56cf690390f02d2df74418c4b8a04bed8576ce2d712016ebc768029f18c4ef35"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/IUserSecretProtectService.java",
+      "sha256": "f12b033a06cccac53f6e722ab4806fcf0fb1530b23540d52d71cf03ac9a7065c"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/MerchantApiService.java",
+      "sha256": "6f567287e2f0e58d3080252cc792f789548f440f78552184d6bad3e76a430618"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/MerchantConsumptionService.java",
+      "sha256": "217789f6b7162be1a7c53920dc71eee4d797ba174b77ae5163c4b0c62d17bcd9"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/MerchantService.java",
+      "sha256": "e48181d79c3acf01b5d798f3d9e34677bc21324fafdd825d2c12141513362537"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/RbacService.java",
+      "sha256": "df4fbdbba5d5e9028d1b2e5ef500bea069194d607bf6b10d1e46420838b4c39d"
+    },
+    {
+      "path": "src/main/java/com/project/system/service/WalletService.java",
+      "sha256": "776d792a14a2120e92d43973643bb403b7125fc1a5eac915d3643264fd3480aa"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/common/BaseController.java",
+      "sha256": "917adbd56c0d366c47ec5a2411c437c211d970292db70e52b91915efc5aa351c"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/common/CommonController.java",
+      "sha256": "aed637bbaa13e1d779638fcf395dbe5982257c22c849e837a146ccd4bf4e29b8"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/BookBorrowRecordController.java",
+      "sha256": "a4233df38aae14682a56f6b82b08d43f6763a60c3d5a4de7cc09e41dded40b92"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/BookInfoController.java",
+      "sha256": "9af5eb8fd30a2badb0cdb731559d6985fb954ded543b4d670663fb2b2896c67a"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/DictDataController.java",
+      "sha256": "7c0a83d37d593575e938b836b9b6a4d988427b90005642f74e7b196e799527c4"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/DictTypeController.java",
+      "sha256": "0a9b48e25ca8d16cf7c88fb1ea7041ceac5c5c667e22403dc055d576c0e42607"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/ExcelImportController.java",
+      "sha256": "28d733946d591a6f59665f57f842cc5b192cd7875d29ded17552500a6872a1ba"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/FinanceController.java",
+      "sha256": "a0d7c8871b597e4528df8f9d2c957a8bb410e36d6aa05ee249ee4df207807cd5"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/GateInOutController.java",
+      "sha256": "dea0da089b161cacd31759e9e56fa39d5b5a467c31d3ed11d1775d2a9082fd68"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/IndexController.java",
+      "sha256": "70a1b7416360b6214c1e80879e58f4f405c0d9326b9c543b36a91adcff8e5d5e"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/LoginController.java",
+      "sha256": "18545e173daca0ccbd5c0e5e86e182ccaf6ce633e41a6a5eb8434d25802f4806"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/MenuController.java",
+      "sha256": "60de33b214acf6214e98cde2840f68eefc576f3f624f18fe223438af6170f94f"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/MerchantApiAdminController.java",
+      "sha256": "bc355af157194cc38d16f50693228eaa54b64f785a752457006c05869710507d"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/MerchantController.java",
+      "sha256": "a0b756e48d45f130a6265f8ad1df2ad059b35418773c25daef29cc320f2f3760"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/MerchantGatewayController.java",
+      "sha256": "229c50e1e4bf0ead90d69526dcde67f6e1e7d018622a51c7817a1a19feafdbef"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/NoticeController.java",
+      "sha256": "9d4fcd6d1d5d729558a3acfa8892c7577ea81a2d4301b96c0a1ff0febe2599f8"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/PermissionController.java",
+      "sha256": "dc73d7504c05c322e1f2369bc27c52a8b4ecd24cde90be3d46a31d780c15881a"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/ProjectAttendController.java",
+      "sha256": "888d6cfc07e647b90631998eef047eb7dbfcb7d32b9328e84661106b639e50a1"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/ProjectInfoController.java",
+      "sha256": "5e18d2fe78acb73e87dffd22b71aad0a874cec53b03baaedc0985b0bf0d72ad8"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/RoleController.java",
+      "sha256": "f8febcf4d1ed0c24f2be0cbbb34513ad8b8111b7114cf3089e8e2c3d0c79c72a"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/UserController.java",
+      "sha256": "8891118b88c48a910132564cfe98b0e649826451135245114dd68e4268fdf08d"
+    },
+    {
+      "path": "src/main/java/com/project/web/controller/system/WalletController.java",
+      "sha256": "f8dcf3e1f86fd0c04986577aac7d88df04b0b8f767281bb1149d66f29e9a2ff7"
+    },
+    {
+      "path": "src/main/resources/application-druid.yml",
+      "sha256": "5ccebf9fe2a521807baf95aec7fe8a55ef32b6e8c8d30374926661b58f00552c"
+    },
+    {
+      "path": "src/main/resources/application-local.yml",
+      "sha256": "d0b7ad2246b3e879207593ed78dda675f564dcb0465341021d3b53795ea9765f"
+    },
+    {
+      "path": "src/main/resources/application.yml",
+      "sha256": "b4bce56ad69e1f600649d4e58cb6d4f7d812c9525b22d9361ce850c9bf7dec39"
+    },
+    {
+      "path": "src/main/resources/ehcache/ehcache-shiro.xml",
+      "sha256": "cf6b540ec32ece06fde655cfff8f1b3a04c3e0a90d7d735ad0c63dbd9fdba422"
+    },
+    {
+      "path": "src/main/resources/logback.xml",
+      "sha256": "26e0a028f2b6d190fa8d2ed7eaa293bd26afb322c32b8fe8d26c128752f97f3e"
+    },
+    {
+      "path": "src/main/resources/mapper/mybatis-config.xml",
+      "sha256": "d27b370b95866212424a8b9f159fcf5dad5b5c8108bba735a76d8b94aa3c2a4c"
+    },
+    {
+      "path": "src/main/resources/mapper/system/BookBorrowRecordMapper.xml",
+      "sha256": "624287d39be1f7601dfb9d704a25928b514ee8624f9b125155382f01c8a0474c"
+    },
+    {
+      "path": "src/main/resources/mapper/system/BookInfoMapper.xml",
+      "sha256": "c1d11fdb8e48f0c121f397232c05b92b324f11e8b48637437716f510616fe7c2"
+    },
+    {
+      "path": "src/main/resources/mapper/system/GateInOutMapper.xml",
+      "sha256": "441bd3d5791118282b3f35007359d2349ea9961c0fd98442a4433eba02178784"
+    },
+    {
+      "path": "src/main/resources/mapper/system/ProjectAttendMapper.xml",
+      "sha256": "ae77afd94463245017e126f2a9117fcf81f3ab8dda9ebf66481be995e32b4196"
+    },
+    {
+      "path": "src/main/resources/mapper/system/ProjectInfoMapper.xml",
+      "sha256": "0e5048f08284373484bb13e040017972dd8a3bc53e46f644364ec60a02ea495f"
+    },
+    {
+      "path": "src/main/resources/mapper/system/SysDictDataMapper.xml",
+      "sha256": "8b99917b6fd1bfc1b3c3678caa8c2191a70fc59dd0c239cdfb0e3cbe8d94d0e7"
+    },
+    {
+      "path": "src/main/resources/mapper/system/SysDictTypeMapper.xml",
+      "sha256": "d80a10cd0c552ca1caf804393d9af94e450b0dec08743a1d47ef24944f68da56"
+    },
+    {
+      "path": "src/main/resources/mapper/system/SysMenuMapper.xml",
+      "sha256": "9246f997deea3187337e1974b7a8cdba8d99f972c63d1d9b6dccb41a183736e9"
+    },
+    {
+      "path": "src/main/resources/mapper/system/SysNoticeMapper.xml",
+      "sha256": "22c527a74ec99e7ef0e41409c1c7ee40cbdf35d63840187b5c773317205453aa"
+    },
+    {
+      "path": "src/main/resources/mapper/system/SysRoleMapper.xml",
+      "sha256": "847478a8f61bb3cbaee2ac9b15cd2b7a1240172d010965901cc4cfb0abf09eaf"
+    },
+    {
+      "path": "src/main/resources/mapper/system/SysRoleMenuMapper.xml",
+      "sha256": "4f2d2a3594cff7e4c2864aecbce2efc771941ad82eff52d43c4cd5256cfc7939"
+    },
+    {
+      "path": "src/main/resources/mapper/system/SysUserMapper.xml",
+      "sha256": "8f12ea1789168fa9125a74c924f2fb37131a0d9113d48b7d56848d5b72f3cda3"
+    },
+    {
+      "path": "src/main/resources/mapper/system/UserSecretProtectMapper.xml",
+      "sha256": "709487a4faba3f349476bd285f6ef89cbb6e3a877d716c471f09fff3f0edc4c3"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/beautifyhtml/beautifyhtml.js",
+      "sha256": "bf60f5fa6aeb112cce13edc023cbc67e1ac0fd2c0fc8c222538ffb668b844224"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/blockUI/jquery.blockUI.js",
+      "sha256": "8ecf2533ee3596bd3c05e430639d3ea16db8f7ef4c47530a10c2da4428d649cc"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/bootstrap-table.min.js",
+      "sha256": "ee775f140fe8fe9f82899de06ee4019e2a8eca47d262af15662657342e1b02f7"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/bootstrap-table-editable.js",
+      "sha256": "92853d4c2fc6f2f03b02e89cbbaf4c41a0ae7231eeaf58d75cd8d65c966d15e9"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js",
+      "sha256": "2a1eb0fd1ea2346bed88590067bfed352c7e8d060e4c02939b3d5bf135534493"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js",
+      "sha256": "055089410832f1687c7ed79d450ddf8145f72890c6f6a9a8627dd9e1f70ba9ab"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/tableExport.js",
+      "sha256": "85ae0e8bd42a95dec148257cf0a249390fdca618905d37b19c8e1569f238f9b8"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js",
+      "sha256": "67eb147291355cfd914b7e7b15a3886bb5a354480c9d73f9afb19c25befc0da8"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js",
+      "sha256": "60ee43120b100088d312c4fa224811277e688248cff381fa8bd092008f7ae9c1"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js",
+      "sha256": "baf65d5b4801eba1d216b9cd27c39d65a99f17c0210effdb3a2ef474e3c215fa"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js",
+      "sha256": "5d25ee98534757cb076c3cc60f2fb96e772ca06f84d0003d9255587ccc649eb2"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.js",
+      "sha256": "2e72db48d362714d553c0a37ebab35971765a1a474e93e0917e244e63115b0e3"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js",
+      "sha256": "f45b286ecaa33eec60747a6f778c02c9649546153015f31016ce7e459be9c5a8"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/bootstrap-treetable/bootstrap-treetable.js",
+      "sha256": "b0f367f3f86da9289e0e6bcd40183f375210d3d6a5ddb365b28b0d713951662e"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/chart/echarts.min.js",
+      "sha256": "03ffd2631a89ea4df52489f45033ea99937f276960c9eaed0cae82357df44c32"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/cropbox/cropbox.js",
+      "sha256": "52700ae12429cc0c2b3a52e9c1a62b2f01676f6a49e58b626cff3560f1f4f6cd"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/datapicker/bootstrap-datepicker.js",
+      "sha256": "6b16f8826b81c45468f670cbd644d44a88a7dbefa3247afe589f1a9e844c1d91"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/distpicker/distpicker.js",
+      "sha256": "14ccda012b4e1f568c3607def121d0c8903893c3e8dc89ac034537f9037a7aa1"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/form/jquery.form.min.js",
+      "sha256": "d8f8ebd4e96964c63aa9eb0933af2ddafdfdb7e94c2efc70a5af109518c9ae80"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/fullscreen/jquery.fullscreen.js",
+      "sha256": "76231abd35ebf569936f570ea49f356245b47f8e42ca615d723b3ef4dd9a18ce"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/iCheck/icheck.min.js",
+      "sha256": "9fcb2f4212989b54a867eb65c86910d89c8779de6e609e6a227c3c6c6a4cd1a7"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/jquery-layout/jquery.layout-latest.js",
+      "sha256": "ccacb6749f921e113fc6158035aeb4694451bedb3c1beb8b728bb0cf83e9cf05"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js",
+      "sha256": "3bd1b659eeaccfeb694b5301670cd0637bb612584861ca4025a152e5e963849b"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.core-3.5.js",
+      "sha256": "d7678b0d521ca475e061e3621ba8e648c49f821346b6b598a6a78106803d551d"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.excheck-3.5.js",
+      "sha256": "557fadef6d9ed2d1c2bc9e0105823d2fda438df19536fe971345a6d58d208dd0"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.exedit-3.5.js",
+      "sha256": "81b644bf09e2c7f815ebc3be032de37755e50c6da2e041dda7e1e8d4bcb72a39"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.exhide-3.5.js",
+      "sha256": "5942acc9b1aec8a07ea3cfa0260866361061fa8ca31c010df01a558b00cc61b9"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/layer/layer.min.js",
+      "sha256": "1ce6649d82d2db0f8e4823f701ddfcfd9c7f107cb446c907e46ec7e57171a2a3"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/layui/lay/modules/laydate.js",
+      "sha256": "280d791f889b9933ea7d0b1231371992ec4714a7bd07e09e93ff49061715c435"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/layui/lay/modules/layer.js",
+      "sha256": "1ce6649d82d2db0f8e4823f701ddfcfd9c7f107cb446c907e46ec7e57171a2a3"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/layui/layui.js",
+      "sha256": "c74f77bd6667ee83d54b1c74ab767ce34f3cc96df6203c3ff0bc0d9bc28c9930"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/raty/jquery.raty.js",
+      "sha256": "b6657779f86217fdd0fab708c975bb2e98c216296036bd9482296abb5f4afe22"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/select/select2.js",
+      "sha256": "4f614bc381034b08bb91b9b11adea638585be9248dcaf5d4bd443b48724f076c"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/summernote/summernote-zh-CN.js",
+      "sha256": "e259a49f63e3812fc4b4a059d55be2ef22a02c85ed6d3b97cf161cc816416be2"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/summernote/summernote-zh-CN.min.js",
+      "sha256": "020f03d90a56da3ab4785c14e123bda74c3f065588e4a3a82fd69e8655f67195"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/summernote/summernote.js",
+      "sha256": "57a4769757f8f6791e62110f96dced8bf1c07b1d7ccadc64b1ce08f9486f2cfb"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/summernote/summernote.min.js",
+      "sha256": "d570d9f13d1b5a2eb9c27aaaedb04f2bd42b5a41347e0eb12d5015b92a8ac3fe"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/validate/additional-methods.min.js",
+      "sha256": "54c8ee680d1dbb3ca6debca6924de1fabe5aa9fc8b1ba2e7d3807590819f04b8"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/validate/jquery.validate.extend.js",
+      "sha256": "43feaa54b41146e13313e12edbac24f80f8ca9f6eaf0117d0c806efc44aeb50f"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/validate/jquery.validate.min.js",
+      "sha256": "2f9092f3e0f9d7b09001e1d497459cd8050c97791d3825e04ef19910e12a3f1b"
+    },
+    {
+      "path": "src/main/resources/static/ajax/libs/validate/messages_zh.min.js",
+      "sha256": "11292f602804aaeb2a0a73d6243174c5d5e29515ca1864772a9c5354c87de14c"
+    },
+    {
+      "path": "src/main/resources/static/js/bootstrap.min.js",
+      "sha256": "575115c40a171b327ad17e90cad7a3632845727fabaf5b750d6bd30093ac3065"
+    },
+    {
+      "path": "src/main/resources/static/js/jquery-ui-1.10.4.min.js",
+      "sha256": "b3ed7e70b5ccf630d3166b6b37d8835b6cdac98468002148beea5a3dc7b8bea4"
+    },
+    {
+      "path": "src/main/resources/static/js/jquery.min.js",
+      "sha256": "f16ab224bb962910558715c82f58c10c3ed20f153ddfaa199029f141b5b0255c"
+    },
+    {
+      "path": "src/main/resources/static/js/plugins/metisMenu/jquery.metisMenu.js",
+      "sha256": "f3543ab3debb16ac74650308ae59af102c847bc1458558d697d06a425df091fa"
+    },
+    {
+      "path": "src/main/resources/static/js/plugins/slimscroll/jquery.slimscroll.min.js",
+      "sha256": "4d12c146eaffd970b0cd80fb818615760e0ff1b4d5af646f87d53f200ecf2c44"
+    },
+    {
+      "path": "src/main/resources/static/project/forgetPwd.js",
+      "sha256": "0f9f9d62e27e49be4d713318982771c297279ae4fe0157a76d5b7af01a7a0fcb"
+    },
+    {
+      "path": "src/main/resources/static/project/index.js",
+      "sha256": "25b8bfe12c3f831fe1e6dded1442fe726ee3a339cf48f9c53a0bbd3cb89e47f9"
+    },
+    {
+      "path": "src/main/resources/static/project/js/common.js",
+      "sha256": "e10f06416c0f3ef3b45d73398d38fba33319a634373db4c8cddef17864272724"
+    },
+    {
+      "path": "src/main/resources/static/project/js/ry-ui.js",
+      "sha256": "563e272b74c1c81a5feae60a51ce33300ced159489241f84deef9fa8004c6b19"
+    },
+    {
+      "path": "src/main/resources/static/project/login.js",
+      "sha256": "39d838761ae4c42d02f4633c1f7238524999b9b49faeb82fa9153f400285732d"
+    },
+    {
+      "path": "src/main/resources/templates/error/404.html",
+      "sha256": "1620796d162e5e069c3fd478e3a1ac6a7d7dcf8c980a1b29e0dcac63997f0ca6"
+    },
+    {
+      "path": "src/main/resources/templates/error/500.html",
+      "sha256": "6a02b7222761e3fcbeae14df1c6ba87e9bda44fcce1f2c39fb79caae335a5366"
+    },
+    {
+      "path": "src/main/resources/templates/error/unauth.html",
+      "sha256": "c11b2e51ec51b1cc31592894e8ebca11ad2dde6606777a1248c3915cc2116e02"
+    },
+    {
+      "path": "src/main/resources/templates/finance.html",
+      "sha256": "7fa4df4b38d0b2c878682e52a931ed120db99aa31988edc7d24555787b1293b9"
+    },
+    {
+      "path": "src/main/resources/templates/forgetPwd.html",
+      "sha256": "b1c351f9b81de6fec156b4860ffb6bf75a54a30aa2a72ab7f583e7932e62d24f"
+    },
+    {
+      "path": "src/main/resources/templates/include.html",
+      "sha256": "69bef925a839b48a6b25d02fd548d37261d6c065271a6492644dbe629a415f8d"
+    },
+    {
+      "path": "src/main/resources/templates/index.html",
+      "sha256": "6e1572d7c4ece475ffcaa87f4b702e8e8edcabd9f45b27f390b24d55e5d788ba"
+    },
+    {
+      "path": "src/main/resources/templates/joinProject.html",
+      "sha256": "07522ac3bd81c51202ffec0b85b2de80b3090991947c4ec62cff2f75f0b3d3f0"
+    },
+    {
+      "path": "src/main/resources/templates/login.html",
+      "sha256": "c84c1e0b68cee46d0da583559310a03626cf0a9aa670d8d9f41fd74dddac1293"
+    },
+    {
+      "path": "src/main/resources/templates/main.html",
+      "sha256": "f3e6d9bf3312a459625d0b4a38106a908e22f9e5dc587aae664fc084fb81c200"
+    },
+    {
+      "path": "src/main/resources/templates/merchant-api.html",
+      "sha256": "3dfa21e7275e89727fb29ad87ac2f3d23de35bfb33f89bf8a1d3b24b780ddff3"
+    },
+    {
+      "path": "src/main/resources/templates/merchant-consumption.html",
+      "sha256": "4f1ab6a835754c8e4a3e971a25d55d08f3fb011c467633192677bc9bba9f9bea"
+    },
+    {
+      "path": "src/main/resources/templates/merchant.html",
+      "sha256": "5c53babd3eb950aa1f6bfae7ab35d5dd382dcb99b3e768e7fcbec45051a63539"
+    },
+    {
+      "path": "src/main/resources/templates/permission.html",
+      "sha256": "e2e3be88a367ae73fd2b347b615b0b45c9b159b55e34606774f420de9770b49e"
+    },
+    {
+      "path": "src/main/resources/templates/system/bookBorrowRecord/bookBorrowRecord.html",
+      "sha256": "b861d9ed91dca9e908bc7af3424d461f3c16b9ea071709880377fba766c4b2d0"
+    },
+    {
+      "path": "src/main/resources/templates/system/bookBorrowRecord/detail.html",
+      "sha256": "79ea0af9ca8873a4ae897a5524d952e629a68788c045fb6a0e42b64f40ab15af"
+    },
+    {
+      "path": "src/main/resources/templates/system/bookInfo/add.html",
+      "sha256": "4f26ad876387d424826b9444514e6bab60ad8bcf44ab7a2e156ec2688a703e34"
+    },
+    {
+      "path": "src/main/resources/templates/system/bookInfo/bookInfo.html",
+      "sha256": "781c420e8b49cb235ca24bcd37c1c92a2b00328bd640bacee3e4e6c9fe69a809"
+    },
+    {
+      "path": "src/main/resources/templates/system/bookInfo/detail.html",
+      "sha256": "59c955ac91c4f53c7f637116a7ab1be77691f224e5a972d4f104db2edef158f0"
+    },
+    {
+      "path": "src/main/resources/templates/system/bookInfo/edit.html",
+      "sha256": "29ab2f6db0189a04ed0d68fdcb7eb9a4fa80f6fbdfae9a1a14ef2ad32067dc0d"
+    },
+    {
+      "path": "src/main/resources/templates/system/dict/data/add.html",
+      "sha256": "806299ea859ee3030036325b5a2ba11bd6cb67948616abfec5f39dec0da5e038"
+    },
+    {
+      "path": "src/main/resources/templates/system/dict/data/data.html",
+      "sha256": "f77f104c9c963497e58893add16d37bcfc79badee67c82af860471e74fa574dc"
+    },
+    {
+      "path": "src/main/resources/templates/system/dict/data/edit.html",
+      "sha256": "bc89463f27422220020b683c27ed11f3dbd52c9c1d39e593e6825c721be505e6"
+    },
+    {
+      "path": "src/main/resources/templates/system/dict/type/add.html",
+      "sha256": "4e9052db565c0ea816db265dcf7d235bdeb7b22925fd2c69a37a0c9dc18bfd82"
+    },
+    {
+      "path": "src/main/resources/templates/system/dict/type/edit.html",
+      "sha256": "e965416001355c95e708a0ae0f6165eb7e53d2da8c692e10ad0c3e6100623a7a"
+    },
+    {
+      "path": "src/main/resources/templates/system/dict/type/type.html",
+      "sha256": "4d773a7a9359a4457d23a8d00230ad7920ec68ed836a6ea7985bc3aa23b5b286"
+    },
+    {
+      "path": "src/main/resources/templates/system/excelImport/excelImport.html",
+      "sha256": "e4814ccc7eab7e112a412d702fb31e5df57f62a2f0c960b53bd15842e72010ab"
+    },
+    {
+      "path": "src/main/resources/templates/system/gateInOut/gateInOut.html",
+      "sha256": "92d42d96a3231521be0e526677ae19f1df8a9feca1962b7311b234d0230fab7b"
+    },
+    {
+      "path": "src/main/resources/templates/system/gateInOut/gateInOutMy.html",
+      "sha256": "0adfc81e65b17560ea2adc635df68be0e06b68d115115d760697b1b8be4422f5"
+    },
+    {
+      "path": "src/main/resources/templates/system/menu/add.html",
+      "sha256": "ee55846cd3da1036a47df223366ce85f70301ba4b7864928646350767c5fb3ff"
+    },
+    {
+      "path": "src/main/resources/templates/system/menu/edit.html",
+      "sha256": "adcc8b41ed36db934e2397c581be59b014af27d288c0ebcb158a712d1e9c2b48"
+    },
+    {
+      "path": "src/main/resources/templates/system/menu/icon.html",
+      "sha256": "795122b79be828dc2120eb2606f522e2e005df0938b2ce87d38e53d82b73df55"
+    },
+    {
+      "path": "src/main/resources/templates/system/menu/menu.html",
+      "sha256": "f35921474676ef3ddb14800f8357d3c962f911f0086c683b5e709d9df7ea6d29"
+    },
+    {
+      "path": "src/main/resources/templates/system/menu/tree.html",
+      "sha256": "4854eb3541c133c4be2bf77bbf8486ec1b2e2e6ce4cefbe23e6de52627df3849"
+    },
+    {
+      "path": "src/main/resources/templates/system/notice/add.html",
+      "sha256": "beeafb25df769e428930eadce8db37d0af8ca4092f71f8d0daf57bf2e2aaa4d3"
+    },
+    {
+      "path": "src/main/resources/templates/system/notice/detail.html",
+      "sha256": "fc3248959a30c20e60ac545a1a419c731e158e39fe80431d116e86d1f1c5097c"
+    },
+    {
+      "path": "src/main/resources/templates/system/notice/edit.html",
+      "sha256": "9c83457ae08952a86c4714571a2e81b3755358935bb68b893475a8a0531c6634"
+    },
+    {
+      "path": "src/main/resources/templates/system/notice/notice.html",
+      "sha256": "483c61ddd67cd7bf0fc5fc33794658ddfccd280bc0d700973fc176029ff020f1"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectAttend/add.html",
+      "sha256": "5eb9f66602183d942f763cbacb827c2736dc086cedf2b6e14d6037975621bd3a"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectAttend/detail.html",
+      "sha256": "b78e95554da0cd4a3ee552073ce60e89358b748df4f8830853f080ca343b876e"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectAttend/edit.html",
+      "sha256": "b80dad50903fb38b75e6908a1570ac4b3375b6bf1d776a6e3b27f09489b89686"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectAttend/projectAttend.html",
+      "sha256": "3ca15bcc083b8623ae521ce27d5b5ba353f751080ea583461689243f7d3a1fe4"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectAttend/projectAttendMy.html",
+      "sha256": "149d8900222a00644af7236cc459565d22fbd7286c064edd09e379362f77a1bb"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectInfo/add.html",
+      "sha256": "9469388e44fa8ed84a9089bae4a43bf46daf81bc7524be780a6338527028da1e"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectInfo/detail.html",
+      "sha256": "d8ff577b82fb4ca81bafe77b5e57ffc62dfcc12d4091c2ecef6801de99110e2f"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectInfo/edit.html",
+      "sha256": "4b8ea482705a848387916ee3befdb1d605617582873e71700e68338d53897465"
+    },
+    {
+      "path": "src/main/resources/templates/system/projectInfo/projectInfo.html",
+      "sha256": "b548c76bbaeffe4cc1e4e786b4b5fd473ecfa25558f78caff2e17e7ea60374d0"
+    },
+    {
+      "path": "src/main/resources/templates/system/role/add.html",
+      "sha256": "ef45a403d37eb9978f93b1c072fb365830fb5e2e6bc505874ab1fff0064594c7"
+    },
+    {
+      "path": "src/main/resources/templates/system/role/edit.html",
+      "sha256": "eaae4775610829828e2a7951080ec9135305cc8f5d6189c793448c1a2177dd8c"
+    },
+    {
+      "path": "src/main/resources/templates/system/role/role.html",
+      "sha256": "e7fb3521bf253f99c2e1bdc22b89d8bc37df8e17a8b6eb948210ddf704255c1e"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/add.html",
+      "sha256": "e2f0f3ccbdb0be537aca94ab2142b6cff773645ef831f160a8d21f66fc6bd6f2"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/card.html",
+      "sha256": "a574f0939a4a2835c74e6719cd4c805336f7f4f04bd4652595524240151dffad"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/edit.html",
+      "sha256": "be10924767e3bd546aa37b356a2c4c26602dbbeef0b413c3040ecb922e66b5ea"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/profile/resetPwd.html",
+      "sha256": "4b82aa9586f0c367ce8140fafe300295ba66c523f3dd6bd105a0eea76211ee99"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/profile/updateSecret.html",
+      "sha256": "0f497e58494d57a1b96addaa0c57c4d13b94b8b1a457316d378e83905f3b2670"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/profile/updateSelf.html",
+      "sha256": "ddc408f5104aa8287431f5eb6f3ca1af9815c97bb6f8cdb77a70f874145a5dd5"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/resetPwd.html",
+      "sha256": "1e44b6838a35ae260aa858f6953512516929ad8e61074660916aba1576f031b2"
+    },
+    {
+      "path": "src/main/resources/templates/system/user/user.html",
+      "sha256": "90d01e9f33224a63cc6755d50362c6491510939aae678c6fa8843a5daa1eb4e2"
+    },
+    {
+      "path": "src/main/resources/templates/wallet-detail.html",
+      "sha256": "486c48854e5ea21a8f8954e690c8536f28612d8f91cb21eadce9390f7038fe68"
+    },
+    {
+      "path": "src/main/resources/templates/wallet-list.html",
+      "sha256": "e3db2c83df47667bfadad3347823e9a6b58e70e9a6f30511034848355bb07f78"
+    },
+    {
+      "path": "src/main/resources/templates/wallet.html",
+      "sha256": "4348a0dc46ab9df2c2a3b328398e0b70d6c8702f57ce1f0f5aec776db14a669e"
+    },
+    {
+      "path": "verification/BridgeIntegrationTest.java",
+      "sha256": "dd33b48ac9ce9eb87fce74fd49f16f98e5b43820867d67a9dfc52fd3ee85b6db"
+    },
+    {
+      "path": "verification/full-feature.jmx",
+      "sha256": "1923f8aff52c5141e660ae26f9e19471b891aa0d380f5eb78da60565520236de"
+    },
+    {
+      "path": "verification/FullFunctionalTest.java",
+      "sha256": "68412c67aaa2b32b011f7f9e5a6f071262d47e7a5ff04e923dcfaed4b7404c3b"
+    },
+    {
+      "path": "verification/jmeter-plan.cjs",
+      "sha256": "28bfb5c12161e555e7f9b9309fc2d7b7ecc4e7754c8a42388f62a44207582cf5"
+    },
+    {
+      "path": "verification/JUnitReportRunner.java",
+      "sha256": "8d20e69d20edf8e11a70e367fc169cdcfd62582852fb5763acf30b241af67f66"
+    },
+    {
+      "path": "verification/make-report.cjs",
+      "sha256": "3012ba7cf36691a7ad319d4faad845335d5c0fbbeca0ec348d12f0b30c640ae8"
+    },
+    {
+      "path": "verification/prepare.cjs",
+      "sha256": "1ffc3c8058fc84da3154efcf5ea6a8670549a97bc06adc4898c4925421bceb32"
+    },
+    {
+      "path": "verification/ReportCapture.java",
+      "sha256": "418d85010438d3b567fa4ab1229f71bd19690ae61ed2f583d83c6cafc0d044a3"
+    },
+    {
+      "path": "verification/results/idea-junit-result.png",
+      "sha256": "5acc02e28d249d11c6af19d14cf7d4606b894361459c38451ed3a2a8ec6e6db9"
+    },
+    {
+      "path": "verification/results/jmeter/users-100/console.log",
+      "sha256": "a219d5ff9f381779e6a6666cfab50163a7f22a1a0aa567d69e4eb664bcfcf4ef"
+    },
+    {
+      "path": "verification/results/jmeter/users-100/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-100/jmeter.log",
+      "sha256": "fb4fe6f20e6cde400d88e5d8578c5c3439959c2ea51d50ac9889dca05f304b28"
+    },
+    {
+      "path": "verification/results/jmeter/users-100/samples.jtl",
+      "sha256": "36fafbf5cec0a31cc8fa5eb4bbb237274d9afb06adba3ed41b07780f9bca151a"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-burst/console.log",
+      "sha256": "9e19e312b453d11e912b7e72b3efac00eac6cfe1f46d587e7d2d540d73fe1fb5"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-burst/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-burst/executed-plan.jmx",
+      "sha256": "1923f8aff52c5141e660ae26f9e19471b891aa0d380f5eb78da60565520236de"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-burst/jmeter.log",
+      "sha256": "00872e346643ad65a66c1591fb0df878f7b6bef74f918a39eae66cdfdb575c22"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-burst/samples.jtl",
+      "sha256": "64a5ed344a37414121299fee818206b3795a889f208b583dbe17b8a5283b3ca7"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-validated/console.log",
+      "sha256": "bf1d27e0712a7e618b5ccbf581c4fbc3f403714566703911e035d54bf218affa"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-validated/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-validated/jmeter.log",
+      "sha256": "ba9f771d2838ef108b596fbefb52dc16ae48b94fdd74c52588672cb5b1439f50"
+    },
+    {
+      "path": "verification/results/jmeter/users-100-validated/samples.jtl",
+      "sha256": "7b1da008cc83f5d3b983257731ff7528002aa5f535deedcd1c99b30669c927d4"
+    },
+    {
+      "path": "verification/results/jmeter/users-200/console.log",
+      "sha256": "dfae308429bec68cb0eac83bfffbae911ea92aed2556b5abb1566fb532bd30f8"
+    },
+    {
+      "path": "verification/results/jmeter/users-200/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-200/jmeter.log",
+      "sha256": "6965efd37152eaed41b87462b8187a98b29f4f9f240c9ca29fd493825538e777"
+    },
+    {
+      "path": "verification/results/jmeter/users-200/samples.jtl",
+      "sha256": "7989144f97e3ce44145ce89bb3f4b5117bbe3e4e1c18f58f4b04c5bae5fd8f53"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-burst/console.log",
+      "sha256": "2abb2e4a4579c70968ad5fc028ab5a2133181b49726b68b852e74523f6a323c7"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-burst/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-burst/executed-plan.jmx",
+      "sha256": "1923f8aff52c5141e660ae26f9e19471b891aa0d380f5eb78da60565520236de"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-burst/jmeter.log",
+      "sha256": "7b02d25d094dba3ba5735887a521a0e033984588414464aaa771f5168510bfad"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-burst/samples.jtl",
+      "sha256": "148bb95c99ece1323ed548e95955fb4cbe4a454add6d270bc35409aeffe6654c"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-validated/console.log",
+      "sha256": "c4292880645324e79fa580e697c632f14c7630db59343f6a6d8240edaae4e880"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-validated/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-validated/jmeter.log",
+      "sha256": "55b2fa8defab23c01b7f41df642c79114110ee7adbd2ed0228063b72541238d0"
+    },
+    {
+      "path": "verification/results/jmeter/users-200-validated/samples.jtl",
+      "sha256": "0e45cff1bf6301e94722ebe4089490b0f05ff7b59f745d670af7c62017ee13b1"
+    },
+    {
+      "path": "verification/results/jmeter/users-500/console.log",
+      "sha256": "92b78d9d0311f9703257c51adee0ff15eee742e66846796737036bf95f6690c9"
+    },
+    {
+      "path": "verification/results/jmeter/users-500/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-500/jmeter.log",
+      "sha256": "c7a212401933aa6182fc20b098fa1e170bd7d0770aab1468801b11acc21095ac"
+    },
+    {
+      "path": "verification/results/jmeter/users-500/samples.jtl",
+      "sha256": "dcc45465998171e9e72faeada3687048cf064f685aab10b9faed6a226cfaefb0"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-burst/console.log",
+      "sha256": "699da47f3e98925270f51c74dd603e92e375f1e0f43152169c32b25f9fbebec2"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-burst/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-burst/executed-plan.jmx",
+      "sha256": "1923f8aff52c5141e660ae26f9e19471b891aa0d380f5eb78da60565520236de"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-burst/jmeter.log",
+      "sha256": "a724dddd5d98ece51f646e76d2d27073427861fafeee91d7a88898e404fa7104"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-burst/samples.jtl",
+      "sha256": "41983041dcc07fad547b12f291847df6d0fc4390ab8223c463757f31de5edeaa"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-validated/console.log",
+      "sha256": "9f0aea3cda8b2f07d5435ee5fde22d9ae050f371135b469ccad102092060a983"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-validated/dashboard/content/pages/icon-apache.png",
+      "sha256": "d29a6a3499632cb6cf7caeeb30746194bd8fd68ba462d0061b384d1583dfd7c0"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-validated/jmeter.log",
+      "sha256": "4495fb3005b0be3f7fbc255ce0541e15741f66fe0d941e61c3c6ae569bc186d5"
+    },
+    {
+      "path": "verification/results/jmeter/users-500-validated/samples.jtl",
+      "sha256": "5c8381192a00ba8c52279ad48419c72d23860137bfbbd8fe7471c725404274e2"
+    },
+    {
+      "path": "verification/results/jmeter-100-dashboard.png",
+      "sha256": "e6f2489df4e5cc8f02fd6dedfa3d48569d62bc36468f6b552c91b1494cfad2c3"
+    },
+    {
+      "path": "verification/results/jmeter-200-dashboard.png",
+      "sha256": "f4503ee2335271bc2087863930aa99d3996d689f36be47f4f3e2c56b86e4eff3"
+    },
+    {
+      "path": "verification/results/jmeter-500-dashboard.png",
+      "sha256": "73a0e3de6dc5ff1b0ec7ea18db12ac37a67a781d3ea8a6fc66118e658f94bbf4"
+    },
+    {
+      "path": "verification/results/junit/BridgeIntegrationTest.log",
+      "sha256": "7b85ca58b9eac7075a1f15ba32bdc7db70aae296b9b89e366a59ad7cef895348"
+    },
+    {
+      "path": "verification/results/junit/BridgeIntegrationTest.xml",
+      "sha256": "e91ec7040aad7c5eb367ed20356f80b52c9dfed26352b91f2e3807db0460835e"
+    },
+    {
+      "path": "verification/results/junit/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/results/junit/first-real-defects.log",
+      "sha256": "62866371703b303e410fd8a599836bd6faa2c5a6b4cffe4866a47ae04d7f37de"
+    },
+    {
+      "path": "verification/results/junit/first-real-defects.xml",
+      "sha256": "aebc41963f5e1a9937cb6ce904e5417e1588c0e6524ce08a40f77ccbc7947465"
+    },
+    {
+      "path": "verification/results/junit/integration/CampusPaymentChannelIntegration.log",
+      "sha256": "6c3cbf40a55ec970488046f87aa79a605726af994485b605b506c5acbe52c799"
+    },
+    {
+      "path": "verification/results/junit/integration/FinanceEvidenceIntegration.log",
+      "sha256": "0392e6dab868727100f5a97b58c1979a906a5c6400104dc308daf7584df35893"
+    },
+    {
+      "path": "verification/results/junit/integration/FinanceIntegration.log",
+      "sha256": "ec0b5e4d6013665acd9f180fe20f46bfb9cc8728390fd2e63bc365a802864f31"
+    },
+    {
+      "path": "verification/results/junit/integration/PermissionIntegration.log",
+      "sha256": "27ea01e0441576f4043f631702350bc6624b438075f95571e28bec6a4ab1d5f0"
+    },
+    {
+      "path": "verification/results/junit/integration/WalletTemplateRenderCheck.log",
+      "sha256": "6dad858b2e1c98868142d3bd86ab4599df3df8ad29e09bd1daa484f59e266cac"
+    },
+    {
+      "path": "verification/results/junit/junit.log",
+      "sha256": "fe6c5478f415ea28a25c71275ab15cff20cf5ed87a4f1410e94f7b902a55dceb"
+    },
+    {
+      "path": "verification/results/junit/SeleniumFlowTest.xml",
+      "sha256": "168aa8f8f6250bfc7089b4c8370548dba06c2178b10a1d65017ba6fdefb430a6"
+    },
+    {
+      "path": "verification/results/junit/SupplementalFunctionalTest.log",
+      "sha256": "9a5157d41bbfdfed344ccbcf7dacbe32d2d33c7d8853c2dcf1eb88e0b6b65c24"
+    },
+    {
+      "path": "verification/results/junit/SupplementalFunctionalTest.xml",
+      "sha256": "88fc709cb049401e2c1a94904f689dbe7d4c65bb381205c58df280ac44d888eb"
+    },
+    {
+      "path": "verification/results/junit/TEST-full-functional.xml",
+      "sha256": "a78ead2f1a571e2705486b20c5912d4daa3616d556541664405f88607394f817"
+    },
+    {
+      "path": "verification/results/selenium/a_loginAndUnifiedEntry.png",
+      "sha256": "7bbf913ff6ee97aaab2e16adf5769ba413c2ea89645bb4e9d65de0af33dbe893"
+    },
+    {
+      "path": "verification/results/selenium/b_personnelEdit.png",
+      "sha256": "492c0573b138d87120e83f51262bea083f837f65691a88c30de4bbbfaf47ff3e"
+    },
+    {
+      "path": "verification/results/selenium/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/results/selenium/c_excelImportAndTemplateDownload.png",
+      "sha256": "6bc03be28505aee07a7420ac2483ca9d8f8cc7b408da39021985019e520d3640"
+    },
+    {
+      "path": "verification/results/selenium/d_gateEntryExit.png",
+      "sha256": "5ac7e18e339827462294957dd3924f03216f2e97a714734c05108d39097ca8b5"
+    },
+    {
+      "path": "verification/results/selenium/e_attendanceJoinAndSignIn.png",
+      "sha256": "a207fef3652837337473cd4485f03797f0d3af2aacdcac0ef82677ea5e04f093"
+    },
+    {
+      "path": "verification/results/selenium/first-run.log",
+      "sha256": "76b13a76967995d52f8c20b96ec17ef5806d88a5fb47319a5207d17bbdb0b6a7"
+    },
+    {
+      "path": "verification/results/selenium/f_libraryBorrowAndReturn.png",
+      "sha256": "000284031665b10a5ea58df7da61f2876b89bbfa46f6385c374db7f78ef2bcdd"
+    },
+    {
+      "path": "verification/results/selenium/g_cardWriteCancelIssue.png",
+      "sha256": "4631e9ad64d1cb457f854484ce4b1701e0a2c9b3122224123967d73c47be6d36"
+    },
+    {
+      "path": "verification/results/selenium/h_walletRechargeAndDebit.png",
+      "sha256": "8d00091d18bf3c50ca9f16633a22aa287a2a768d4f3e95c90f0239b8291d989e"
+    },
+    {
+      "path": "verification/results/selenium/i_merchantAndFinancePages.png",
+      "sha256": "dd7a7da9363b1d4c385449994f2e98c33db7d7fafb1f8093c99a7783177a212f"
+    },
+    {
+      "path": "verification/results/selenium/i_merchant_created.png",
+      "sha256": "7a0f3e9c0db4d673e28ab1cfc7713549687eade605484da4ad0f11fb1fc5a939"
+    },
+    {
+      "path": "verification/results/selenium/j_permissionsAndUnauthorizedAccess.png",
+      "sha256": "3b49a50b811b3ebb62446724a423dc7f6c5466d6b9837522ec71e315f10ee84f"
+    },
+    {
+      "path": "verification/results/selenium/selenium.log",
+      "sha256": "39b38df87aca9606adf210f2485f2361e7c46e98140afdd7494cc708536e213a"
+    },
+    {
+      "path": "verification/results/test-summary.png",
+      "sha256": "9b50f3afb4733e6ae5aca28d064f2142e8bcd2b213dcfc7b61fab7afb054bed4"
+    },
+    {
+      "path": "verification/run-jmeter.cjs",
+      "sha256": "1c7a69138b27effa76117cb49a95560e087efbd54b170a439a17d2010da742d3"
+    },
+    {
+      "path": "verification/run-junit.cjs",
+      "sha256": "3880ab1fa61cec550782e4fe7d754b4eeb59160a9969ab055d2c6f5d3171cd41"
+    },
+    {
+      "path": "verification/run-selenium.cjs",
+      "sha256": "6180cc63c32b2122dd17141b5bcd5c00aa4a9ff1400e5d888c297e6eab81e0f4"
+    },
+    {
+      "path": "verification/seal-evidence.cjs",
+      "sha256": "5777ddd5dd49d5c7cc23eac93a66e19dac3c53fe2ad2128e8c6064d3eab6f25a"
+    },
+    {
+      "path": "verification/SeleniumFlowTest.java",
+      "sha256": "057a6110657d51b087aa419365ada076432c251591f9640012772cd2de214a96"
+    },
+    {
+      "path": "verification/server.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/server.stdout.log",
+      "sha256": "1c1a9414e497395bd77fe8eabd5ce11a78bd39d1b1d07456c505d272315527f0"
+    },
+    {
+      "path": "verification/start-server.cjs",
+      "sha256": "7e830d6aa3ff7cbac929997214e9b87b4b39c21b6a3067582a8fb67733db2e59"
+    },
+    {
+      "path": "verification/SupplementalFunctionalTest.java",
+      "sha256": "f0dd66a17694ccbf831f278fe46baeafb826e10fb1d167a50b9ee4fb80a00a05"
+    }
+  ]
+}

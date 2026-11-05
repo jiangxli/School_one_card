@@ -1,0 +1,4 @@
+PASS valid evidence image saved and retrieved
+PASS resubmission preserves original evidence
+PASS cannot attach another operator evidence
+PASS invalid image rejected

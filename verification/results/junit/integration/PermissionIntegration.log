@@ -1,0 +1,17 @@
+PASS multiple roles bound
+PASS MyBatis role union
+PASS MyBatis permission union
+07:25:29.107 [main] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+PASS production Shiro grants recharge
+PASS ordinary roles cannot assign roles
+PASS revoke immediately affects existing Shiro subject
+PASS disabled role excluded while other role remains
+PASS batch remove preserves other roles
+PASS super administrator binding protected
+PASS unknown menu rejected
+PASS reserved admin role key rejected
+PASS menu ancestors included
+PASS authorization audit saved
+PASS server guard rejects direct recharge without permission
+07:25:29.539 [main] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [disableSessionValidation,250] - Disabled session validation scheduler.
+PASS TOTAL 14

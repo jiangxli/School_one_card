@@ -1,0 +1,26 @@
+开发环境续接记录
+保存日期：2026年11月4日
+
+继续开发目录：school_one_card2。school_one_card为旧工程兼本地Java/MySQL运行时来源，不能删除。
+当前开发地址：http://127.0.0.1:8084/login
+开发数据库：127.0.0.1:13306/school_one_card2，使用独立库。
+Java运行时：school_one_card/.local/jdk8/jdk1.8.0_512。
+MySQL运行时及实际数据：school_one_card/.local/mysql、school_one_card/.local/mysql-data。
+Maven：D:/Soft/JetBrain/IntelliJ IDEA 2023.3.8/plugins/maven/lib/maven3/bin/mvn.cmd。
+启动需使用druid,local配置，并覆盖数据源URL指向school_one_card2（src中local配置仍默认旧库，不能直接不带覆盖启动）。当前启动进程编号保存在school_one_card2/.local/application.pid。
+
+最新状态：人员钱包自动开通；卡片独立开通注销；钱包查询、充值、模拟划扣；充值订单号与资金流水号分离；挂失/解挂按钮，挂失禁止消费但允许充值，充值不自动解挂。商户管理包括负责人及创建日期检索、负责人资料、动态商户类型、执照许可资料、商户简介、三类图片上传和操作记录。各轮测试日志及SQL均在school_one_card2。
+最后完成：钱包挂失解挂5项检查通过、模板和构建通过、登录页HTTP200。
+未完成：完整浏览器交互与视觉验收、真实读卡和支付接入、完整性能安全测试、论文后续同步。V1.1论文是第一轮稿，尚未同步之后所有程序变更，不可当最终提交稿。
+
+本存档包括源码、SQL、测试、说明、构建JAR和独立数据库快照。数据库SQL含31张表199条记录及图片数据，须导入全新空库；不得覆盖当前业务库。原开发文件仍在原位置，不删除、不关闭开发服务。
+下次从此记录及school_one_card2各功能说明继续，先检查8084与13306端口和PID，避免重复启动。JAR正在运行时需停止本任务实例后再clean package。
+
+2026年11月4日续接补充：最新完成商户消费及RBAC多角色权限管理。以权限管理重构说明.txt为准；sys_user_role已成为授权依据，sys_user.role_id仅兼容。新版运行8084，当前源码和数据库已经更新，旧开发快照不包含本轮改动。权限迁移脚本有初始授权逻辑，不要重复导入已完成授权的开发库。
+
+2026年11月4日新增商户支付接口：商户管理 → 接口配置。含随机UUID、HMAC签名、订单申请/交易提交/查单、充值与消费、失败日志及持久化结果通知队列；默认关闭接口及充值权限。详见docs/payment-api/商户支付接口对接说明.txt。独立库cc_api_test共25项接口检查通过，当前开发服务8084；真实支付方及公网回调尚未联调。SQL迁移merchant-payment-api.sql已应用，迁移前备份为论文修订工作/商户API迁移前开发数据库.sql。旧开发环境快照尚不包含本轮改动。
+
+2026年11月4日支付业务定位已纠正（当前以此为准）：一卡通是校园卡支付渠道，消费主体及本地流水由商户系统产生。对外API为POST /api/v1/merchant/balance、pay、query、recharge；pay一次请求受理生成campusOrderNo并完成扣款，直接通过该HTTP响应返回结果，不需要先申请订单。merchantSerialNo为商户本地流水；campusOrderNo为一卡通订单；内部资金记账编号不作为商户流水。query支持按任一业务编号查单。保留UUID及HMAC验证、幂等和失败日志。
+异步回调配置及发送任务已经取消，旧outbox表仅留存历史，不再产生通知。旧两阶段测试和说明移入archive-v1目录。当前验收脚本CampusPaymentChannelIntegration独立21项通过，四个API匿名请求返回401 JSON，登录页HTTP200。入口仍为商户管理→接口配置，联调页面已改为模拟商户查询余额、发起消费及查单。
+
+2026年11月4日新增财务对账：一卡通钱包下第四菜单。包含概览、内部对账、CSV/XLSX商户账单导入比对、差错处理、双人复核、归档、原账单及快照保存、凭证和导出。FinanceIntegration20项、FinanceEvidenceIntegration4项独立测试通过。详见docs/finance/财务对账使用说明.txt。数据库迁移finance-reconciliation.sql已应用，旧快照未覆盖本轮。对账操作不修改资金，真实结算/银行对账未接入。

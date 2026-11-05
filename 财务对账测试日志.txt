@@ -1,0 +1,26 @@
+PASS internal balances and successful orders reconcile
+PASS internal order snapshot includes linked serial merchant and description
+PASS unlinked direct ledger entries preserved
+PASS order detail excludes wallet balance checks
+PASS wallet balance checks remain separately available
+PASS internal export preserves transaction summary
+PASS merchant payment and refund vouchers match
+PASS original bill preserved with snapshot
+PASS amount mismatch detected
+PASS unresolved batch cannot archive
+PASS handler cannot review own work
+PASS reviewed batch archives without rewriting discrepancy
+PASS archived batch immutable
+PASS reconciliation and review never modify wallet funds
+PASS duplicate merchant serials detected
+PASS platform-only refund identified
+PASS merchant-only transaction identified
+PASS wrong merchant bill rejected
+PASS invalid import leaves no partial batch
+PASS full result export includes business identifiers
+PASS rerun preserves prior version and input hash
+PASS internal detects balance and order-ledger discrepancies
+PASS XLSX bill supported
+PASS formula cells rejected
+PASS malformed UTF8 rejected
+PASS TOTAL 25

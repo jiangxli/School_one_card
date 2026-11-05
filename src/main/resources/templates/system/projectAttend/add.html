@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+    <div class="wrapper wrapper-content animated fadeInRight ibox-content">
+        <form class="form-horizontal m" id="form-projectAttend-add">
+			<div class="form-group" style="background: #eeeeee">
+				<h3>考勤人信息</h3>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">考勤人：</label>
+				<div class="col-sm-8">
+					<label class="control-label" th:text="${userName}"></label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">工号：</label>
+				<div class="col-sm-8">
+					<label class="control-label" th:text="${loginName}"></label>
+				</div>
+			</div>
+			<div class="form-group" style="background: #eeeeee">
+				<h3>考勤项目信息</h3>
+			</div>
+			<div th:if="${projectInfo!=null}" th:object="${projectInfo}">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">考勤项目：</label>
+					<div class="col-sm-8">
+						<label class="control-label" th:text="*{projectName}"></label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">考勤开始时间：</label>
+					<div class="col-sm-8">
+						<label class="control-label" th:text="*{startTime}"></label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">考勤结束时间：</label>
+					<div class="col-sm-8">
+						<label class="control-label" th:text="*{endTime}"></label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">项目介绍：</label>
+					<div class="col-sm-8">
+						<label class="control-label" th:text="*{remark}"></label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">创建人：</label>
+					<div class="col-sm-8">
+						<label class="control-label" th:text="*{userName}"></label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">创建时间：</label>
+					<div class="col-sm-8">
+						<label class="control-label" th:text="*{createTime}"></label>
+					</div>
+				</div>
+			</div>
+			<div th:if="${projectInfo == null}">
+				<div class="form-group">
+					您还未加入考勤项目！
+				</div>
+			</div>
+		</form>
+	</div>
+    <div th:include="include::footer"></div>
+    <script th:inline="javascript">
+		var prefix = ctx + "system/projectAttend"
+		$("#form-projectAttend-add").validate({
+			rules:{
+				xxxx:{
+					required:true,
+				},
+			}
+		});
+		
+		function submitHandler() {
+	        if ($.validate.form()) {
+	            $.operate.save(prefix + "/add", $('#form-projectAttend-add').serialize());
+	        }
+	    }
+	</script>
+</body>
+</html>

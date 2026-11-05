@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head th:include="include :: header"></head>
+<body class="gray-bg" style="width:100%;height:100%;position:absolute;">
+    <!--<div style="width:100%;height:100%;background: url('/img/welcom.jpg')no-repeat;background-size:100% 100%;"></div>-->
+    <!--<div style="width:100%;height:100%;background: white;text-align: center;">
+        <img src="/img/welcome.jpg" style="padding-top: 20%;">
+    </div>-->
+    <div class="container-div">
+        <div class="row">
+            <div class="col-sm-12 select-table table-striped" style="min-height: 97%;">
+                <div class="form-group" style="text-align: center;">
+                    <h2>通知公告</h2>
+                </div>
+                <form id="notice-form">
+                    <div class="select-list">
+                        <ul style="margin-left: 23%;">
+                            <li>
+                                公告标题：<input type="text" name="noticeTitle"/>
+                            </li>
+                            <li>
+                                公告类型：<select name="noticeType" th:with="type=${@dict.getType('sys_notice_type')}">
+                                <option value="">所有</option>
+                                <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
+                            </select>
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <table id="bootstrap-table" data-mobile-responsive="true"></table>
+            </div>
+        </div>
+    </div>
+    <div th:include="include :: footer"></div>
+    <script th:inline="javascript">
+        var types = [[${@dict.getType('sys_notice_type')}]];
+        var datas = [[${@dict.getType('sys_notice_status')}]];
+        var prefix = ctx + "system/notice";
+
+        $(function() {
+            var options = {
+                url: prefix + "/viewList",
+                modalName: "公告",
+                search: false,           // 是否显示搜索框功能
+                showSearch: false,   // 是否显示检索信息
+                showRefresh: false, // 是否显示刷新按钮
+                showColumns: false, // 是否显示隐藏某列下拉框
+                showToggle: false,   // 是否显示详细视图和列表视图的切换按钮
+                showExport: false,
+                columns: [
+                    {
+                        field : 'noticeId',
+                        title : '序号',
+                        visible:false
+                    },
+                    {
+                        field: 'noticeType',
+                        title: '公告类型',
+                        align: 'center',
+                        formatter: function(value, row, index) {
+                            return $.table.selectDictLabel(types, value);
+                        }
+                    },
+                    {
+                        field : 'noticeTitle',
+                        align : "center",
+                        title : '公告标题',formatter: function(value, row, index) {
+                            return "<a href='javascript:view("+row.noticeId+")'>"+value+"</a>"
+                        }
+                    },
+                    {
+                        field: 'status',
+                        title: '状态',
+                        align: 'center',
+                        formatter: function(value, row, index) {
+                            return $.table.selectDictLabel(datas, value);
+                        },
+                        visible:false
+                    },
+                    {
+                        field : 'createBy',
+                        title : '创建者'
+                    },
+                    {
+                        field: 'insertTime',
+                        title: '创建时间',
+                        sortable: true
+                    }]
+            };
+            $.table.init(options);
+        });
+        function view(noticeId) {
+            var url = prefix + "/detail/"+noticeId;
+            var index = layer.open({
+                type: 2,
+                area: [800 + 'px', ($(window).height() - 50) + 'px'],
+                fix: false,
+                //不固定
+                maxmin: true,
+                shade: 0.3,
+                title: "查看",
+                content: url,
+                btn: '',
+                // 弹层外区域关闭
+                shadeClose: true
+            });
+            layer.full(index);
+        }
+    </script>
+</body>
+</html>

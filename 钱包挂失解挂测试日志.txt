@@ -1,0 +1,5 @@
+PASS wallet becomes lost
+PASS lost wallet rejects debit
+PASS rejected debit preserves balance and ledger
+PASS lost wallet accepts recharge once and remains lost
+PASS restored wallet accepts debit

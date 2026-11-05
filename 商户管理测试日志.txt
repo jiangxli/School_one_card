@@ -1,0 +1,10 @@
+PASS create unique merchant number
+PASS search merchant
+PASS rename preserves original transaction name
+PASS disabled merchant rejects new consumption
+PASS disabled merchant permits original refund and lists both records
+PASS enable merchant
+PASS system merchant protected
+PASS invalid category rejected
+PASS create update disable enable audit
+PASS TOTAL 9

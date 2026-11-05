@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+    <form class="form-horizontal m" id="form-notice-edit" th:object="${notice}">
+        <input id="noticeId" name="noticeId" th:field="*{noticeId}"  type="hidden">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">公告标题：</label>
+            <div class="col-sm-8">
+                <input id="noticeTitle" name="noticeTitle" th:field="*{noticeTitle}" class="form-control" type="text">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">公告类型：</label>
+            <div class="col-sm-8">
+                <select name="noticeType" class="form-control m-b" th:with="type=${@dict.getType('sys_notice_type')}">
+                    <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}" th:field="*{noticeType}"></option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">公告状态：</label>
+            <div class="col-sm-8">
+                <div class="radio-box" th:each="dict : ${@dict.getType('sys_notice_status')}">
+                    <input type="radio" th:id="${dict.dictCode}" name="status" th:value="${dict.dictValue}" th:field="*{status}">
+                    <label th:for="${dict.dictCode}" th:text="${dict.dictLabel}"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">附件：</label>
+            <div class="col-sm-8">
+                <input id="fileName" name="fileName" type="hidden">
+                <input id="file" name="file" type="file" onchange="selectFile(this.value)">
+                <span style="color: red;">注意：上传新的将替换原来的，不上传则保留原来的。</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">公告内容：</label>
+            <div class="col-sm-8">
+                <input id="noticeContent" name="noticeContent" th:field="*{noticeContent}" type="hidden">
+                <div class="summernote" sn-data-id="noticeContent"></div>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+    var prefix = ctx + "system/notice";
+
+    $("#form-notice-edit").validate({
+        rules:{
+            noticeTitle:{
+                required:true,
+            }
+        }
+    });
+    $.form.init({
+        url:prefix + "/edit",
+        beforeSubmit:function () {
+            return $.validate.form();
+        },
+        success:function (result) {
+            $.operate.successCallback(result);
+        }
+    });
+    function submitHandler() {
+        $('#form-notice-edit').submit();
+    }
+    function selectFile(filePath) {
+        $("#fileName").val(filePath.substring(filePath.lastIndexOf("\\")+1));
+    }
+</script>
+</body>
+</html>

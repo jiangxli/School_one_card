@@ -1,0 +1,225 @@
+{
+  "date": "2026-11-05",
+  "tests": [
+    {
+      "group": "JUnit HTTP功能",
+      "name": "a_loginAndAuthentication",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "b_userMaintenanceAndAutomaticWallet",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "c_excelTemplateImportExport",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "d_gateEntryExitAndExport",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "e_attendanceCodeAndSignIn",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "f_libraryBorrowReturnAndRepeatReturn",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "g_cardIssueWriteCancelReissue",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "h_walletRechargePayLostRestoreAndLedger",
+      "pass": true
+    },
+    {
+      "group": "JUnit HTTP功能",
+      "name": "i_permissionAndCrossUserAccess",
+      "pass": true
+    },
+    {
+      "group": "JUnit 商户、财务、角色",
+      "name": "roleCreateGrantBindAndAudit",
+      "pass": true
+    },
+    {
+      "group": "JUnit 商户、财务、角色",
+      "name": "merchantCreateQueryAndDisable",
+      "pass": true
+    },
+    {
+      "group": "JUnit 商户、财务、角色",
+      "name": "financeInternalReconciliationAndBatchQuery",
+      "pass": true
+    },
+    {
+      "group": "JUnit 集成回归",
+      "name": "paymentSignatureIdempotenceAndConcurrency",
+      "pass": true
+    },
+    {
+      "group": "JUnit 集成回归",
+      "name": "thymeleafTemplates",
+      "pass": true
+    },
+    {
+      "group": "JUnit 集成回归",
+      "name": "financeImportDifferenceReviewArchive",
+      "pass": true
+    },
+    {
+      "group": "JUnit 集成回归",
+      "name": "multipleRolesRevocationAndServerGuard",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "a_loginAndUnifiedEntry",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "b_personnelEdit",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "c_excelImportAndTemplateDownload",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "d_gateEntryExit",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "e_attendanceJoinAndSignIn",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "f_libraryBorrowAndReturn",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "g_cardWriteCancelIssue",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "h_walletRechargeAndDebit",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "i_merchantAndFinancePages",
+      "pass": true
+    },
+    {
+      "group": "Selenium Chrome页面流程",
+      "name": "j_permissionsAndUnauthorizedAccess",
+      "pass": true
+    }
+  ],
+  "loads": [
+    {
+      "users": 100,
+      "peak": 100,
+      "samples": 1300,
+      "errorPct": 0,
+      "meanMs": 40.626153846153876,
+      "p95Ms": 115.95000000000005,
+      "maxMs": 357,
+      "throughput": 1112.0615911035072
+    },
+    {
+      "users": 200,
+      "peak": 200,
+      "samples": 2600,
+      "errorPct": 0,
+      "meanMs": 68.50538461538463,
+      "p95Ms": 237,
+      "maxMs": 631,
+      "throughput": 1558.7529976019187
+    },
+    {
+      "users": 500,
+      "peak": 500,
+      "samples": 6500,
+      "errorPct": 0,
+      "meanMs": 195.99584615384592,
+      "p95Ms": 669,
+      "maxMs": 1841,
+      "throughput": 1823.793490460157
+    }
+  ],
+  "total": 26,
+  "fail": 0,
+  "matrix": [
+    [
+      "统一登录与权限",
+      "登录正确/错误、未登录、跨用户和无权限访问；多角色撤权",
+      "登录、统一入口、权限页、普通用户拒绝访问",
+      "登录、角色列表查询"
+    ],
+    [
+      "人员与Excel",
+      "新增修改、自动钱包、真实模板解析、批量导入、导出",
+      "修改人员、下载模板、文件上传、导入结果",
+      "人员分页、Excel导入页"
+    ],
+    [
+      "门禁",
+      "进入/外出记录、本人记录及导出",
+      "点击首页门禁按钮、记录页面",
+      "本人门禁查询"
+    ],
+    [
+      "项目考勤",
+      "生成考勤项目、无效码、加入项目、签到及导出",
+      "输入考勤码、页面签到、记录页",
+      "项目及本人签到查询"
+    ],
+    [
+      "图书借还",
+      "借书扣库存、归还、重复归还、无库存拒绝",
+      "点击借阅和还书、记录页面",
+      "图书和借阅查询"
+    ],
+    [
+      "校园卡",
+      "开卡、幂等写卡、注销、重开、钱包余额保留",
+      "开卡、写卡、注销、重开确认框",
+      "校园卡页面"
+    ],
+    [
+      "钱包与支付",
+      "充值幂等、消费、挂失拒绝、解挂、签名及并发重复支付",
+      "充值确认、模拟划扣、流水显示",
+      "余额和流水查询"
+    ],
+    [
+      "商户",
+      "类型、新增、查询、停用",
+      "新增商户表单、商户列表",
+      "商户查询"
+    ],
+    [
+      "财务对账",
+      "内部对账、导入差错、处理复核、归档与凭证",
+      "执行内部对账及结果页",
+      "财务概览查询"
+    ]
+  ]
+}

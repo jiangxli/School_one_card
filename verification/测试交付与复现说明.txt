@@ -1,0 +1,27 @@
+校园一卡通自动化测试交付说明（2026年11月5日）
+
+入口：verification/results/index.html。包含功能覆盖矩阵、JUnit XML链接、真实浏览器截图、JMeter三档HTML仪表盘、已发现问题及适用范围。
+JUnit：4.13.2；16个测试方法（9个HTTP功能、3个补充功能、4个集成回归）。集成回归内部检查点不另算独立用例。
+Selenium：4.27.0，Chrome 156，10个测试方法，含虚构人员修改、Excel下载/上传、门禁按钮、输入考勤码和签到、借阅/还书、写卡/注销/重开、充值/模拟划扣、商户新增/内部对账、权限拒绝。
+JMeter：5.6.3，13个采样器/线程，其中1个登录、12类业务读取入口。100、200、500线程；一轮，零爬升时间；JTL记录的峰值活跃线程分别100、200、500。本机短时测试不代表持续生产容量。结果目录 users-*-burst；users-*-validated为爬升10秒测试，users-*为首次无效日期范围测试，均保留。
+
+本轮发现的程序缺陷：SysUserMapper.xml insertUser误混入查询条件AND u.identity，导致带身份字段的新增及批量导入失败。已移除两段错误条件，保留原有身份列和值映射及查询筛选，测试实例验证通过。开发8084实例未重启、旧发布JAR未更新，不能把旧发布包视为本轮修复交付。
+
+环境：verification/environment.json。只复制最新开发库表结构、菜单/角色/字典配置，业务测试数据均为虚构人员/商户。测试实例127.0.0.1:18084。验证码仅在该测试实例禁用；未改开发实例验证码设置。测试工具进程使用IDEA自带Java17，应用和JUnit业务进程使用项目Java8。
+
+新一轮完整复测必须重新准备测试库，避免固定测试学工号及交易键重复造成假失败；保留已有结果目录后再运行。
+以school_one_card2为工作目录：
+1. node verification/prepare.cjs
+2. node verification/start-server.cjs（仅重启verification/server.pid记录的本任务测试实例）
+3. 等待verification/server.stdout.log出现Started Application
+4. node verification/run-junit.cjs
+5. node verification/run-junit.cjs SupplementalFunctionalTest
+6. node verification/run-selenium.cjs
+7. node verification/run-jmeter.cjs
+8. node verification/make-report.cjs
+财务凭证、支付并发、多角色的BridgeIntegrationTest需先在工作区根运行论文修订工作/prepare-idea-validation.cjs，再重新编译src/test/java/idevalidation下测试。IDEA运行配置JUnit - latest integration evidence使用离线JUnitCore运行，不是旧的普通main断言汇总器。CLI运行 node verification/run-junit.cjs BridgeIntegrationTest。
+
+证据：results/junit/*.xml、*.log；results/selenium/*.png、*.html；results/jmeter各次运行samples.jtl、jmeter.log、console.log及dashboard；results/test-summary.png和jmeter-*-dashboard.png。
+已保留部分首轮失败日志用于说明缺陷发现与测试脚本调整，最终状态以总报告所链接的最新XML和-burst目录为准。
+
+边界：模拟门禁/写卡，不验证实体硬件；本地模拟充值/划扣，不验证第三方资金到账；Selenium仅Chrome；未开展完整SQL注入/XSS专项渗透测试。JMeter主要验证读取/页面入口负载，资金并发正确性由JUnit独立验证，三种工具职责不同。

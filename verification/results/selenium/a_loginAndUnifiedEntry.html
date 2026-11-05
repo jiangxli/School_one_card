@@ -1,0 +1,307 @@
+<html lang="zh"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>校园一卡通首页</title>
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <link href="favicon.ico" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/skins.css" rel="stylesheet">
+    <link href="/project/css/ry-ui.css?v=3.2.0" rel="stylesheet">
+    <style type="text/css">
+        .nav > li:hover .dropdown-menu {display: block;}
+        #content-main.max { height: calc(100% - 110px); overflow: hidden; width: 100%; height: 100%; left: 0px; position: absolute; top: 0px; z-index: 9998; margin: 0; }
+    </style>
+<link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/default/layer.css?v=3.1.1" id="layuicss-layer"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/moon/style.css" id="layuicss-thememoonstylecss"></head>
+<body class="fixed-sidebar full-height-layout gray-bg theme-white skin-purple" style="overflow: hidden">
+<div id="wrapper">
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <ul class="nav">
+            <li class="logo">
+                <span class="logo-lg" title="校园一卡通">校园一卡通</span>
+            </li>
+        </ul>
+        <div class="slimScrollDiv" style="position: relative; width: auto; height: 100%;"><div class="sidebar-collapse" style="width: auto; height: 100%;">
+            <ul class="nav" id="side-menu">
+
+            	<li>
+            		<div class="user-panel">
+            			<a class="menuItem" title="个人中心" data-index="0">
+            				<div class="hide">个人中心</div>
+					        <div class="pull-left image">
+		                    	<img src="/img/user.png" class="img-circle" alt="User Image">
+                                
+                            </div>
+				        </a>
+				        <div class="pull-left info">
+				          <p style="float: left;">testadmin</p>
+				          <a href="logout" style="padding: 5px;line-height: 30px;"><i class="fa fa-sign-out text-danger"></i>注销</a>
+				        </div>
+				    </div>
+            	</li>
+                <li>
+                	<a href="#">
+                		<i class="fa fa-credit-card"></i>
+                    	<span class="nav-label">一卡通钱包</span> 
+                    	<span class="fa arrow"></span>
+                	</a>
+                   <ul class="nav nav-second-level collapse">
+						<li>
+							<a class="menuItem" href="/campus/wallet" data-index="1">钱包管理</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/campus/merchant" data-index="2">商户管理</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/campus/merchant/consumption" data-index="3">商户消费</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/campus/finance" data-index="4">财务对账</a>
+							
+							
+						</li>
+					</ul>
+                </li>
+                <li>
+                	<a href="#">
+                		<i class="fa fa-gear"></i>
+                    	<span class="nav-label">系统管理</span> 
+                    	<span class="fa arrow"></span>
+                	</a>
+                   <ul class="nav nav-second-level collapse">
+						<li>
+							<a class="menuItem" href="/system/user" data-index="5">用户管理</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/system/permission" data-index="6">权限管理</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/system/excelImport" data-index="7">Excel导入</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/system/notice" data-index="8">通知公告</a>
+							
+							
+						</li>
+					</ul>
+                </li>
+                <li>
+                	<a href="#">
+                		<i class="fa fa-bars"></i>
+                    	<span class="nav-label">图书管理</span> 
+                    	<span class="fa arrow"></span>
+                	</a>
+                   <ul class="nav nav-second-level collapse">
+						<li>
+							<a class="menuItem" href="/system/bookInfo" data-index="9">图书列表</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/system/dict/detail/2002131747150000" data-index="10">图书类型</a>
+							
+							
+						</li>
+					</ul>
+                </li>
+                <li>
+                	<a href="#">
+                		<i class="fa fa-user-circle"></i>
+                    	<span class="nav-label">借阅管理</span> 
+                    	<span class="fa arrow"></span>
+                	</a>
+                   <ul class="nav nav-second-level collapse">
+						<li>
+							<a class="menuItem" href="/system/bookBorrowRecord" data-index="11">借阅管理</a>
+							
+							
+						</li>
+					</ul>
+                </li>
+                <li>
+                	<a href="#">
+                		<i class="fa fa-circle-o"></i>
+                    	<span class="nav-label">门禁记录</span> 
+                    	<span class="fa arrow"></span>
+                	</a>
+                   <ul class="nav nav-second-level collapse">
+						<li>
+							<a class="menuItem" href="/system/gateInOut" data-index="12">门禁记录管理</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/system/gateInOut/viewMy" data-index="13">我的门禁记录</a>
+							
+							
+						</li>
+					</ul>
+                </li>
+                <li>
+                	<a href="#">
+                		<i class="fa fa-eyedropper"></i>
+                    	<span class="nav-label">考勤管理</span> 
+                    	<span class="fa arrow"></span>
+                	</a>
+                   <ul class="nav nav-second-level collapse">
+						<li>
+							<a class="menuItem" href="/system/projectInfo" data-index="14">考勤项目</a>
+							
+							
+						</li>
+						<li>
+							<a class="menuItem" href="/system/projectAttend/my" data-index="15">我的考勤记录</a>
+							
+							
+						</li>
+					</ul>
+                </li>
+            </ul>
+        </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 894px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.9; z-index: 90; right: 1px;"></div></div>
+    </nav>
+    <!--左侧导航结束-->
+    
+    <!--右侧部分开始-->
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2" style="color:#FFF;" href="#" title="收起菜单">
+                    	<i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right welcome-message">
+	                <li onclick="joinProject()"><a title="加入考勤项目"><i class="fa fa-product-hunt"></i> 加入考勤项目</a></li>
+	                <li class="gate2" onclick="addGate(1)"><a title="门禁进入"><i class="fa fa-credit-card"></i> 门禁进入</a></li>
+	                <li class="gate1 hidden" onclick="addGate(2)"><a title="门禁外出"><i class="fa fa-credit-card"></i> 门禁外出</a></li>
+                    <li class="dropdown user-menu">
+						<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+                            <img src="/img/user.png" class="user-image">
+                            
+							<span class="hidden-xs">测试管理员</span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a onclick="resetPwd()" class="menuItem" data-index="16">
+								<i class="fa fa-key"></i> 修改密码</a>
+							</li>
+                            <li>
+                                <a onclick="updateSecret()" class="menuItem" data-index="17">
+                                    <i class="fa fa-key"></i> 密保设置</a>
+                            </li>
+                            <li>
+                                <a onclick="updateSelf(1812120000000000)" class="menuItem" data-index="18">
+                                    <i class="fa fa-key"></i> 个人信息</a>
+                            </li>
+							<li class="divider"></li>
+							<li>
+								<a href="logout">
+								<i class="fa fa-sign-out"></i> 退出登录</a>
+							</li>
+						</ul>
+					</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row content-tabs">
+            <button class="roll-nav roll-left tabLeft">
+                <i class="fa fa-backward"></i>
+            </button>
+            <nav class="page-tabs menuTabs">
+                <div class="page-tabs-content">
+                    <a href="javascript:;" class="active menuTab" data-id="/system/main">首页</a>
+                </div>
+            </nav>
+            <button class="roll-nav roll-right tabRight">
+                <i class="fa fa-forward"></i>
+            </button>
+            <div class="btn-group roll-nav roll-right">
+                <button class="dropdown J_tabClose" data-toggle="dropdown">
+                                                                          页签操作<span class="caret"></span>
+                </button>
+                <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                     <li><a class="tabCloseCurrent" href="javascript:void(0);">关闭当前</a></li>
+                     <li><a class="tabCloseOther" href="javascript:void(0);">关闭其他</a></li>
+					 <li><a class="tabCloseAll" href="javascript:void(0);">全部关闭</a></li>
+					 <li><a class="tabMaxCurrent" href="javascript:void(0);">全屏显示</a></li>
+                </ul>
+            </div>
+            <a href="#" class="roll-nav roll-right tabReload"><i class="fa fa-refresh"></i> 刷新</a>
+        </div>
+        
+        <a id="ax_close_max" class="ax_close_max" href="#" title="关闭全屏"> <i class="fa fa-times-circle-o"></i> </a>
+                    
+        <div class="row mainContent" id="content-main">
+            <iframe class="RuoYi_iframe" name="iframe0" width="100%" height="100%" data-id="/system/main" src="/system/main" frameborder="0" seamless=""></iframe>
+        </div>
+        <div class="footer">
+            <div class="pull-right">© 2020 校园一卡通 Copyright </div>
+        </div>
+    </div>
+    <!--右侧部分结束-->
+</div>
+<!-- 全局js -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/ajax/libs/blockUI/jquery.blockUI.js"></script>
+<script src="/ajax/libs/layer/layer.min.js"></script>
+<script src="/project/js/ry-ui.js?v=3.2.0"></script>
+<script src="/project/index.js"></script>
+<script src="/ajax/libs/fullscreen/jquery.fullscreen.js"></script>
+<script>var ctx = "\/";</script>
+<script>
+    /*用户管理-重置密码*/
+    function resetPwd() {
+        var url = ctx + 'system/user/updatePwd';
+        $.modal.open("重置密码", url, '800', '500');
+    }
+    function updateSelf() {
+        $.modal.open("修改个人信息", ctx+'system/user/updateSelf', '800', '500');
+    }
+    function updateSecret() {
+        $.modal.open("密保设置", ctx+'system/user/updateSecret', '800', '400');
+    }
+    function addGate(kind) {
+        $.ajax({
+            url:ctx+"system/gateInOut/add",
+            data:{kind:kind},
+            type:"post",
+            dataType:"json",
+            success:function (data) {
+                if(data.code == web_status.SUCCESS){
+                    $.modal.msgSuccess("操作成功！");
+                    $(".gate1,.gate2").addClass("hidden");
+                    $(".gate"+kind).removeClass("hidden");
+                }
+            }
+        })
+    }
+
+    function joinProject() {
+        $.modal.open("加入考勤项目",ctx+"system/joinProject",450,350);
+    }
+</script>
+
+
+
+</body></html>

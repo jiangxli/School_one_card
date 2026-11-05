@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),crypto=require('crypto');
+const root=path.resolve('..'), project=process.cwd(), out=path.join(project,'verification'), mysql=path.join(root,'school_one_card/.local/mysql/mysql-5.7.44-winx64/bin/mysql.exe');
+function sql(args,input){return cp.execFileSync(mysql,['-h127.0.0.1','-P13306','-uroot','--default-character-set=utf8mb4',...args],{input,encoding:'utf8',maxBuffer:40000000});}
+const db='cc_full_'+Date.now();let schema='SET FOREIGN_KEY_CHECKS=0;\n';for(const t of sql(['-BN','-e','SHOW TABLES FROM school_one_card2']).trim().split(/\r?\n/)){const row=sql(['-BNr','-e','SHOW CREATE TABLE school_one_card2.`'+t+'`']);schema+=row.substring(row.indexOf('\t')+1).trim()+';\n';}schema+='SET FOREIGN_KEY_CHECKS=1;';sql(['-e','CREATE DATABASE '+db+' CHARACTER SET utf8mb4']);sql([db],schema);
+for(const table of ['sys_menu','sys_role','sys_role_menu','sys_dict_type','sys_dict_data'])sql([db,'-e',`INSERT INTO ${table} SELECT * FROM school_one_card2.${table}`]);
+const password='Test2026ok',salt='testonly';let seed="INSERT INTO sys_permission_lock(id) VALUES(1); INSERT INTO campus_merchant_sequence(id,seq) VALUES(1,1000);";
+for(const [id,name,label,role] of [[1812120000000000,'testadmin','测试管理员',1812120000000001],[880001,'teststudent','测试学生',1812120000000002],[880002,'testother','其他学生',1812120000000002]]){const hash=crypto.createHash('md5').update(name+password+salt).digest('hex');seed+=`INSERT INTO sys_user(user_id,login_name,user_name,password,salt,status,del_flag,role_id,phonenumber,identity) VALUES(${id},'${name}','${label}','${hash}','${salt}','0','0',${role},'13800000001','本科生'); INSERT INTO sys_user_role VALUES(${id},${role}); INSERT INTO campus_wallet(user_id,student_no,balance) VALUES(${id},'${name}',100); INSERT INTO campus_person_identity(user_id,identity_no) VALUES(${id},'11010519491231002X');`;}
+seed+="INSERT INTO campus_merchant(id,name,active) VALUES(1,'测试食堂',1),(2,'测试超市',1),(3,'测试划扣',1); INSERT INTO book_info(book_id,book_name,num) VALUES(880001,'自动化测试图书',3);";
+// book columns are resolved from the actual schema rather than assumed.
+seed=seed.replace(/ INSERT INTO book_info[^;]+;/,'');sql([db,'-e',seed]);
+fs.writeFileSync(path.join(out,'environment.json'),JSON.stringify({db,base:'http://127.0.0.1:18084',admin:1812120000000000,student:880001,password,source:'school_one_card2',created:new Date().toISOString()},null,2));fs.writeFileSync(path.join(out,'schema.sql'),schema);console.log('isolated database '+db);
+

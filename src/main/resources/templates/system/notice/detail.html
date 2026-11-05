@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<link th:href="@{/ajax/libs/summernote/summernote.css}" rel="stylesheet"/>
+<link th:href="@{/ajax/libs/summernote/summernote-bs3.css}" rel="stylesheet"/>
+<body class="white-bg">
+<style>
+    .col-sm-3,.col-sm-9{
+        margin-top: 7px;
+    }
+</style>
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+    <form class="form-horizontal m" id="form-notice-edit" th:object="${notice}">
+        <input id="noticeId" name="noticeId" th:field="*{noticeId}"  type="hidden">
+        <div class="form-group" style="text-align: center;">
+            <h2 th:text="*{noticeTitle}"></h2>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">公告类型：</label>
+            <div class="col-sm-9" id="noticeTypeDiv">
+                <select name="noticeType" id="noticeType" class="form-control m-b" disabled th:with="type=${@dict.getType('sys_notice_type')}">
+                    <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}" th:field="*{noticeType}"></option>
+                </select>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">发布时间：</label>
+            <div class="col-sm-9" th:text="*{insertTime}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">公告内容：</label>
+            <div class="col-sm-9">
+                <input id="noticeContent" name="noticeContent" th:field="*{noticeContent}" type="hidden">
+                <div class="summernote" sn-show-id="noticeContent"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">附件下载：</label>
+            <div class="col-sm-9">
+                <a th:href="*{fileUrl}" th:text="*{fileName}" target="_blank"></a>
+            </div>
+        </div>
+    </form>
+</div>
+<div th:include="include::footer"></div>
+<script th:src="@{/ajax/libs/summernote/summernote.min.js}"></script>
+<script th:src="@{/ajax/libs/summernote/summernote-zh-CN.js}"></script>
+<script th:inline="javascript">
+    var datas = [[${@dict.getType('sys_notice_type')}]];
+    $(function () {
+        $("#noticeTypeDiv").html($.table.selectDictLabel(datas, $("#noticeType").val()));
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+    <div class="container-div">
+        <div class="row">
+            <div class="col-sm-12 search-collapse">
+                <form id="user-form">
+                    <div class="select-list">
+                        <ul>
+                            <li>
+                                图书名称：<input type="text" name="bookName"/>
+                            </li>
+                            <li>
+                                作者：<input type="text" name="author"/>
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                                <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="btn-group-sm hidden-xs" id="toolbar" role="group">
+                <a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="system:bookInfo:add">
+                    <i class="fa fa-plus"></i> 添加
+                </a>
+                <a class="btn btn-danger btn-del btn-del disabled" onclick="$.operate.removeAll()" shiro:hasPermission="system:bookInfo:remove">
+                    <i class="fa fa-remove"></i> 删除
+                </a>
+            </div>
+
+            <div class="col-sm-12 select-table table-striped">
+                <table id="bootstrap-table" data-mobile-responsive="true"></table>
+            </div>
+        </div>
+    </div>
+    <div th:include="include :: footer"></div>
+    <script th:inline="javascript">
+        var editFlag = [[${@permission.hasPermi('system:bookInfo:edit')}]];
+        var removeFlag = [[${@permission.hasPermi('system:bookInfo:remove')}]];
+        var borrowFlag = [[${@permission.hasPermi('system:bookBorrowRecord:add')}]];
+        var prefix = ctx + "system/bookInfo";
+
+        var datas = [[${@dict.getType('book_kind')}]];
+
+        $(function() {
+            var options = {
+                url: prefix + "/list",
+                createUrl: prefix + "/add",
+                updateUrl: prefix + "/edit/{id}",
+                detailUrl: prefix + "/detail/{id}",
+                removeUrl: prefix + "/remove",
+                search: false,
+                showSearch:false,
+                showRefresh:false,
+                showColumns:false,
+                showToggle:false,
+                showExport:false,
+                modalName: "图书管理",
+                columns: [{
+		            checkbox: true
+		        },
+				{
+					field : 'bookId', 
+					title : '图书编号',
+                    visible: false
+				},
+				{
+					field : 'bookName', 
+					title : '图书名称' 
+				},
+				{
+					field : 'author', 
+					title : '作者' 
+				},
+				{
+					field : 'publisher', 
+					title : '出版社' 
+				},
+				{
+					field : 'borrowNum',
+					title : '总借阅人次'
+				},
+				{
+					field : 'kind', 
+					title : '图书类型',
+                    formatter: function(value, row, index) {
+                        return $.table.selectDictLabel(datas, value);
+                    }
+				},
+				{
+					field : 'bookNum', 
+					title : '图书数量' 
+				},
+				{
+					field : 'createTime', 
+					title : '创建时间' 
+				},
+		        {
+		            title: '操作',
+		            align: 'center',
+		            formatter: function(value, row, index) {
+		            	var actions = [];
+                        actions.push('<a class="btn btn-primary btn-xs" href="javascript:void(0)" onclick="$.operate.detail(\'' + row.bookId + '\')"><i class="fa fa-eye"></i>查看</a> ');
+		            	actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="$.operate.edit(\'' + row.bookId + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+                        actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.bookId + '\')"><i class="fa fa-remove"></i>删除</a> ');
+                        if(row.bookNum > 0){
+                            actions.push('<a class="btn btn-warning btn-xs ' + borrowFlag + '" href="javascript:void(0)" onclick="borrowOut(\'' + row.bookId + '\',\''+row.bookName+'\')"><i class="fa fa-share-square-o"></i>借阅</a>');
+                        }
+						return actions.join('');
+		            }
+		        }]
+            };
+            $.table.init(options);
+        });
+
+        function borrowOut(bookId,bookName) {
+            $.modal.confirm("确认借阅【"+bookName+"】吗？",function () {
+                $.operate.submit(ctx+"system/bookBorrowRecord/add","post","json",{bookId:bookId});
+            });
+        }
+    </script>
+</body>
+</html>

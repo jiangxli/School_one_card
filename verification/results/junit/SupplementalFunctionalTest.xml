@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite tests="3" failures="0" time="0.533"><testcase classname="SupplementalFunctionalTest" name="roleCreateGrantBindAndAudit" time="0.0395222"></testcase>
+<testcase classname="SupplementalFunctionalTest" name="merchantCreateQueryAndDisable" time="0.0498715"></testcase>
+<testcase classname="SupplementalFunctionalTest" name="financeInternalReconciliationAndBatchQuery" time="0.0390716"></testcase></testsuite>

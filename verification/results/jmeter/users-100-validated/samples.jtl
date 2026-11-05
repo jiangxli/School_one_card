@@ -1,0 +1,1301 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1793834285898,8,01 Login,200,,Authenticated users 1-4,text,true,,340,265,4,4,http://127.0.0.1:18084/login,8,0,1
+1793834285701,30,01 Login,200,,Authenticated users 1-2,text,true,,340,265,2,2,http://127.0.0.1:18084/login,26,0,10
+1793834285688,43,01 Login,200,,Authenticated users 1-1,text,true,,340,265,2,2,http://127.0.0.1:18084/login,39,0,23
+1793834286096,7,01 Login,200,,Authenticated users 1-6,text,true,,340,265,6,6,http://127.0.0.1:18084/login,7,0,1
+1793834286197,8,01 Login,200,,Authenticated users 1-7,text,true,,340,265,7,7,http://127.0.0.1:18084/login,8,0,1
+1793834285799,33,01 Login,200,,Authenticated users 1-3,text,true,,340,265,3,3,http://127.0.0.1:18084/login,33,0,1
+1793834285997,7,01 Login,200,,Authenticated users 1-5,text,true,,340,265,5,5,http://127.0.0.1:18084/login,7,0,1
+1793834286212,9,02 Personnel query,200,,Authenticated users 1-5,text,true,,7564,320,7,7,http://127.0.0.1:18084/system/user/list,9,0,0
+1793834286212,9,02 Personnel query,200,,Authenticated users 1-6,text,true,,7564,320,7,7,http://127.0.0.1:18084/system/user/list,9,0,0
+1793834286212,9,02 Personnel query,200,,Authenticated users 1-1,text,true,,7564,320,7,7,http://127.0.0.1:18084/system/user/list,9,0,0
+1793834286225,4,03 Gate records,200,,Authenticated users 1-1,text,true,,1137,327,7,7,http://127.0.0.1:18084/system/gateInOut/listMy,4,0,0
+1793834286224,5,03 Gate records,200,,Authenticated users 1-6,text,true,,1137,327,7,7,http://127.0.0.1:18084/system/gateInOut/listMy,5,0,0
+1793834286224,5,03 Gate records,200,,Authenticated users 1-5,text,true,,1137,327,7,7,http://127.0.0.1:18084/system/gateInOut/listMy,5,0,0
+1793834286212,17,02 Personnel query,200,,Authenticated users 1-3,text,true,,7564,320,7,7,http://127.0.0.1:18084/system/user/list,17,0,0
+1793834286212,17,02 Personnel query,200,,Authenticated users 1-2,text,true,,7564,320,7,7,http://127.0.0.1:18084/system/user/list,17,0,0
+1793834286212,19,02 Personnel query,200,,Authenticated users 1-7,text,true,,7564,320,7,7,http://127.0.0.1:18084/system/user/list,19,0,0
+1793834286212,23,02 Personnel query,200,,Authenticated users 1-4,text,true,,7564,320,7,7,http://127.0.0.1:18084/system/user/list,23,0,0
+1793834286230,9,04 Attendance projects,200,,Authenticated users 1-1,text,true,,482,327,7,7,http://127.0.0.1:18084/system/projectInfo/list,9,0,0
+1793834286232,7,03 Gate records,200,,Authenticated users 1-2,text,true,,1137,327,7,7,http://127.0.0.1:18084/system/gateInOut/listMy,7,0,0
+1793834286231,8,03 Gate records,200,,Authenticated users 1-3,text,true,,1137,327,7,7,http://127.0.0.1:18084/system/gateInOut/listMy,8,0,0
+1793834286230,12,04 Attendance projects,200,,Authenticated users 1-5,text,true,,482,327,7,7,http://127.0.0.1:18084/system/projectInfo/list,12,0,0
+1793834286234,8,03 Gate records,200,,Authenticated users 1-7,text,true,,1137,327,7,7,http://127.0.0.1:18084/system/gateInOut/listMy,8,0,0
+1793834286237,5,03 Gate records,200,,Authenticated users 1-4,text,true,,1137,327,7,7,http://127.0.0.1:18084/system/gateInOut/listMy,5,0,0
+1793834286240,5,04 Attendance projects,200,,Authenticated users 1-3,text,true,,482,327,7,7,http://127.0.0.1:18084/system/projectInfo/list,5,0,0
+1793834286230,15,04 Attendance projects,200,,Authenticated users 1-6,text,true,,482,327,7,7,http://127.0.0.1:18084/system/projectInfo/list,15,0,0
+1793834286243,5,04 Attendance projects,200,,Authenticated users 1-7,text,true,,482,327,7,7,http://127.0.0.1:18084/system/projectInfo/list,5,0,0
+1793834286241,7,05 Attendance records,200,,Authenticated users 1-1,text,true,,771,331,7,7,http://127.0.0.1:18084/system/projectAttend/listMy,7,0,0
+1793834286243,6,04 Attendance projects,200,,Authenticated users 1-4,text,true,,482,327,7,7,http://127.0.0.1:18084/system/projectInfo/list,6,0,0
+1793834286243,7,05 Attendance records,200,,Authenticated users 1-5,text,true,,771,331,7,7,http://127.0.0.1:18084/system/projectAttend/listMy,7,0,0
+1793834286241,9,04 Attendance projects,200,,Authenticated users 1-2,text,true,,482,327,7,7,http://127.0.0.1:18084/system/projectInfo/list,9,0,0
+1793834286246,5,05 Attendance records,200,,Authenticated users 1-6,text,true,,771,331,7,7,http://127.0.0.1:18084/system/projectAttend/listMy,5,0,0
+1793834286246,5,05 Attendance records,200,,Authenticated users 1-3,text,true,,771,331,7,7,http://127.0.0.1:18084/system/projectAttend/listMy,5,0,0
+1793834286249,4,05 Attendance records,200,,Authenticated users 1-4,text,true,,771,331,7,7,http://127.0.0.1:18084/system/projectAttend/listMy,4,0,0
+1793834286249,4,05 Attendance records,200,,Authenticated users 1-7,text,true,,771,331,7,7,http://127.0.0.1:18084/system/projectAttend/listMy,4,0,0
+1793834286250,4,05 Attendance records,200,,Authenticated users 1-2,text,true,,771,331,7,7,http://127.0.0.1:18084/system/projectAttend/listMy,4,0,0
+1793834286250,7,06 Books,200,,Authenticated users 1-5,text,true,,738,324,7,7,http://127.0.0.1:18084/system/bookInfo/list,6,0,0
+1793834286249,7,06 Books,200,,Authenticated users 1-1,text,true,,738,324,7,7,http://127.0.0.1:18084/system/bookInfo/list,7,0,0
+1793834286252,7,06 Books,200,,Authenticated users 1-3,text,true,,738,324,7,7,http://127.0.0.1:18084/system/bookInfo/list,7,0,0
+1793834286252,7,06 Books,200,,Authenticated users 1-6,text,true,,738,324,7,7,http://127.0.0.1:18084/system/bookInfo/list,7,0,0
+1793834286254,6,06 Books,200,,Authenticated users 1-4,text,true,,738,324,7,7,http://127.0.0.1:18084/system/bookInfo/list,6,0,0
+1793834286254,7,06 Books,200,,Authenticated users 1-7,text,true,,738,324,7,7,http://127.0.0.1:18084/system/bookInfo/list,7,0,0
+1793834286254,7,06 Books,200,,Authenticated users 1-2,text,true,,738,324,7,7,http://127.0.0.1:18084/system/bookInfo/list,7,0,0
+1793834286258,7,07 Borrowing records,200,,Authenticated users 1-5,text,true,,1505,339,7,7,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,7,0,0
+1793834286261,4,07 Borrowing records,200,,Authenticated users 1-4,text,true,,1505,339,7,7,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834286261,4,07 Borrowing records,200,,Authenticated users 1-7,text,true,,1505,339,7,7,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,4,0,0
+1793834286262,4,07 Borrowing records,200,,Authenticated users 1-2,text,true,,1505,339,7,7,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,4,0,0
+1793834286260,6,07 Borrowing records,200,,Authenticated users 1-6,text,true,,1505,339,7,7,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,6,0,0
+1793834286258,9,07 Borrowing records,200,,Authenticated users 1-1,text,true,,1505,339,7,7,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,9,0,0
+1793834286260,8,07 Borrowing records,200,,Authenticated users 1-3,text,true,,1505,339,7,7,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,8,0,0
+1793834286268,2,08 Wallet and transactions,200,,Authenticated users 1-1,text,true,,3202,228,7,7,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834286267,3,08 Wallet and transactions,200,,Authenticated users 1-2,text,true,,3202,228,7,7,http://127.0.0.1:18084/campus/wallet/data?user=880001,3,0,0
+1793834286267,3,08 Wallet and transactions,200,,Authenticated users 1-6,text,true,,3202,228,7,7,http://127.0.0.1:18084/campus/wallet/data?user=880001,3,0,0
+1793834286267,3,08 Wallet and transactions,200,,Authenticated users 1-4,text,true,,3202,228,7,7,http://127.0.0.1:18084/campus/wallet/data?user=880001,3,0,0
+1793834286267,3,08 Wallet and transactions,200,,Authenticated users 1-5,text,true,,3202,228,7,7,http://127.0.0.1:18084/campus/wallet/data?user=880001,3,0,0
+1793834286267,5,08 Wallet and transactions,200,,Authenticated users 1-7,text,true,,3202,228,7,7,http://127.0.0.1:18084/campus/wallet/data?user=880001,5,0,0
+1793834286268,4,08 Wallet and transactions,200,,Authenticated users 1-3,text,true,,3202,228,7,7,http://127.0.0.1:18084/campus/wallet/data?user=880001,4,0,0
+1793834286272,2,09 Merchant query,200,,Authenticated users 1-5,text,true,,1347,227,7,7,http://127.0.0.1:18084/campus/merchant/search?page=1,2,0,0
+1793834286271,3,09 Merchant query,200,,Authenticated users 1-2,text,true,,1347,227,7,7,http://127.0.0.1:18084/campus/merchant/search?page=1,3,0,0
+1793834286271,3,09 Merchant query,200,,Authenticated users 1-6,text,true,,1347,227,7,7,http://127.0.0.1:18084/campus/merchant/search?page=1,3,0,0
+1793834286272,3,09 Merchant query,200,,Authenticated users 1-4,text,true,,1347,227,7,7,http://127.0.0.1:18084/campus/merchant/search?page=1,3,0,0
+1793834286271,3,09 Merchant query,200,,Authenticated users 1-1,text,true,,1347,227,7,7,http://127.0.0.1:18084/campus/merchant/search?page=1,3,0,0
+1793834286272,4,09 Merchant query,200,,Authenticated users 1-3,text,true,,1347,227,7,7,http://127.0.0.1:18084/campus/merchant/search?page=1,4,0,0
+1793834286272,4,09 Merchant query,200,,Authenticated users 1-7,text,true,,1347,227,7,7,http://127.0.0.1:18084/campus/merchant/search?page=1,4,0,0
+1793834286275,5,10 Finance overview,200,,Authenticated users 1-1,text,true,,353,253,7,7,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,4,0,0
+1793834286275,5,10 Finance overview,200,,Authenticated users 1-6,text,true,,353,253,7,7,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,5,0,0
+1793834286275,5,10 Finance overview,200,,Authenticated users 1-4,text,true,,353,253,7,7,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,5,0,0
+1793834286277,4,10 Finance overview,200,,Authenticated users 1-3,text,true,,353,253,7,7,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,4,0,0
+1793834286281,3,11 Roles,200,,Authenticated users 1-1,text,true,,730,221,7,7,http://127.0.0.1:18084/system/permission/roles,3,0,0
+1793834286281,3,11 Roles,200,,Authenticated users 1-6,text,true,,730,221,7,7,http://127.0.0.1:18084/system/permission/roles,3,0,0
+1793834286283,2,11 Roles,200,,Authenticated users 1-3,text,true,,730,221,7,7,http://127.0.0.1:18084/system/permission/roles,2,0,0
+1793834286282,3,11 Roles,200,,Authenticated users 1-4,text,true,,730,221,7,7,http://127.0.0.1:18084/system/permission/roles,2,0,0
+1793834286275,14,10 Finance overview,200,,Authenticated users 1-2,text,true,,353,253,7,7,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,14,0,0
+1793834286277,13,10 Finance overview,200,,Authenticated users 1-7,text,true,,353,253,7,7,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,13,0,0
+1793834286275,16,10 Finance overview,200,,Authenticated users 1-5,text,true,,353,253,7,7,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,16,0,0
+1793834286292,1,11 Roles,200,,Authenticated users 1-5,text,true,,730,221,7,7,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834286291,2,11 Roles,200,,Authenticated users 1-7,text,true,,730,221,7,7,http://127.0.0.1:18084/system/permission/roles,2,0,0
+1793834286290,3,11 Roles,200,,Authenticated users 1-2,text,true,,730,221,7,7,http://127.0.0.1:18084/system/permission/roles,3,0,0
+1793834286286,11,12 Excel import page,200,,Authenticated users 1-1,text,true,,7213,216,8,8,http://127.0.0.1:18084/system/excelImport,9,0,0
+1793834286287,10,12 Excel import page,200,,Authenticated users 1-3,text,true,,7213,216,8,8,http://127.0.0.1:18084/system/excelImport,8,0,0
+1793834286287,11,12 Excel import page,200,,Authenticated users 1-4,text,true,,7213,216,8,8,http://127.0.0.1:18084/system/excelImport,9,0,0
+1793834286287,11,12 Excel import page,200,,Authenticated users 1-6,text,true,,7213,216,8,8,http://127.0.0.1:18084/system/excelImport,10,0,0
+1793834286294,9,12 Excel import page,200,,Authenticated users 1-2,text,true,,7213,216,8,8,http://127.0.0.1:18084/system/excelImport,4,0,0
+1793834286294,9,12 Excel import page,200,,Authenticated users 1-5,text,true,,7213,216,8,8,http://127.0.0.1:18084/system/excelImport,6,0,0
+1793834286294,10,12 Excel import page,200,,Authenticated users 1-7,text,true,,7213,216,8,8,http://127.0.0.1:18084/system/excelImport,8,0,0
+1793834286299,8,01 Login,200,,Authenticated users 1-8,text,true,,340,265,8,8,http://127.0.0.1:18084/login,8,0,1
+1793834286299,10,13 Card page,200,,Authenticated users 1-3,text,true,,5857,221,8,8,http://127.0.0.1:18084/system/user/card/880001,8,0,0
+1793834286300,9,13 Card page,200,,Authenticated users 1-6,text,true,,5857,221,8,8,http://127.0.0.1:18084/system/user/card/880001,9,0,0
+1793834286300,10,13 Card page,200,,Authenticated users 1-4,text,true,,5857,221,8,8,http://127.0.0.1:18084/system/user/card/880001,9,0,0
+1793834286299,11,13 Card page,200,,Authenticated users 1-1,text,true,,5857,221,8,8,http://127.0.0.1:18084/system/user/card/880001,10,0,0
+1793834286304,8,13 Card page,200,,Authenticated users 1-5,text,true,,5857,221,4,4,http://127.0.0.1:18084/system/user/card/880001,8,0,0
+1793834286304,8,13 Card page,200,,Authenticated users 1-2,text,true,,5857,221,4,4,http://127.0.0.1:18084/system/user/card/880001,8,0,0
+1793834286304,9,13 Card page,200,,Authenticated users 1-7,text,true,,5857,221,4,4,http://127.0.0.1:18084/system/user/card/880001,8,0,0
+1793834286308,8,02 Personnel query,200,,Authenticated users 1-8,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,8,0,0
+1793834286317,3,03 Gate records,200,,Authenticated users 1-8,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834286321,4,04 Attendance projects,200,,Authenticated users 1-8,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,4,0,0
+1793834286325,3,05 Attendance records,200,,Authenticated users 1-8,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834286329,5,06 Books,200,,Authenticated users 1-8,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834286334,4,07 Borrowing records,200,,Authenticated users 1-8,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,4,0,0
+1793834286338,2,08 Wallet and transactions,200,,Authenticated users 1-8,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834286341,2,09 Merchant query,200,,Authenticated users 1-8,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,2,0,0
+1793834286343,2,10 Finance overview,200,,Authenticated users 1-8,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834286346,1,11 Roles,200,,Authenticated users 1-8,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834286347,4,12 Excel import page,200,,Authenticated users 1-8,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834286351,5,13 Card page,200,,Authenticated users 1-8,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834286399,7,01 Login,200,,Authenticated users 1-9,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834286407,3,02 Personnel query,200,,Authenticated users 1-9,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834286411,2,03 Gate records,200,,Authenticated users 1-9,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834286414,4,04 Attendance projects,200,,Authenticated users 1-9,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,4,0,0
+1793834286418,3,05 Attendance records,200,,Authenticated users 1-9,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834286421,5,06 Books,200,,Authenticated users 1-9,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,5,0,0
+1793834286426,3,07 Borrowing records,200,,Authenticated users 1-9,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834286429,2,08 Wallet and transactions,200,,Authenticated users 1-9,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834286432,1,09 Merchant query,200,,Authenticated users 1-9,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834286434,2,10 Finance overview,200,,Authenticated users 1-9,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834286436,1,11 Roles,200,,Authenticated users 1-9,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834286437,4,12 Excel import page,200,,Authenticated users 1-9,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834286441,4,13 Card page,200,,Authenticated users 1-9,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834286496,7,01 Login,200,,Authenticated users 1-10,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834286503,4,02 Personnel query,200,,Authenticated users 1-10,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834286508,3,03 Gate records,200,,Authenticated users 1-10,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834286511,3,04 Attendance projects,200,,Authenticated users 1-10,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834286514,2,05 Attendance records,200,,Authenticated users 1-10,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834286517,4,06 Books,200,,Authenticated users 1-10,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834286521,3,07 Borrowing records,200,,Authenticated users 1-10,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834286524,2,08 Wallet and transactions,200,,Authenticated users 1-10,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834286526,2,09 Merchant query,200,,Authenticated users 1-10,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,2,0,0
+1793834286528,2,10 Finance overview,200,,Authenticated users 1-10,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834286530,1,11 Roles,200,,Authenticated users 1-10,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834286532,4,12 Excel import page,200,,Authenticated users 1-10,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834286537,6,13 Card page,200,,Authenticated users 1-10,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,6,0,0
+1793834286597,7,01 Login,200,,Authenticated users 1-11,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834286605,4,02 Personnel query,200,,Authenticated users 1-11,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834286610,3,03 Gate records,200,,Authenticated users 1-11,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834286613,3,04 Attendance projects,200,,Authenticated users 1-11,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834286616,3,05 Attendance records,200,,Authenticated users 1-11,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834286620,3,06 Books,200,,Authenticated users 1-11,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834286624,2,07 Borrowing records,200,,Authenticated users 1-11,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834286627,1,08 Wallet and transactions,200,,Authenticated users 1-11,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834286629,1,09 Merchant query,200,,Authenticated users 1-11,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834286630,3,10 Finance overview,200,,Authenticated users 1-11,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,3,0,0
+1793834286633,2,11 Roles,200,,Authenticated users 1-11,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,2,0,0
+1793834286635,4,12 Excel import page,200,,Authenticated users 1-11,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834286639,4,13 Card page,200,,Authenticated users 1-11,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834286697,7,01 Login,200,,Authenticated users 1-12,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834286705,3,02 Personnel query,200,,Authenticated users 1-12,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834286709,3,03 Gate records,200,,Authenticated users 1-12,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834286712,3,04 Attendance projects,200,,Authenticated users 1-12,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834286716,2,05 Attendance records,200,,Authenticated users 1-12,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834286719,3,06 Books,200,,Authenticated users 1-12,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834286722,3,07 Borrowing records,200,,Authenticated users 1-12,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834286725,2,08 Wallet and transactions,200,,Authenticated users 1-12,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834286728,1,09 Merchant query,200,,Authenticated users 1-12,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834286729,1,10 Finance overview,200,,Authenticated users 1-12,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834286731,1,11 Roles,200,,Authenticated users 1-12,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834286732,4,12 Excel import page,200,,Authenticated users 1-12,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834286736,4,13 Card page,200,,Authenticated users 1-12,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834286797,6,01 Login,200,,Authenticated users 1-13,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834286804,4,02 Personnel query,200,,Authenticated users 1-13,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834286808,3,03 Gate records,200,,Authenticated users 1-13,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834286812,2,04 Attendance projects,200,,Authenticated users 1-13,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834286815,2,05 Attendance records,200,,Authenticated users 1-13,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834286818,5,06 Books,200,,Authenticated users 1-13,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,5,0,0
+1793834286825,2,07 Borrowing records,200,,Authenticated users 1-13,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834286828,1,08 Wallet and transactions,200,,Authenticated users 1-13,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834286829,1,09 Merchant query,200,,Authenticated users 1-13,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834286831,2,10 Finance overview,200,,Authenticated users 1-13,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834286834,1,11 Roles,200,,Authenticated users 1-13,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834286837,3,12 Excel import page,200,,Authenticated users 1-13,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834286840,5,13 Card page,200,,Authenticated users 1-13,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834286898,7,01 Login,200,,Authenticated users 1-14,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,2
+1793834286906,4,02 Personnel query,200,,Authenticated users 1-14,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834286910,2,03 Gate records,200,,Authenticated users 1-14,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834286913,3,04 Attendance projects,200,,Authenticated users 1-14,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834286916,3,05 Attendance records,200,,Authenticated users 1-14,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834286919,4,06 Books,200,,Authenticated users 1-14,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834286923,3,07 Borrowing records,200,,Authenticated users 1-14,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834286926,1,08 Wallet and transactions,200,,Authenticated users 1-14,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834286928,1,09 Merchant query,200,,Authenticated users 1-14,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834286929,1,10 Finance overview,200,,Authenticated users 1-14,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834286931,1,11 Roles,200,,Authenticated users 1-14,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834286932,4,12 Excel import page,200,,Authenticated users 1-14,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834286936,4,13 Card page,200,,Authenticated users 1-14,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834286997,6,01 Login,200,,Authenticated users 1-15,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834287004,5,02 Personnel query,200,,Authenticated users 1-15,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,5,0,0
+1793834287010,2,03 Gate records,200,,Authenticated users 1-15,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834287013,2,04 Attendance projects,200,,Authenticated users 1-15,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287016,3,05 Attendance records,200,,Authenticated users 1-15,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834287019,3,06 Books,200,,Authenticated users 1-15,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834287023,3,07 Borrowing records,200,,Authenticated users 1-15,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834287026,2,08 Wallet and transactions,200,,Authenticated users 1-15,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834287028,1,09 Merchant query,200,,Authenticated users 1-15,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287030,2,10 Finance overview,200,,Authenticated users 1-15,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834287032,2,11 Roles,200,,Authenticated users 1-15,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,2,0,0
+1793834287034,4,12 Excel import page,200,,Authenticated users 1-15,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834287038,6,13 Card page,200,,Authenticated users 1-15,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834287099,7,01 Login,200,,Authenticated users 1-16,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834287106,3,02 Personnel query,200,,Authenticated users 1-16,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834287110,2,03 Gate records,200,,Authenticated users 1-16,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834287113,2,04 Attendance projects,200,,Authenticated users 1-16,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287115,4,05 Attendance records,200,,Authenticated users 1-16,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,4,0,0
+1793834287119,4,06 Books,200,,Authenticated users 1-16,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834287123,3,07 Borrowing records,200,,Authenticated users 1-16,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834287126,2,08 Wallet and transactions,200,,Authenticated users 1-16,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834287128,1,09 Merchant query,200,,Authenticated users 1-16,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287130,1,10 Finance overview,200,,Authenticated users 1-16,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834287131,3,11 Roles,200,,Authenticated users 1-16,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,2,0,0
+1793834287135,4,12 Excel import page,200,,Authenticated users 1-16,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,3,0,0
+1793834287140,4,13 Card page,200,,Authenticated users 1-16,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834287196,7,01 Login,200,,Authenticated users 1-17,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834287203,4,02 Personnel query,200,,Authenticated users 1-17,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834287209,5,03 Gate records,200,,Authenticated users 1-17,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,5,0,0
+1793834287214,3,04 Attendance projects,200,,Authenticated users 1-17,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834287217,2,05 Attendance records,200,,Authenticated users 1-17,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834287220,3,06 Books,200,,Authenticated users 1-17,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834287224,2,07 Borrowing records,200,,Authenticated users 1-17,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834287227,2,08 Wallet and transactions,200,,Authenticated users 1-17,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834287230,1,09 Merchant query,200,,Authenticated users 1-17,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287231,3,10 Finance overview,200,,Authenticated users 1-17,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,3,0,0
+1793834287235,0,11 Roles,200,,Authenticated users 1-17,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834287236,3,12 Excel import page,200,,Authenticated users 1-17,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834287239,5,13 Card page,200,,Authenticated users 1-17,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834287296,6,01 Login,200,,Authenticated users 1-18,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834287302,4,02 Personnel query,200,,Authenticated users 1-18,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834287306,3,03 Gate records,200,,Authenticated users 1-18,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834287310,2,04 Attendance projects,200,,Authenticated users 1-18,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287312,2,05 Attendance records,200,,Authenticated users 1-18,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834287315,4,06 Books,200,,Authenticated users 1-18,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834287319,5,07 Borrowing records,200,,Authenticated users 1-18,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,5,0,0
+1793834287324,2,08 Wallet and transactions,200,,Authenticated users 1-18,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834287326,1,09 Merchant query,200,,Authenticated users 1-18,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287328,1,10 Finance overview,200,,Authenticated users 1-18,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834287329,1,11 Roles,200,,Authenticated users 1-18,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834287330,5,12 Excel import page,200,,Authenticated users 1-18,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834287335,4,13 Card page,200,,Authenticated users 1-18,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834287395,7,01 Login,200,,Authenticated users 1-19,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834287402,4,02 Personnel query,200,,Authenticated users 1-19,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834287407,2,03 Gate records,200,,Authenticated users 1-19,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834287410,2,04 Attendance projects,200,,Authenticated users 1-19,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287412,3,05 Attendance records,200,,Authenticated users 1-19,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834287416,4,06 Books,200,,Authenticated users 1-19,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834287420,3,07 Borrowing records,200,,Authenticated users 1-19,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834287424,1,08 Wallet and transactions,200,,Authenticated users 1-19,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834287426,1,09 Merchant query,200,,Authenticated users 1-19,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287427,2,10 Finance overview,200,,Authenticated users 1-19,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834287429,1,11 Roles,200,,Authenticated users 1-19,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834287431,4,12 Excel import page,200,,Authenticated users 1-19,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,3,0,0
+1793834287436,4,13 Card page,200,,Authenticated users 1-19,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834287496,7,01 Login,200,,Authenticated users 1-20,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834287504,4,02 Personnel query,200,,Authenticated users 1-20,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834287508,3,03 Gate records,200,,Authenticated users 1-20,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834287511,3,04 Attendance projects,200,,Authenticated users 1-20,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834287514,3,05 Attendance records,200,,Authenticated users 1-20,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834287518,4,06 Books,200,,Authenticated users 1-20,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834287522,3,07 Borrowing records,200,,Authenticated users 1-20,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834287526,2,08 Wallet and transactions,200,,Authenticated users 1-20,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834287528,2,09 Merchant query,200,,Authenticated users 1-20,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,2,0,0
+1793834287530,2,10 Finance overview,200,,Authenticated users 1-20,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834287533,1,11 Roles,200,,Authenticated users 1-20,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834287535,5,12 Excel import page,200,,Authenticated users 1-20,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,3,0,0
+1793834287541,5,13 Card page,200,,Authenticated users 1-20,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834287596,6,01 Login,200,,Authenticated users 1-21,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834287603,3,02 Personnel query,200,,Authenticated users 1-21,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834287607,3,03 Gate records,200,,Authenticated users 1-21,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834287610,2,04 Attendance projects,200,,Authenticated users 1-21,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287613,2,05 Attendance records,200,,Authenticated users 1-21,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834287616,3,06 Books,200,,Authenticated users 1-21,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834287620,2,07 Borrowing records,200,,Authenticated users 1-21,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834287622,2,08 Wallet and transactions,200,,Authenticated users 1-21,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834287624,1,09 Merchant query,200,,Authenticated users 1-21,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287625,1,10 Finance overview,200,,Authenticated users 1-21,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834287627,0,11 Roles,200,,Authenticated users 1-21,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834287628,3,12 Excel import page,200,,Authenticated users 1-21,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834287632,3,13 Card page,200,,Authenticated users 1-21,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834287696,6,01 Login,200,,Authenticated users 1-22,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834287703,3,02 Personnel query,200,,Authenticated users 1-22,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834287707,2,03 Gate records,200,,Authenticated users 1-22,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834287710,2,04 Attendance projects,200,,Authenticated users 1-22,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287713,2,05 Attendance records,200,,Authenticated users 1-22,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834287715,4,06 Books,200,,Authenticated users 1-22,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834287720,2,07 Borrowing records,200,,Authenticated users 1-22,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834287722,2,08 Wallet and transactions,200,,Authenticated users 1-22,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834287725,1,09 Merchant query,200,,Authenticated users 1-22,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287726,2,10 Finance overview,200,,Authenticated users 1-22,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834287728,1,11 Roles,200,,Authenticated users 1-22,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834287729,4,12 Excel import page,200,,Authenticated users 1-22,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834287733,5,13 Card page,200,,Authenticated users 1-22,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834287797,7,01 Login,200,,Authenticated users 1-23,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834287805,3,02 Personnel query,200,,Authenticated users 1-23,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834287809,2,03 Gate records,200,,Authenticated users 1-23,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834287812,2,04 Attendance projects,200,,Authenticated users 1-23,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287815,3,05 Attendance records,200,,Authenticated users 1-23,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834287818,4,06 Books,200,,Authenticated users 1-23,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834287823,2,07 Borrowing records,200,,Authenticated users 1-23,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834287825,2,08 Wallet and transactions,200,,Authenticated users 1-23,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834287827,1,09 Merchant query,200,,Authenticated users 1-23,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287829,1,10 Finance overview,200,,Authenticated users 1-23,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834287831,0,11 Roles,200,,Authenticated users 1-23,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834287832,4,12 Excel import page,200,,Authenticated users 1-23,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834287836,4,13 Card page,200,,Authenticated users 1-23,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834287896,6,01 Login,200,,Authenticated users 1-24,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834287903,3,02 Personnel query,200,,Authenticated users 1-24,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834287907,3,03 Gate records,200,,Authenticated users 1-24,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834287911,2,04 Attendance projects,200,,Authenticated users 1-24,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834287913,3,05 Attendance records,200,,Authenticated users 1-24,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834287916,4,06 Books,200,,Authenticated users 1-24,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834287920,2,07 Borrowing records,200,,Authenticated users 1-24,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834287923,1,08 Wallet and transactions,200,,Authenticated users 1-24,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834287924,1,09 Merchant query,200,,Authenticated users 1-24,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834287926,1,10 Finance overview,200,,Authenticated users 1-24,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834287928,0,11 Roles,200,,Authenticated users 1-24,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834287929,3,12 Excel import page,200,,Authenticated users 1-24,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834287932,4,13 Card page,200,,Authenticated users 1-24,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834287995,7,01 Login,200,,Authenticated users 1-25,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834288002,4,02 Personnel query,200,,Authenticated users 1-25,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834288006,4,03 Gate records,200,,Authenticated users 1-25,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,4,0,0
+1793834288010,3,04 Attendance projects,200,,Authenticated users 1-25,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288013,2,05 Attendance records,200,,Authenticated users 1-25,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288015,4,06 Books,200,,Authenticated users 1-25,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288019,2,07 Borrowing records,200,,Authenticated users 1-25,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834288022,1,08 Wallet and transactions,200,,Authenticated users 1-25,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834288024,1,09 Merchant query,200,,Authenticated users 1-25,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288025,1,10 Finance overview,200,,Authenticated users 1-25,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834288027,1,11 Roles,200,,Authenticated users 1-25,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834288028,3,12 Excel import page,200,,Authenticated users 1-25,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288031,5,13 Card page,200,,Authenticated users 1-25,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834288096,6,01 Login,200,,Authenticated users 1-26,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834288103,3,02 Personnel query,200,,Authenticated users 1-26,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834288106,3,03 Gate records,200,,Authenticated users 1-26,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834288109,2,04 Attendance projects,200,,Authenticated users 1-26,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288112,2,05 Attendance records,200,,Authenticated users 1-26,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288115,4,06 Books,200,,Authenticated users 1-26,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288119,2,07 Borrowing records,200,,Authenticated users 1-26,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834288122,1,08 Wallet and transactions,200,,Authenticated users 1-26,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834288123,1,09 Merchant query,200,,Authenticated users 1-26,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288125,1,10 Finance overview,200,,Authenticated users 1-26,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834288126,1,11 Roles,200,,Authenticated users 1-26,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834288127,3,12 Excel import page,200,,Authenticated users 1-26,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288130,4,13 Card page,200,,Authenticated users 1-26,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288195,6,01 Login,200,,Authenticated users 1-27,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834288202,3,02 Personnel query,200,,Authenticated users 1-27,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834288205,3,03 Gate records,200,,Authenticated users 1-27,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834288209,2,04 Attendance projects,200,,Authenticated users 1-27,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288212,2,05 Attendance records,200,,Authenticated users 1-27,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288214,4,06 Books,200,,Authenticated users 1-27,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288218,3,07 Borrowing records,200,,Authenticated users 1-27,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834288221,1,08 Wallet and transactions,200,,Authenticated users 1-27,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834288223,1,09 Merchant query,200,,Authenticated users 1-27,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288224,2,10 Finance overview,200,,Authenticated users 1-27,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834288227,0,11 Roles,200,,Authenticated users 1-27,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834288228,3,12 Excel import page,200,,Authenticated users 1-27,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288232,4,13 Card page,200,,Authenticated users 1-27,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288295,7,01 Login,200,,Authenticated users 1-28,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834288303,3,02 Personnel query,200,,Authenticated users 1-28,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834288306,3,03 Gate records,200,,Authenticated users 1-28,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834288310,2,04 Attendance projects,200,,Authenticated users 1-28,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288312,2,05 Attendance records,200,,Authenticated users 1-28,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288314,5,06 Books,200,,Authenticated users 1-28,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,5,0,0
+1793834288319,3,07 Borrowing records,200,,Authenticated users 1-28,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834288322,1,08 Wallet and transactions,200,,Authenticated users 1-28,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834288323,2,09 Merchant query,200,,Authenticated users 1-28,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,2,0,0
+1793834288325,2,10 Finance overview,200,,Authenticated users 1-28,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834288327,1,11 Roles,200,,Authenticated users 1-28,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834288328,3,12 Excel import page,200,,Authenticated users 1-28,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288332,4,13 Card page,200,,Authenticated users 1-28,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288396,6,01 Login,200,,Authenticated users 1-29,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834288402,4,02 Personnel query,200,,Authenticated users 1-29,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834288406,2,03 Gate records,200,,Authenticated users 1-29,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834288409,2,04 Attendance projects,200,,Authenticated users 1-29,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288411,3,05 Attendance records,200,,Authenticated users 1-29,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834288414,4,06 Books,200,,Authenticated users 1-29,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288418,2,07 Borrowing records,200,,Authenticated users 1-29,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834288420,2,08 Wallet and transactions,200,,Authenticated users 1-29,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834288422,1,09 Merchant query,200,,Authenticated users 1-29,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288423,1,10 Finance overview,200,,Authenticated users 1-29,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834288425,0,11 Roles,200,,Authenticated users 1-29,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834288426,3,12 Excel import page,200,,Authenticated users 1-29,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834288429,4,13 Card page,200,,Authenticated users 1-29,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288495,7,01 Login,200,,Authenticated users 1-30,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834288502,5,02 Personnel query,200,,Authenticated users 1-30,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,5,0,0
+1793834288507,3,03 Gate records,200,,Authenticated users 1-30,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834288511,2,04 Attendance projects,200,,Authenticated users 1-30,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288513,2,05 Attendance records,200,,Authenticated users 1-30,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288516,4,06 Books,200,,Authenticated users 1-30,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288520,3,07 Borrowing records,200,,Authenticated users 1-30,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834288523,2,08 Wallet and transactions,200,,Authenticated users 1-30,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834288526,1,09 Merchant query,200,,Authenticated users 1-30,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288528,1,10 Finance overview,200,,Authenticated users 1-30,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834288530,1,11 Roles,200,,Authenticated users 1-30,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834288531,6,12 Excel import page,200,,Authenticated users 1-30,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,3,0,0
+1793834288538,5,13 Card page,200,,Authenticated users 1-30,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834288596,6,01 Login,200,,Authenticated users 1-31,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834288603,3,02 Personnel query,200,,Authenticated users 1-31,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834288606,3,03 Gate records,200,,Authenticated users 1-31,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834288609,2,04 Attendance projects,200,,Authenticated users 1-31,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288612,2,05 Attendance records,200,,Authenticated users 1-31,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288614,4,06 Books,200,,Authenticated users 1-31,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288618,2,07 Borrowing records,200,,Authenticated users 1-31,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834288620,1,08 Wallet and transactions,200,,Authenticated users 1-31,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834288622,0,09 Merchant query,200,,Authenticated users 1-31,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834288623,1,10 Finance overview,200,,Authenticated users 1-31,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834288624,1,11 Roles,200,,Authenticated users 1-31,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834288625,3,12 Excel import page,200,,Authenticated users 1-31,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288629,4,13 Card page,200,,Authenticated users 1-31,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288695,6,01 Login,200,,Authenticated users 1-32,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834288702,4,02 Personnel query,200,,Authenticated users 1-32,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834288707,3,03 Gate records,200,,Authenticated users 1-32,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834288710,3,04 Attendance projects,200,,Authenticated users 1-32,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834288713,3,05 Attendance records,200,,Authenticated users 1-32,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834288716,4,06 Books,200,,Authenticated users 1-32,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288720,3,07 Borrowing records,200,,Authenticated users 1-32,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834288723,2,08 Wallet and transactions,200,,Authenticated users 1-32,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834288725,1,09 Merchant query,200,,Authenticated users 1-32,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288726,2,10 Finance overview,200,,Authenticated users 1-32,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834288728,1,11 Roles,200,,Authenticated users 1-32,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834288729,3,12 Excel import page,200,,Authenticated users 1-32,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288733,4,13 Card page,200,,Authenticated users 1-32,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288794,7,01 Login,200,,Authenticated users 1-33,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834288801,3,02 Personnel query,200,,Authenticated users 1-33,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834288805,2,03 Gate records,200,,Authenticated users 1-33,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834288807,3,04 Attendance projects,200,,Authenticated users 1-33,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834288810,2,05 Attendance records,200,,Authenticated users 1-33,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288813,4,06 Books,200,,Authenticated users 1-33,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834288817,3,07 Borrowing records,200,,Authenticated users 1-33,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834288820,2,08 Wallet and transactions,200,,Authenticated users 1-33,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834288822,1,09 Merchant query,200,,Authenticated users 1-33,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288823,1,10 Finance overview,200,,Authenticated users 1-33,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834288825,0,11 Roles,200,,Authenticated users 1-33,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834288826,3,12 Excel import page,200,,Authenticated users 1-33,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288829,4,13 Card page,200,,Authenticated users 1-33,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288895,6,01 Login,200,,Authenticated users 1-34,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834288902,3,02 Personnel query,200,,Authenticated users 1-34,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834288906,3,03 Gate records,200,,Authenticated users 1-34,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834288909,2,04 Attendance projects,200,,Authenticated users 1-34,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834288912,2,05 Attendance records,200,,Authenticated users 1-34,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834288914,4,06 Books,200,,Authenticated users 1-34,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834288918,2,07 Borrowing records,200,,Authenticated users 1-34,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834288920,1,08 Wallet and transactions,200,,Authenticated users 1-34,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834288922,1,09 Merchant query,200,,Authenticated users 1-34,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834288923,2,10 Finance overview,200,,Authenticated users 1-34,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834288926,1,11 Roles,200,,Authenticated users 1-34,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834288927,3,12 Excel import page,200,,Authenticated users 1-34,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834288930,4,13 Card page,200,,Authenticated users 1-34,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834288995,6,01 Login,200,,Authenticated users 1-35,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289002,3,02 Personnel query,200,,Authenticated users 1-35,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289006,2,03 Gate records,200,,Authenticated users 1-35,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834289008,2,04 Attendance projects,200,,Authenticated users 1-35,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289010,2,05 Attendance records,200,,Authenticated users 1-35,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289013,3,06 Books,200,,Authenticated users 1-35,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834289017,2,07 Borrowing records,200,,Authenticated users 1-35,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289019,2,08 Wallet and transactions,200,,Authenticated users 1-35,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834289021,1,09 Merchant query,200,,Authenticated users 1-35,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834289022,1,10 Finance overview,200,,Authenticated users 1-35,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834289024,0,11 Roles,200,,Authenticated users 1-35,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834289025,3,12 Excel import page,200,,Authenticated users 1-35,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834289028,3,13 Card page,200,,Authenticated users 1-35,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834289095,6,01 Login,200,,Authenticated users 1-36,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289102,3,02 Personnel query,200,,Authenticated users 1-36,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289106,2,03 Gate records,200,,Authenticated users 1-36,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834289108,3,04 Attendance projects,200,,Authenticated users 1-36,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834289111,2,05 Attendance records,200,,Authenticated users 1-36,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289113,4,06 Books,200,,Authenticated users 1-36,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834289117,2,07 Borrowing records,200,,Authenticated users 1-36,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289119,1,08 Wallet and transactions,200,,Authenticated users 1-36,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834289121,1,09 Merchant query,200,,Authenticated users 1-36,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834289122,1,10 Finance overview,200,,Authenticated users 1-36,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834289123,1,11 Roles,200,,Authenticated users 1-36,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834289124,3,12 Excel import page,200,,Authenticated users 1-36,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289128,4,13 Card page,200,,Authenticated users 1-36,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834289196,6,01 Login,200,,Authenticated users 1-37,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289203,3,02 Personnel query,200,,Authenticated users 1-37,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289206,3,03 Gate records,200,,Authenticated users 1-37,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834289209,3,04 Attendance projects,200,,Authenticated users 1-37,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834289212,3,05 Attendance records,200,,Authenticated users 1-37,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289215,3,06 Books,200,,Authenticated users 1-37,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834289219,2,07 Borrowing records,200,,Authenticated users 1-37,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289221,2,08 Wallet and transactions,200,,Authenticated users 1-37,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834289223,1,09 Merchant query,200,,Authenticated users 1-37,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834289224,2,10 Finance overview,200,,Authenticated users 1-37,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834289226,1,11 Roles,200,,Authenticated users 1-37,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834289227,3,12 Excel import page,200,,Authenticated users 1-37,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289231,3,13 Card page,200,,Authenticated users 1-37,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834289294,6,01 Login,200,,Authenticated users 1-38,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289301,3,02 Personnel query,200,,Authenticated users 1-38,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289304,2,03 Gate records,200,,Authenticated users 1-38,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834289307,2,04 Attendance projects,200,,Authenticated users 1-38,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289309,2,05 Attendance records,200,,Authenticated users 1-38,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289311,4,06 Books,200,,Authenticated users 1-38,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834289315,4,07 Borrowing records,200,,Authenticated users 1-38,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,4,0,0
+1793834289319,1,08 Wallet and transactions,200,,Authenticated users 1-38,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834289321,1,09 Merchant query,200,,Authenticated users 1-38,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834289322,1,10 Finance overview,200,,Authenticated users 1-38,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834289323,1,11 Roles,200,,Authenticated users 1-38,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834289324,4,12 Excel import page,200,,Authenticated users 1-38,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289328,3,13 Card page,200,,Authenticated users 1-38,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834289396,6,01 Login,200,,Authenticated users 1-39,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289402,3,02 Personnel query,200,,Authenticated users 1-39,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289406,2,03 Gate records,200,,Authenticated users 1-39,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834289409,2,04 Attendance projects,200,,Authenticated users 1-39,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289411,2,05 Attendance records,200,,Authenticated users 1-39,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289414,3,06 Books,200,,Authenticated users 1-39,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834289417,2,07 Borrowing records,200,,Authenticated users 1-39,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289420,1,08 Wallet and transactions,200,,Authenticated users 1-39,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834289421,1,09 Merchant query,200,,Authenticated users 1-39,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834289422,1,10 Finance overview,200,,Authenticated users 1-39,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834289423,1,11 Roles,200,,Authenticated users 1-39,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834289424,5,12 Excel import page,200,,Authenticated users 1-39,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,3,0,0
+1793834289429,4,13 Card page,200,,Authenticated users 1-39,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834289496,5,01 Login,200,,Authenticated users 1-40,text,true,,340,265,1,1,http://127.0.0.1:18084/login,5,0,0
+1793834289502,4,02 Personnel query,200,,Authenticated users 1-40,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834289506,2,03 Gate records,200,,Authenticated users 1-40,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834289509,2,04 Attendance projects,200,,Authenticated users 1-40,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289511,3,05 Attendance records,200,,Authenticated users 1-40,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289514,6,06 Books,200,,Authenticated users 1-40,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,6,0,0
+1793834289521,3,07 Borrowing records,200,,Authenticated users 1-40,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834289525,2,08 Wallet and transactions,200,,Authenticated users 1-40,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834289527,1,09 Merchant query,200,,Authenticated users 1-40,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834289529,1,10 Finance overview,200,,Authenticated users 1-40,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834289531,0,11 Roles,200,,Authenticated users 1-40,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834289532,4,12 Excel import page,200,,Authenticated users 1-40,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289537,4,13 Card page,200,,Authenticated users 1-40,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834289596,6,01 Login,200,,Authenticated users 1-41,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289603,3,02 Personnel query,200,,Authenticated users 1-41,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289606,2,03 Gate records,200,,Authenticated users 1-41,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834289609,2,04 Attendance projects,200,,Authenticated users 1-41,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289611,2,05 Attendance records,200,,Authenticated users 1-41,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289613,4,06 Books,200,,Authenticated users 1-41,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834289617,2,07 Borrowing records,200,,Authenticated users 1-41,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289619,1,08 Wallet and transactions,200,,Authenticated users 1-41,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834289621,0,09 Merchant query,200,,Authenticated users 1-41,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834289622,1,10 Finance overview,200,,Authenticated users 1-41,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834289623,1,11 Roles,200,,Authenticated users 1-41,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834289624,3,12 Excel import page,200,,Authenticated users 1-41,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289627,4,13 Card page,200,,Authenticated users 1-41,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834289695,6,01 Login,200,,Authenticated users 1-42,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289702,3,02 Personnel query,200,,Authenticated users 1-42,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289705,3,03 Gate records,200,,Authenticated users 1-42,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834289708,2,04 Attendance projects,200,,Authenticated users 1-42,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289711,2,05 Attendance records,200,,Authenticated users 1-42,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289713,3,06 Books,200,,Authenticated users 1-42,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834289716,2,07 Borrowing records,200,,Authenticated users 1-42,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289719,1,08 Wallet and transactions,200,,Authenticated users 1-42,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834289721,1,09 Merchant query,200,,Authenticated users 1-42,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834289722,2,10 Finance overview,200,,Authenticated users 1-42,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834289724,1,11 Roles,200,,Authenticated users 1-42,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834289726,4,12 Excel import page,200,,Authenticated users 1-42,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289730,5,13 Card page,200,,Authenticated users 1-42,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834289795,6,01 Login,200,,Authenticated users 1-43,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834289802,3,02 Personnel query,200,,Authenticated users 1-43,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834289805,3,03 Gate records,200,,Authenticated users 1-43,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834289808,2,04 Attendance projects,200,,Authenticated users 1-43,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289811,2,05 Attendance records,200,,Authenticated users 1-43,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289813,4,06 Books,200,,Authenticated users 1-43,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834289817,2,07 Borrowing records,200,,Authenticated users 1-43,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289819,1,08 Wallet and transactions,200,,Authenticated users 1-43,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834289821,1,09 Merchant query,200,,Authenticated users 1-43,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834289822,5,10 Finance overview,200,,Authenticated users 1-43,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,5,0,0
+1793834289827,1,11 Roles,200,,Authenticated users 1-43,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834289829,4,12 Excel import page,200,,Authenticated users 1-43,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289833,5,13 Card page,200,,Authenticated users 1-43,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834289895,8,01 Login,200,,Authenticated users 1-44,text,true,,340,265,1,1,http://127.0.0.1:18084/login,8,0,1
+1793834289903,4,02 Personnel query,200,,Authenticated users 1-44,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834289907,3,03 Gate records,200,,Authenticated users 1-44,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834289910,2,04 Attendance projects,200,,Authenticated users 1-44,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834289913,2,05 Attendance records,200,,Authenticated users 1-44,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834289915,3,06 Books,200,,Authenticated users 1-44,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834289919,2,07 Borrowing records,200,,Authenticated users 1-44,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834289921,1,08 Wallet and transactions,200,,Authenticated users 1-44,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834289923,1,09 Merchant query,200,,Authenticated users 1-44,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834289924,2,10 Finance overview,200,,Authenticated users 1-44,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834289926,1,11 Roles,200,,Authenticated users 1-44,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834289927,3,12 Excel import page,200,,Authenticated users 1-44,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834289930,4,13 Card page,200,,Authenticated users 1-44,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834289996,7,01 Login,200,,Authenticated users 1-45,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834290004,3,02 Personnel query,200,,Authenticated users 1-45,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834290008,3,03 Gate records,200,,Authenticated users 1-45,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834290011,3,04 Attendance projects,200,,Authenticated users 1-45,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834290014,3,05 Attendance records,200,,Authenticated users 1-45,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834290017,4,06 Books,200,,Authenticated users 1-45,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290022,2,07 Borrowing records,200,,Authenticated users 1-45,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834290025,1,08 Wallet and transactions,200,,Authenticated users 1-45,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290026,1,09 Merchant query,200,,Authenticated users 1-45,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834290028,1,10 Finance overview,200,,Authenticated users 1-45,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290029,1,11 Roles,200,,Authenticated users 1-45,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834290031,4,12 Excel import page,200,,Authenticated users 1-45,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834290035,5,13 Card page,200,,Authenticated users 1-45,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290095,6,01 Login,200,,Authenticated users 1-46,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834290102,3,02 Personnel query,200,,Authenticated users 1-46,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834290106,3,03 Gate records,200,,Authenticated users 1-46,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834290109,3,04 Attendance projects,200,,Authenticated users 1-46,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834290112,3,05 Attendance records,200,,Authenticated users 1-46,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834290116,4,06 Books,200,,Authenticated users 1-46,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290120,3,07 Borrowing records,200,,Authenticated users 1-46,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834290123,1,08 Wallet and transactions,200,,Authenticated users 1-46,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290124,2,09 Merchant query,200,,Authenticated users 1-46,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,2,0,0
+1793834290126,1,10 Finance overview,200,,Authenticated users 1-46,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290128,0,11 Roles,200,,Authenticated users 1-46,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834290129,3,12 Excel import page,200,,Authenticated users 1-46,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834290132,4,13 Card page,200,,Authenticated users 1-46,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290197,6,01 Login,200,,Authenticated users 1-47,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834290204,4,02 Personnel query,200,,Authenticated users 1-47,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834290208,3,03 Gate records,200,,Authenticated users 1-47,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834290211,2,04 Attendance projects,200,,Authenticated users 1-47,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834290213,2,05 Attendance records,200,,Authenticated users 1-47,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834290215,4,06 Books,200,,Authenticated users 1-47,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290219,3,07 Borrowing records,200,,Authenticated users 1-47,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834290222,1,08 Wallet and transactions,200,,Authenticated users 1-47,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290223,1,09 Merchant query,200,,Authenticated users 1-47,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834290225,1,10 Finance overview,200,,Authenticated users 1-47,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290226,1,11 Roles,200,,Authenticated users 1-47,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834290227,3,12 Excel import page,200,,Authenticated users 1-47,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834290230,4,13 Card page,200,,Authenticated users 1-47,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834290296,7,01 Login,200,,Authenticated users 1-48,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834290303,3,02 Personnel query,200,,Authenticated users 1-48,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834290306,3,03 Gate records,200,,Authenticated users 1-48,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834290309,2,04 Attendance projects,200,,Authenticated users 1-48,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834290311,3,05 Attendance records,200,,Authenticated users 1-48,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834290314,4,06 Books,200,,Authenticated users 1-48,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290319,2,07 Borrowing records,200,,Authenticated users 1-48,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834290321,1,08 Wallet and transactions,200,,Authenticated users 1-48,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290323,0,09 Merchant query,200,,Authenticated users 1-48,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834290324,1,10 Finance overview,200,,Authenticated users 1-48,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290325,1,11 Roles,200,,Authenticated users 1-48,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834290326,3,12 Excel import page,200,,Authenticated users 1-48,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834290329,5,13 Card page,200,,Authenticated users 1-48,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290397,6,01 Login,200,,Authenticated users 1-49,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834290403,4,02 Personnel query,200,,Authenticated users 1-49,text,true,,7564,299,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834290408,3,03 Gate records,200,,Authenticated users 1-49,text,true,,1137,306,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834290411,2,04 Attendance projects,200,,Authenticated users 1-49,text,true,,482,306,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834290414,2,05 Attendance records,200,,Authenticated users 1-49,text,true,,771,310,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834290416,3,06 Books,200,,Authenticated users 1-49,text,true,,738,303,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834290419,3,07 Borrowing records,200,,Authenticated users 1-49,text,true,,1505,318,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834290422,1,08 Wallet and transactions,200,,Authenticated users 1-49,text,true,,3202,207,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290423,1,09 Merchant query,200,,Authenticated users 1-49,text,true,,1347,206,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834290425,1,10 Finance overview,200,,Authenticated users 1-49,text,true,,353,232,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290427,0,11 Roles,200,,Authenticated users 1-49,text,true,,730,200,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834290428,3,12 Excel import page,200,,Authenticated users 1-49,text,true,,7213,195,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834290431,4,13 Card page,200,,Authenticated users 1-49,text,true,,5857,200,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290496,6,01 Login,200,,Authenticated users 1-50,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834290502,4,02 Personnel query,200,,Authenticated users 1-50,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834290506,2,03 Gate records,200,,Authenticated users 1-50,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834290509,2,04 Attendance projects,200,,Authenticated users 1-50,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834290511,2,05 Attendance records,200,,Authenticated users 1-50,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834290513,4,06 Books,200,,Authenticated users 1-50,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290517,3,07 Borrowing records,200,,Authenticated users 1-50,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834290520,1,08 Wallet and transactions,200,,Authenticated users 1-50,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290521,1,09 Merchant query,200,,Authenticated users 1-50,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834290522,2,10 Finance overview,200,,Authenticated users 1-50,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290524,0,11 Roles,200,,Authenticated users 1-50,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834290525,3,12 Excel import page,200,,Authenticated users 1-50,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834290528,3,13 Card page,200,,Authenticated users 1-50,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834290597,6,01 Login,200,,Authenticated users 1-51,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834290604,3,02 Personnel query,200,,Authenticated users 1-51,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834290607,3,03 Gate records,200,,Authenticated users 1-51,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834290610,2,04 Attendance projects,200,,Authenticated users 1-51,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834290612,2,05 Attendance records,200,,Authenticated users 1-51,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834290614,4,06 Books,200,,Authenticated users 1-51,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290618,2,07 Borrowing records,200,,Authenticated users 1-51,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834290620,1,08 Wallet and transactions,200,,Authenticated users 1-51,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290622,0,09 Merchant query,200,,Authenticated users 1-51,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834290623,1,10 Finance overview,200,,Authenticated users 1-51,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290624,1,11 Roles,200,,Authenticated users 1-51,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834290625,3,12 Excel import page,200,,Authenticated users 1-51,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834290629,4,13 Card page,200,,Authenticated users 1-51,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290696,6,01 Login,200,,Authenticated users 1-52,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834290703,3,02 Personnel query,200,,Authenticated users 1-52,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834290707,3,03 Gate records,200,,Authenticated users 1-52,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834290710,2,04 Attendance projects,200,,Authenticated users 1-52,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834290713,2,05 Attendance records,200,,Authenticated users 1-52,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834290715,4,06 Books,200,,Authenticated users 1-52,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290720,2,07 Borrowing records,200,,Authenticated users 1-52,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834290722,2,08 Wallet and transactions,200,,Authenticated users 1-52,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834290725,1,09 Merchant query,200,,Authenticated users 1-52,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834290726,2,10 Finance overview,200,,Authenticated users 1-52,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834290728,1,11 Roles,200,,Authenticated users 1-52,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834290729,3,12 Excel import page,200,,Authenticated users 1-52,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834290733,4,13 Card page,200,,Authenticated users 1-52,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290796,6,01 Login,200,,Authenticated users 1-53,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834290802,4,02 Personnel query,200,,Authenticated users 1-53,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834290806,2,03 Gate records,200,,Authenticated users 1-53,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834290808,3,04 Attendance projects,200,,Authenticated users 1-53,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834290811,2,05 Attendance records,200,,Authenticated users 1-53,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834290813,4,06 Books,200,,Authenticated users 1-53,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834290817,3,07 Borrowing records,200,,Authenticated users 1-53,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834290820,1,08 Wallet and transactions,200,,Authenticated users 1-53,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290822,1,09 Merchant query,200,,Authenticated users 1-53,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834290823,1,10 Finance overview,200,,Authenticated users 1-53,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290824,1,11 Roles,200,,Authenticated users 1-53,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834290825,3,12 Excel import page,200,,Authenticated users 1-53,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834290828,4,13 Card page,200,,Authenticated users 1-53,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290895,6,01 Login,200,,Authenticated users 1-54,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834290902,3,02 Personnel query,200,,Authenticated users 1-54,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834290905,3,03 Gate records,200,,Authenticated users 1-54,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834290908,2,04 Attendance projects,200,,Authenticated users 1-54,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834290910,2,05 Attendance records,200,,Authenticated users 1-54,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834290913,3,06 Books,200,,Authenticated users 1-54,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834290917,2,07 Borrowing records,200,,Authenticated users 1-54,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834290919,1,08 Wallet and transactions,200,,Authenticated users 1-54,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834290920,2,09 Merchant query,200,,Authenticated users 1-54,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834290922,1,10 Finance overview,200,,Authenticated users 1-54,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834290923,1,11 Roles,200,,Authenticated users 1-54,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834290925,3,12 Excel import page,200,,Authenticated users 1-54,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834290928,5,13 Card page,200,,Authenticated users 1-54,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834290996,7,01 Login,200,,Authenticated users 1-55,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834291003,4,02 Personnel query,200,,Authenticated users 1-55,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291008,3,03 Gate records,200,,Authenticated users 1-55,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834291011,3,04 Attendance projects,200,,Authenticated users 1-55,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834291014,2,05 Attendance records,200,,Authenticated users 1-55,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834291017,3,06 Books,200,,Authenticated users 1-55,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834291021,2,07 Borrowing records,200,,Authenticated users 1-55,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291023,2,08 Wallet and transactions,200,,Authenticated users 1-55,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834291025,1,09 Merchant query,200,,Authenticated users 1-55,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834291027,1,10 Finance overview,200,,Authenticated users 1-55,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834291028,1,11 Roles,200,,Authenticated users 1-55,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291029,3,12 Excel import page,200,,Authenticated users 1-55,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291033,4,13 Card page,200,,Authenticated users 1-55,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834291095,7,01 Login,200,,Authenticated users 1-56,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834291102,3,02 Personnel query,200,,Authenticated users 1-56,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834291106,2,03 Gate records,200,,Authenticated users 1-56,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834291108,2,04 Attendance projects,200,,Authenticated users 1-56,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834291111,2,05 Attendance records,200,,Authenticated users 1-56,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834291113,3,06 Books,200,,Authenticated users 1-56,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834291116,2,07 Borrowing records,200,,Authenticated users 1-56,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291119,1,08 Wallet and transactions,200,,Authenticated users 1-56,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834291120,1,09 Merchant query,200,,Authenticated users 1-56,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834291121,2,10 Finance overview,200,,Authenticated users 1-56,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834291123,1,11 Roles,200,,Authenticated users 1-56,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291124,3,12 Excel import page,200,,Authenticated users 1-56,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291127,4,13 Card page,200,,Authenticated users 1-56,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834291196,6,01 Login,200,,Authenticated users 1-57,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834291202,3,02 Personnel query,200,,Authenticated users 1-57,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834291205,3,03 Gate records,200,,Authenticated users 1-57,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834291208,3,04 Attendance projects,200,,Authenticated users 1-57,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834291211,3,05 Attendance records,200,,Authenticated users 1-57,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834291215,3,06 Books,200,,Authenticated users 1-57,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834291219,2,07 Borrowing records,200,,Authenticated users 1-57,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291221,1,08 Wallet and transactions,200,,Authenticated users 1-57,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834291223,0,09 Merchant query,200,,Authenticated users 1-57,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834291224,1,10 Finance overview,200,,Authenticated users 1-57,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834291225,1,11 Roles,200,,Authenticated users 1-57,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291226,4,12 Excel import page,200,,Authenticated users 1-57,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291230,4,13 Card page,200,,Authenticated users 1-57,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834291296,6,01 Login,200,,Authenticated users 1-58,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834291303,4,02 Personnel query,200,,Authenticated users 1-58,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291307,4,03 Gate records,200,,Authenticated users 1-58,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,4,0,0
+1793834291311,2,04 Attendance projects,200,,Authenticated users 1-58,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834291313,3,05 Attendance records,200,,Authenticated users 1-58,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834291316,3,06 Books,200,,Authenticated users 1-58,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834291320,2,07 Borrowing records,200,,Authenticated users 1-58,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291322,1,08 Wallet and transactions,200,,Authenticated users 1-58,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834291324,1,09 Merchant query,200,,Authenticated users 1-58,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834291325,2,10 Finance overview,200,,Authenticated users 1-58,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834291327,1,11 Roles,200,,Authenticated users 1-58,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291328,3,12 Excel import page,200,,Authenticated users 1-58,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291331,5,13 Card page,200,,Authenticated users 1-58,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834291398,6,01 Login,200,,Authenticated users 1-59,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834291404,4,02 Personnel query,200,,Authenticated users 1-59,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291408,3,03 Gate records,200,,Authenticated users 1-59,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834291411,2,04 Attendance projects,200,,Authenticated users 1-59,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834291413,2,05 Attendance records,200,,Authenticated users 1-59,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834291416,4,06 Books,200,,Authenticated users 1-59,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834291420,3,07 Borrowing records,200,,Authenticated users 1-59,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834291423,1,08 Wallet and transactions,200,,Authenticated users 1-59,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834291425,1,09 Merchant query,200,,Authenticated users 1-59,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834291426,1,10 Finance overview,200,,Authenticated users 1-59,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834291427,1,11 Roles,200,,Authenticated users 1-59,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291428,4,12 Excel import page,200,,Authenticated users 1-59,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291432,5,13 Card page,200,,Authenticated users 1-59,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834291498,6,01 Login,200,,Authenticated users 1-60,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834291504,4,02 Personnel query,200,,Authenticated users 1-60,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291508,3,03 Gate records,200,,Authenticated users 1-60,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834291511,3,04 Attendance projects,200,,Authenticated users 1-60,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834291514,3,05 Attendance records,200,,Authenticated users 1-60,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834291517,4,06 Books,200,,Authenticated users 1-60,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834291521,2,07 Borrowing records,200,,Authenticated users 1-60,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291523,2,08 Wallet and transactions,200,,Authenticated users 1-60,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834291525,1,09 Merchant query,200,,Authenticated users 1-60,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834291526,1,10 Finance overview,200,,Authenticated users 1-60,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834291528,1,11 Roles,200,,Authenticated users 1-60,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291529,3,12 Excel import page,200,,Authenticated users 1-60,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291533,4,13 Card page,200,,Authenticated users 1-60,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834291597,9,01 Login,200,,Authenticated users 1-61,text,true,,340,265,1,1,http://127.0.0.1:18084/login,9,0,1
+1793834291606,4,02 Personnel query,200,,Authenticated users 1-61,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291611,2,03 Gate records,200,,Authenticated users 1-61,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834291614,3,04 Attendance projects,200,,Authenticated users 1-61,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834291617,4,05 Attendance records,200,,Authenticated users 1-61,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,4,0,0
+1793834291621,8,06 Books,200,,Authenticated users 1-61,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,8,0,0
+1793834291629,3,07 Borrowing records,200,,Authenticated users 1-61,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834291633,1,08 Wallet and transactions,200,,Authenticated users 1-61,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834291635,1,09 Merchant query,200,,Authenticated users 1-61,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834291636,2,10 Finance overview,200,,Authenticated users 1-61,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834291638,1,11 Roles,200,,Authenticated users 1-61,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291639,4,12 Excel import page,200,,Authenticated users 1-61,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291644,4,13 Card page,200,,Authenticated users 1-61,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834291696,6,01 Login,200,,Authenticated users 1-62,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834291702,4,02 Personnel query,200,,Authenticated users 1-62,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291706,3,03 Gate records,200,,Authenticated users 1-62,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834291709,3,04 Attendance projects,200,,Authenticated users 1-62,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834291712,2,05 Attendance records,200,,Authenticated users 1-62,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834291714,4,06 Books,200,,Authenticated users 1-62,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834291719,2,07 Borrowing records,200,,Authenticated users 1-62,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291722,1,08 Wallet and transactions,200,,Authenticated users 1-62,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834291723,2,09 Merchant query,200,,Authenticated users 1-62,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,2,0,0
+1793834291725,1,10 Finance overview,200,,Authenticated users 1-62,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834291727,0,11 Roles,200,,Authenticated users 1-62,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834291728,4,12 Excel import page,200,,Authenticated users 1-62,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291732,5,13 Card page,200,,Authenticated users 1-62,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834291796,7,01 Login,200,,Authenticated users 1-63,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,0
+1793834291803,4,02 Personnel query,200,,Authenticated users 1-63,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291807,2,03 Gate records,200,,Authenticated users 1-63,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834291809,2,04 Attendance projects,200,,Authenticated users 1-63,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834291812,2,05 Attendance records,200,,Authenticated users 1-63,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834291814,3,06 Books,200,,Authenticated users 1-63,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834291817,2,07 Borrowing records,200,,Authenticated users 1-63,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291819,2,08 Wallet and transactions,200,,Authenticated users 1-63,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834291821,1,09 Merchant query,200,,Authenticated users 1-63,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834291822,1,10 Finance overview,200,,Authenticated users 1-63,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834291823,1,11 Roles,200,,Authenticated users 1-63,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834291824,3,12 Excel import page,200,,Authenticated users 1-63,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291827,3,13 Card page,200,,Authenticated users 1-63,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834291898,5,01 Login,200,,Authenticated users 1-64,text,true,,340,265,1,1,http://127.0.0.1:18084/login,5,0,0
+1793834291904,4,02 Personnel query,200,,Authenticated users 1-64,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834291908,3,03 Gate records,200,,Authenticated users 1-64,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834291911,3,04 Attendance projects,200,,Authenticated users 1-64,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834291914,2,05 Attendance records,200,,Authenticated users 1-64,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834291916,3,06 Books,200,,Authenticated users 1-64,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834291919,2,07 Borrowing records,200,,Authenticated users 1-64,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834291922,1,08 Wallet and transactions,200,,Authenticated users 1-64,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834291923,1,09 Merchant query,200,,Authenticated users 1-64,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834291924,2,10 Finance overview,200,,Authenticated users 1-64,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834291926,1,11 Roles,200,,Authenticated users 1-64,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834291927,3,12 Excel import page,200,,Authenticated users 1-64,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834291930,4,13 Card page,200,,Authenticated users 1-64,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834291997,6,01 Login,200,,Authenticated users 1-65,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834292004,3,02 Personnel query,200,,Authenticated users 1-65,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834292007,3,03 Gate records,200,,Authenticated users 1-65,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834292010,2,04 Attendance projects,200,,Authenticated users 1-65,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834292012,2,05 Attendance records,200,,Authenticated users 1-65,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834292014,4,06 Books,200,,Authenticated users 1-65,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834292018,2,07 Borrowing records,200,,Authenticated users 1-65,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292020,1,08 Wallet and transactions,200,,Authenticated users 1-65,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292022,0,09 Merchant query,200,,Authenticated users 1-65,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834292023,1,10 Finance overview,200,,Authenticated users 1-65,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834292024,1,11 Roles,200,,Authenticated users 1-65,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834292025,3,12 Excel import page,200,,Authenticated users 1-65,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292028,4,13 Card page,200,,Authenticated users 1-65,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834292097,5,01 Login,200,,Authenticated users 1-66,text,true,,340,265,1,1,http://127.0.0.1:18084/login,5,0,0
+1793834292102,3,02 Personnel query,200,,Authenticated users 1-66,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834292106,2,03 Gate records,200,,Authenticated users 1-66,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834292108,3,04 Attendance projects,200,,Authenticated users 1-66,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834292111,2,05 Attendance records,200,,Authenticated users 1-66,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834292113,4,06 Books,200,,Authenticated users 1-66,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834292117,2,07 Borrowing records,200,,Authenticated users 1-66,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292119,1,08 Wallet and transactions,200,,Authenticated users 1-66,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292120,1,09 Merchant query,200,,Authenticated users 1-66,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292121,2,10 Finance overview,200,,Authenticated users 1-66,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834292123,0,11 Roles,200,,Authenticated users 1-66,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834292124,3,12 Excel import page,200,,Authenticated users 1-66,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292127,4,13 Card page,200,,Authenticated users 1-66,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834292195,6,01 Login,200,,Authenticated users 1-67,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834292202,3,02 Personnel query,200,,Authenticated users 1-67,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834292205,3,03 Gate records,200,,Authenticated users 1-67,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834292208,2,04 Attendance projects,200,,Authenticated users 1-67,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834292211,1,05 Attendance records,200,,Authenticated users 1-67,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,1,0,0
+1793834292213,3,06 Books,200,,Authenticated users 1-67,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834292216,3,07 Borrowing records,200,,Authenticated users 1-67,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834292219,1,08 Wallet and transactions,200,,Authenticated users 1-67,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292221,1,09 Merchant query,200,,Authenticated users 1-67,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292222,1,10 Finance overview,200,,Authenticated users 1-67,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834292223,1,11 Roles,200,,Authenticated users 1-67,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834292224,3,12 Excel import page,200,,Authenticated users 1-67,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292227,4,13 Card page,200,,Authenticated users 1-67,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834292296,6,01 Login,200,,Authenticated users 1-68,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834292303,2,02 Personnel query,200,,Authenticated users 1-68,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,2,0,0
+1793834292306,2,03 Gate records,200,,Authenticated users 1-68,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834292308,2,04 Attendance projects,200,,Authenticated users 1-68,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834292310,3,05 Attendance records,200,,Authenticated users 1-68,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834292313,3,06 Books,200,,Authenticated users 1-68,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834292316,2,07 Borrowing records,200,,Authenticated users 1-68,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292319,1,08 Wallet and transactions,200,,Authenticated users 1-68,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292320,1,09 Merchant query,200,,Authenticated users 1-68,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292321,1,10 Finance overview,200,,Authenticated users 1-68,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834292322,1,11 Roles,200,,Authenticated users 1-68,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834292323,3,12 Excel import page,200,,Authenticated users 1-68,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292327,3,13 Card page,200,,Authenticated users 1-68,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834292395,6,01 Login,200,,Authenticated users 1-69,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834292401,3,02 Personnel query,200,,Authenticated users 1-69,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834292405,2,03 Gate records,200,,Authenticated users 1-69,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834292407,3,04 Attendance projects,200,,Authenticated users 1-69,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834292411,2,05 Attendance records,200,,Authenticated users 1-69,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834292413,3,06 Books,200,,Authenticated users 1-69,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834292417,2,07 Borrowing records,200,,Authenticated users 1-69,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292419,1,08 Wallet and transactions,200,,Authenticated users 1-69,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292420,1,09 Merchant query,200,,Authenticated users 1-69,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292421,1,10 Finance overview,200,,Authenticated users 1-69,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834292422,1,11 Roles,200,,Authenticated users 1-69,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834292423,4,12 Excel import page,200,,Authenticated users 1-69,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292427,3,13 Card page,200,,Authenticated users 1-69,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834292496,6,01 Login,200,,Authenticated users 1-70,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834292503,3,02 Personnel query,200,,Authenticated users 1-70,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834292506,2,03 Gate records,200,,Authenticated users 1-70,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834292509,2,04 Attendance projects,200,,Authenticated users 1-70,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834292511,2,05 Attendance records,200,,Authenticated users 1-70,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834292513,3,06 Books,200,,Authenticated users 1-70,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834292517,2,07 Borrowing records,200,,Authenticated users 1-70,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292519,1,08 Wallet and transactions,200,,Authenticated users 1-70,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292520,1,09 Merchant query,200,,Authenticated users 1-70,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292522,1,10 Finance overview,200,,Authenticated users 1-70,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834292523,0,11 Roles,200,,Authenticated users 1-70,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834292524,3,12 Excel import page,200,,Authenticated users 1-70,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834292527,4,13 Card page,200,,Authenticated users 1-70,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834292596,6,01 Login,200,,Authenticated users 1-71,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834292602,4,02 Personnel query,200,,Authenticated users 1-71,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834292606,3,03 Gate records,200,,Authenticated users 1-71,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834292609,3,04 Attendance projects,200,,Authenticated users 1-71,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834292612,3,05 Attendance records,200,,Authenticated users 1-71,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834292615,4,06 Books,200,,Authenticated users 1-71,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834292620,2,07 Borrowing records,200,,Authenticated users 1-71,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292622,2,08 Wallet and transactions,200,,Authenticated users 1-71,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834292624,1,09 Merchant query,200,,Authenticated users 1-71,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292625,2,10 Finance overview,200,,Authenticated users 1-71,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834292627,1,11 Roles,200,,Authenticated users 1-71,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834292628,4,12 Excel import page,200,,Authenticated users 1-71,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292632,6,13 Card page,200,,Authenticated users 1-71,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834292701,6,01 Login,200,,Authenticated users 1-72,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834292707,4,02 Personnel query,200,,Authenticated users 1-72,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834292711,3,03 Gate records,200,,Authenticated users 1-72,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834292714,2,04 Attendance projects,200,,Authenticated users 1-72,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834292717,2,05 Attendance records,200,,Authenticated users 1-72,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834292719,4,06 Books,200,,Authenticated users 1-72,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834292723,2,07 Borrowing records,200,,Authenticated users 1-72,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292726,1,08 Wallet and transactions,200,,Authenticated users 1-72,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292727,1,09 Merchant query,200,,Authenticated users 1-72,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292729,1,10 Finance overview,200,,Authenticated users 1-72,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834292730,1,11 Roles,200,,Authenticated users 1-72,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834292731,4,12 Excel import page,200,,Authenticated users 1-72,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292736,4,13 Card page,200,,Authenticated users 1-72,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834292796,6,01 Login,200,,Authenticated users 1-73,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834292803,3,02 Personnel query,200,,Authenticated users 1-73,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834292806,3,03 Gate records,200,,Authenticated users 1-73,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834292809,2,04 Attendance projects,200,,Authenticated users 1-73,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834292811,2,05 Attendance records,200,,Authenticated users 1-73,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834292813,4,06 Books,200,,Authenticated users 1-73,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834292817,3,07 Borrowing records,200,,Authenticated users 1-73,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834292820,1,08 Wallet and transactions,200,,Authenticated users 1-73,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292821,1,09 Merchant query,200,,Authenticated users 1-73,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292822,1,10 Finance overview,200,,Authenticated users 1-73,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834292824,0,11 Roles,200,,Authenticated users 1-73,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834292825,3,12 Excel import page,200,,Authenticated users 1-73,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834292828,4,13 Card page,200,,Authenticated users 1-73,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834292897,5,01 Login,200,,Authenticated users 1-74,text,true,,340,265,1,1,http://127.0.0.1:18084/login,5,0,0
+1793834292902,4,02 Personnel query,200,,Authenticated users 1-74,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834292906,3,03 Gate records,200,,Authenticated users 1-74,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834292909,3,04 Attendance projects,200,,Authenticated users 1-74,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834292912,2,05 Attendance records,200,,Authenticated users 1-74,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834292914,4,06 Books,200,,Authenticated users 1-74,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834292918,2,07 Borrowing records,200,,Authenticated users 1-74,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834292921,1,08 Wallet and transactions,200,,Authenticated users 1-74,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834292922,1,09 Merchant query,200,,Authenticated users 1-74,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834292923,2,10 Finance overview,200,,Authenticated users 1-74,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834292925,1,11 Roles,200,,Authenticated users 1-74,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834292926,3,12 Excel import page,200,,Authenticated users 1-74,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834292929,4,13 Card page,200,,Authenticated users 1-74,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834292996,6,01 Login,200,,Authenticated users 1-75,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834293003,3,02 Personnel query,200,,Authenticated users 1-75,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293006,2,03 Gate records,200,,Authenticated users 1-75,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293009,2,04 Attendance projects,200,,Authenticated users 1-75,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293011,2,05 Attendance records,200,,Authenticated users 1-75,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293013,4,06 Books,200,,Authenticated users 1-75,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834293017,2,07 Borrowing records,200,,Authenticated users 1-75,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293019,2,08 Wallet and transactions,200,,Authenticated users 1-75,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834293021,1,09 Merchant query,200,,Authenticated users 1-75,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293022,1,10 Finance overview,200,,Authenticated users 1-75,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293023,1,11 Roles,200,,Authenticated users 1-75,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834293024,3,12 Excel import page,200,,Authenticated users 1-75,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293027,4,13 Card page,200,,Authenticated users 1-75,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834293096,6,01 Login,200,,Authenticated users 1-76,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293102,3,02 Personnel query,200,,Authenticated users 1-76,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293106,2,03 Gate records,200,,Authenticated users 1-76,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293108,3,04 Attendance projects,200,,Authenticated users 1-76,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834293111,2,05 Attendance records,200,,Authenticated users 1-76,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293114,3,06 Books,200,,Authenticated users 1-76,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834293117,3,07 Borrowing records,200,,Authenticated users 1-76,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834293120,1,08 Wallet and transactions,200,,Authenticated users 1-76,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834293121,1,09 Merchant query,200,,Authenticated users 1-76,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293123,1,10 Finance overview,200,,Authenticated users 1-76,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293124,1,11 Roles,200,,Authenticated users 1-76,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834293125,3,12 Excel import page,200,,Authenticated users 1-76,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293128,4,13 Card page,200,,Authenticated users 1-76,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834293197,6,01 Login,200,,Authenticated users 1-77,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293204,3,02 Personnel query,200,,Authenticated users 1-77,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293207,2,03 Gate records,200,,Authenticated users 1-77,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293209,2,04 Attendance projects,200,,Authenticated users 1-77,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293211,2,05 Attendance records,200,,Authenticated users 1-77,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293214,3,06 Books,200,,Authenticated users 1-77,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834293217,2,07 Borrowing records,200,,Authenticated users 1-77,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293219,2,08 Wallet and transactions,200,,Authenticated users 1-77,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834293221,1,09 Merchant query,200,,Authenticated users 1-77,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293222,1,10 Finance overview,200,,Authenticated users 1-77,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293223,1,11 Roles,200,,Authenticated users 1-77,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834293224,3,12 Excel import page,200,,Authenticated users 1-77,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293227,3,13 Card page,200,,Authenticated users 1-77,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834293296,7,01 Login,200,,Authenticated users 1-78,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834293303,3,02 Personnel query,200,,Authenticated users 1-78,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293307,2,03 Gate records,200,,Authenticated users 1-78,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293309,2,04 Attendance projects,200,,Authenticated users 1-78,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293312,2,05 Attendance records,200,,Authenticated users 1-78,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293314,3,06 Books,200,,Authenticated users 1-78,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834293317,2,07 Borrowing records,200,,Authenticated users 1-78,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293319,1,08 Wallet and transactions,200,,Authenticated users 1-78,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834293321,0,09 Merchant query,200,,Authenticated users 1-78,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834293322,1,10 Finance overview,200,,Authenticated users 1-78,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293323,1,11 Roles,200,,Authenticated users 1-78,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834293324,3,12 Excel import page,200,,Authenticated users 1-78,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293327,4,13 Card page,200,,Authenticated users 1-78,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834293396,6,01 Login,200,,Authenticated users 1-79,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293403,3,02 Personnel query,200,,Authenticated users 1-79,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293406,3,03 Gate records,200,,Authenticated users 1-79,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293409,2,04 Attendance projects,200,,Authenticated users 1-79,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293411,2,05 Attendance records,200,,Authenticated users 1-79,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293413,3,06 Books,200,,Authenticated users 1-79,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834293417,2,07 Borrowing records,200,,Authenticated users 1-79,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293419,1,08 Wallet and transactions,200,,Authenticated users 1-79,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834293420,1,09 Merchant query,200,,Authenticated users 1-79,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293421,1,10 Finance overview,200,,Authenticated users 1-79,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293423,0,11 Roles,200,,Authenticated users 1-79,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834293424,3,12 Excel import page,200,,Authenticated users 1-79,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293427,4,13 Card page,200,,Authenticated users 1-79,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834293499,6,01 Login,200,,Authenticated users 1-80,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293506,3,02 Personnel query,200,,Authenticated users 1-80,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293509,2,03 Gate records,200,,Authenticated users 1-80,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293512,2,04 Attendance projects,200,,Authenticated users 1-80,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293514,2,05 Attendance records,200,,Authenticated users 1-80,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293516,4,06 Books,200,,Authenticated users 1-80,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834293520,2,07 Borrowing records,200,,Authenticated users 1-80,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293523,1,08 Wallet and transactions,200,,Authenticated users 1-80,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834293524,1,09 Merchant query,200,,Authenticated users 1-80,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293525,1,10 Finance overview,200,,Authenticated users 1-80,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293526,1,11 Roles,200,,Authenticated users 1-80,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834293527,3,12 Excel import page,200,,Authenticated users 1-80,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293530,5,13 Card page,200,,Authenticated users 1-80,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834293599,6,01 Login,200,,Authenticated users 1-81,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293606,3,02 Personnel query,200,,Authenticated users 1-81,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293609,3,03 Gate records,200,,Authenticated users 1-81,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834293612,2,04 Attendance projects,200,,Authenticated users 1-81,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293614,2,05 Attendance records,200,,Authenticated users 1-81,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293617,3,06 Books,200,,Authenticated users 1-81,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834293620,2,07 Borrowing records,200,,Authenticated users 1-81,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293622,2,08 Wallet and transactions,200,,Authenticated users 1-81,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834293624,1,09 Merchant query,200,,Authenticated users 1-81,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293625,2,10 Finance overview,200,,Authenticated users 1-81,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834293627,1,11 Roles,200,,Authenticated users 1-81,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834293628,3,12 Excel import page,200,,Authenticated users 1-81,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293631,4,13 Card page,200,,Authenticated users 1-81,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834293700,6,01 Login,200,,Authenticated users 1-82,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293707,3,02 Personnel query,200,,Authenticated users 1-82,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293710,2,03 Gate records,200,,Authenticated users 1-82,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293713,2,04 Attendance projects,200,,Authenticated users 1-82,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293715,2,05 Attendance records,200,,Authenticated users 1-82,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293717,4,06 Books,200,,Authenticated users 1-82,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834293721,2,07 Borrowing records,200,,Authenticated users 1-82,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293723,1,08 Wallet and transactions,200,,Authenticated users 1-82,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834293725,1,09 Merchant query,200,,Authenticated users 1-82,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293726,1,10 Finance overview,200,,Authenticated users 1-82,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293728,0,11 Roles,200,,Authenticated users 1-82,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834293729,3,12 Excel import page,200,,Authenticated users 1-82,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834293732,4,13 Card page,200,,Authenticated users 1-82,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834293798,6,01 Login,200,,Authenticated users 1-83,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293805,3,02 Personnel query,200,,Authenticated users 1-83,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293808,2,03 Gate records,200,,Authenticated users 1-83,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293811,2,04 Attendance projects,200,,Authenticated users 1-83,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293813,2,05 Attendance records,200,,Authenticated users 1-83,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293816,3,06 Books,200,,Authenticated users 1-83,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834293819,2,07 Borrowing records,200,,Authenticated users 1-83,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293821,1,08 Wallet and transactions,200,,Authenticated users 1-83,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834293822,1,09 Merchant query,200,,Authenticated users 1-83,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293823,2,10 Finance overview,200,,Authenticated users 1-83,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834293825,1,11 Roles,200,,Authenticated users 1-83,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834293826,3,12 Excel import page,200,,Authenticated users 1-83,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834293829,5,13 Card page,200,,Authenticated users 1-83,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,5,0,0
+1793834293897,7,01 Login,200,,Authenticated users 1-84,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834293904,3,02 Personnel query,200,,Authenticated users 1-84,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834293908,2,03 Gate records,200,,Authenticated users 1-84,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834293910,2,04 Attendance projects,200,,Authenticated users 1-84,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834293912,2,05 Attendance records,200,,Authenticated users 1-84,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834293914,4,06 Books,200,,Authenticated users 1-84,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834293918,2,07 Borrowing records,200,,Authenticated users 1-84,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834293920,2,08 Wallet and transactions,200,,Authenticated users 1-84,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834293922,1,09 Merchant query,200,,Authenticated users 1-84,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834293923,1,10 Finance overview,200,,Authenticated users 1-84,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834293925,0,11 Roles,200,,Authenticated users 1-84,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834293926,3,12 Excel import page,200,,Authenticated users 1-84,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834293929,3,13 Card page,200,,Authenticated users 1-84,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834293997,7,01 Login,200,,Authenticated users 1-85,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834294004,3,02 Personnel query,200,,Authenticated users 1-85,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294008,2,03 Gate records,200,,Authenticated users 1-85,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294010,2,04 Attendance projects,200,,Authenticated users 1-85,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294012,3,05 Attendance records,200,,Authenticated users 1-85,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834294015,4,06 Books,200,,Authenticated users 1-85,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834294019,2,07 Borrowing records,200,,Authenticated users 1-85,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294021,1,08 Wallet and transactions,200,,Authenticated users 1-85,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294023,1,09 Merchant query,200,,Authenticated users 1-85,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294024,1,10 Finance overview,200,,Authenticated users 1-85,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834294025,1,11 Roles,200,,Authenticated users 1-85,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834294026,3,12 Excel import page,200,,Authenticated users 1-85,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834294030,4,13 Card page,200,,Authenticated users 1-85,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834294097,6,01 Login,200,,Authenticated users 1-86,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834294104,3,02 Personnel query,200,,Authenticated users 1-86,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294107,3,03 Gate records,200,,Authenticated users 1-86,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834294111,2,04 Attendance projects,200,,Authenticated users 1-86,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294113,2,05 Attendance records,200,,Authenticated users 1-86,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834294115,4,06 Books,200,,Authenticated users 1-86,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834294120,2,07 Borrowing records,200,,Authenticated users 1-86,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294122,3,08 Wallet and transactions,200,,Authenticated users 1-86,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,2,0,0
+1793834294125,1,09 Merchant query,200,,Authenticated users 1-86,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294126,2,10 Finance overview,200,,Authenticated users 1-86,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834294128,1,11 Roles,200,,Authenticated users 1-86,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834294129,3,12 Excel import page,200,,Authenticated users 1-86,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834294132,4,13 Card page,200,,Authenticated users 1-86,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834294197,7,01 Login,200,,Authenticated users 1-87,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,0
+1793834294205,3,02 Personnel query,200,,Authenticated users 1-87,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294209,2,03 Gate records,200,,Authenticated users 1-87,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294211,2,04 Attendance projects,200,,Authenticated users 1-87,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294213,3,05 Attendance records,200,,Authenticated users 1-87,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834294216,4,06 Books,200,,Authenticated users 1-87,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834294220,3,07 Borrowing records,200,,Authenticated users 1-87,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,3,0,0
+1793834294223,1,08 Wallet and transactions,200,,Authenticated users 1-87,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294225,1,09 Merchant query,200,,Authenticated users 1-87,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294226,1,10 Finance overview,200,,Authenticated users 1-87,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834294228,0,11 Roles,200,,Authenticated users 1-87,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834294229,4,12 Excel import page,200,,Authenticated users 1-87,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834294233,5,13 Card page,200,,Authenticated users 1-87,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834294303,7,01 Login,200,,Authenticated users 1-88,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834294310,3,02 Personnel query,200,,Authenticated users 1-88,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294313,3,03 Gate records,200,,Authenticated users 1-88,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834294316,2,04 Attendance projects,200,,Authenticated users 1-88,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294319,2,05 Attendance records,200,,Authenticated users 1-88,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834294321,5,06 Books,200,,Authenticated users 1-88,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,5,0,0
+1793834294326,2,07 Borrowing records,200,,Authenticated users 1-88,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294329,1,08 Wallet and transactions,200,,Authenticated users 1-88,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294330,1,09 Merchant query,200,,Authenticated users 1-88,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294331,1,10 Finance overview,200,,Authenticated users 1-88,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834294333,0,11 Roles,200,,Authenticated users 1-88,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834294334,3,12 Excel import page,200,,Authenticated users 1-88,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834294337,5,13 Card page,200,,Authenticated users 1-88,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834294399,6,01 Login,200,,Authenticated users 1-89,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834294406,3,02 Personnel query,200,,Authenticated users 1-89,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294410,2,03 Gate records,200,,Authenticated users 1-89,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294412,2,04 Attendance projects,200,,Authenticated users 1-89,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294414,3,05 Attendance records,200,,Authenticated users 1-89,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834294417,4,06 Books,200,,Authenticated users 1-89,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834294421,2,07 Borrowing records,200,,Authenticated users 1-89,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294423,1,08 Wallet and transactions,200,,Authenticated users 1-89,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294425,0,09 Merchant query,200,,Authenticated users 1-89,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,0,0,0
+1793834294426,1,10 Finance overview,200,,Authenticated users 1-89,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834294427,1,11 Roles,200,,Authenticated users 1-89,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834294428,3,12 Excel import page,200,,Authenticated users 1-89,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834294432,4,13 Card page,200,,Authenticated users 1-89,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834294499,6,01 Login,200,,Authenticated users 1-90,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834294506,3,02 Personnel query,200,,Authenticated users 1-90,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294510,2,03 Gate records,200,,Authenticated users 1-90,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294512,2,04 Attendance projects,200,,Authenticated users 1-90,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294514,2,05 Attendance records,200,,Authenticated users 1-90,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834294517,3,06 Books,200,,Authenticated users 1-90,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834294520,2,07 Borrowing records,200,,Authenticated users 1-90,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294522,1,08 Wallet and transactions,200,,Authenticated users 1-90,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294524,1,09 Merchant query,200,,Authenticated users 1-90,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294525,1,10 Finance overview,200,,Authenticated users 1-90,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834294526,1,11 Roles,200,,Authenticated users 1-90,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834294527,3,12 Excel import page,200,,Authenticated users 1-90,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834294530,4,13 Card page,200,,Authenticated users 1-90,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834294596,6,01 Login,200,,Authenticated users 1-91,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834294602,3,02 Personnel query,200,,Authenticated users 1-91,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294605,2,03 Gate records,200,,Authenticated users 1-91,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294608,2,04 Attendance projects,200,,Authenticated users 1-91,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294610,2,05 Attendance records,200,,Authenticated users 1-91,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834294612,4,06 Books,200,,Authenticated users 1-91,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834294616,2,07 Borrowing records,200,,Authenticated users 1-91,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294619,1,08 Wallet and transactions,200,,Authenticated users 1-91,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294620,1,09 Merchant query,200,,Authenticated users 1-91,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294621,1,10 Finance overview,200,,Authenticated users 1-91,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834294623,0,11 Roles,200,,Authenticated users 1-91,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834294623,4,12 Excel import page,200,,Authenticated users 1-91,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834294627,4,13 Card page,200,,Authenticated users 1-91,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834294695,5,01 Login,200,,Authenticated users 1-92,text,true,,340,265,1,1,http://127.0.0.1:18084/login,5,0,0
+1793834294701,3,02 Personnel query,200,,Authenticated users 1-92,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294704,2,03 Gate records,200,,Authenticated users 1-92,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294706,3,04 Attendance projects,200,,Authenticated users 1-92,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,3,0,0
+1793834294710,2,05 Attendance records,200,,Authenticated users 1-92,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834294713,3,06 Books,200,,Authenticated users 1-92,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834294717,2,07 Borrowing records,200,,Authenticated users 1-92,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294719,1,08 Wallet and transactions,200,,Authenticated users 1-92,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294720,1,09 Merchant query,200,,Authenticated users 1-92,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294721,2,10 Finance overview,200,,Authenticated users 1-92,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834294723,1,11 Roles,200,,Authenticated users 1-92,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834294724,3,12 Excel import page,200,,Authenticated users 1-92,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834294727,4,13 Card page,200,,Authenticated users 1-92,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834294805,5,01 Login,200,,Authenticated users 1-93,text,true,,340,265,1,1,http://127.0.0.1:18084/login,5,0,0
+1793834294811,3,02 Personnel query,200,,Authenticated users 1-93,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294814,2,03 Gate records,200,,Authenticated users 1-93,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294816,2,04 Attendance projects,200,,Authenticated users 1-93,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294818,3,05 Attendance records,200,,Authenticated users 1-93,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834294821,3,06 Books,200,,Authenticated users 1-93,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834294825,2,07 Borrowing records,200,,Authenticated users 1-93,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,1,0,0
+1793834294827,1,08 Wallet and transactions,200,,Authenticated users 1-93,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294828,1,09 Merchant query,200,,Authenticated users 1-93,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294829,1,10 Finance overview,200,,Authenticated users 1-93,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834294830,1,11 Roles,200,,Authenticated users 1-93,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834294831,3,12 Excel import page,200,,Authenticated users 1-93,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834294834,4,13 Card page,200,,Authenticated users 1-93,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834294900,5,01 Login,200,,Authenticated users 1-94,text,true,,340,265,1,1,http://127.0.0.1:18084/login,5,0,1
+1793834294906,3,02 Personnel query,200,,Authenticated users 1-94,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834294909,2,03 Gate records,200,,Authenticated users 1-94,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834294911,2,04 Attendance projects,200,,Authenticated users 1-94,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834294914,2,05 Attendance records,200,,Authenticated users 1-94,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834294916,3,06 Books,200,,Authenticated users 1-94,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834294920,2,07 Borrowing records,200,,Authenticated users 1-94,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834294922,1,08 Wallet and transactions,200,,Authenticated users 1-94,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834294923,1,09 Merchant query,200,,Authenticated users 1-94,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834294924,2,10 Finance overview,200,,Authenticated users 1-94,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,2,0,0
+1793834294926,0,11 Roles,200,,Authenticated users 1-94,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,0,0,0
+1793834294927,2,12 Excel import page,200,,Authenticated users 1-94,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,1,0,0
+1793834294930,3,13 Card page,200,,Authenticated users 1-94,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834295010,6,01 Login,200,,Authenticated users 1-95,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834295017,3,02 Personnel query,200,,Authenticated users 1-95,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834295020,2,03 Gate records,200,,Authenticated users 1-95,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834295022,2,04 Attendance projects,200,,Authenticated users 1-95,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834295024,3,05 Attendance records,200,,Authenticated users 1-95,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834295027,3,06 Books,200,,Authenticated users 1-95,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834295030,2,07 Borrowing records,200,,Authenticated users 1-95,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834295032,2,08 Wallet and transactions,200,,Authenticated users 1-95,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834295034,1,09 Merchant query,200,,Authenticated users 1-95,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834295035,1,10 Finance overview,200,,Authenticated users 1-95,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834295036,1,11 Roles,200,,Authenticated users 1-95,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834295037,3,12 Excel import page,200,,Authenticated users 1-95,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834295040,5,13 Card page,200,,Authenticated users 1-95,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834295098,6,01 Login,200,,Authenticated users 1-96,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834295104,3,02 Personnel query,200,,Authenticated users 1-96,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834295108,2,03 Gate records,200,,Authenticated users 1-96,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834295110,2,04 Attendance projects,200,,Authenticated users 1-96,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834295112,2,05 Attendance records,200,,Authenticated users 1-96,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,2,0,0
+1793834295114,3,06 Books,200,,Authenticated users 1-96,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834295117,2,07 Borrowing records,200,,Authenticated users 1-96,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834295120,1,08 Wallet and transactions,200,,Authenticated users 1-96,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834295121,1,09 Merchant query,200,,Authenticated users 1-96,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834295122,1,10 Finance overview,200,,Authenticated users 1-96,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834295123,1,11 Roles,200,,Authenticated users 1-96,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834295124,3,12 Excel import page,200,,Authenticated users 1-96,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834295128,3,13 Card page,200,,Authenticated users 1-96,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834295199,7,01 Login,200,,Authenticated users 1-97,text,true,,340,265,1,1,http://127.0.0.1:18084/login,7,0,1
+1793834295206,4,02 Personnel query,200,,Authenticated users 1-97,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,4,0,0
+1793834295210,2,03 Gate records,200,,Authenticated users 1-97,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834295212,2,04 Attendance projects,200,,Authenticated users 1-97,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834295214,3,05 Attendance records,200,,Authenticated users 1-97,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834295217,3,06 Books,200,,Authenticated users 1-97,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834295220,2,07 Borrowing records,200,,Authenticated users 1-97,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834295222,1,08 Wallet and transactions,200,,Authenticated users 1-97,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834295224,1,09 Merchant query,200,,Authenticated users 1-97,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834295225,5,10 Finance overview,200,,Authenticated users 1-97,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,5,0,0
+1793834295230,1,11 Roles,200,,Authenticated users 1-97,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834295231,4,12 Excel import page,200,,Authenticated users 1-97,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834295235,3,13 Card page,200,,Authenticated users 1-97,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0
+1793834295297,6,01 Login,200,,Authenticated users 1-98,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,1
+1793834295303,3,02 Personnel query,200,,Authenticated users 1-98,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834295307,2,03 Gate records,200,,Authenticated users 1-98,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834295309,2,04 Attendance projects,200,,Authenticated users 1-98,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834295312,2,05 Attendance records,200,,Authenticated users 1-98,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,1,0,0
+1793834295314,3,06 Books,200,,Authenticated users 1-98,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834295317,2,07 Borrowing records,200,,Authenticated users 1-98,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834295319,1,08 Wallet and transactions,200,,Authenticated users 1-98,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834295321,1,09 Merchant query,200,,Authenticated users 1-98,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834295322,1,10 Finance overview,200,,Authenticated users 1-98,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834295323,2,11 Roles,200,,Authenticated users 1-98,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,2,0,0
+1793834295325,4,12 Excel import page,200,,Authenticated users 1-98,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834295330,4,13 Card page,200,,Authenticated users 1-98,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834295397,6,01 Login,200,,Authenticated users 1-99,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834295403,4,02 Personnel query,200,,Authenticated users 1-99,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834295407,2,03 Gate records,200,,Authenticated users 1-99,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,2,0,0
+1793834295409,2,04 Attendance projects,200,,Authenticated users 1-99,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834295412,1,05 Attendance records,200,,Authenticated users 1-99,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,1,0,0
+1793834295414,3,06 Books,200,,Authenticated users 1-99,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,3,0,0
+1793834295418,2,07 Borrowing records,200,,Authenticated users 1-99,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834295420,1,08 Wallet and transactions,200,,Authenticated users 1-99,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834295421,1,09 Merchant query,200,,Authenticated users 1-99,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834295422,1,10 Finance overview,200,,Authenticated users 1-99,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834295423,1,11 Roles,200,,Authenticated users 1-99,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834295424,3,12 Excel import page,200,,Authenticated users 1-99,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834295427,4,13 Card page,200,,Authenticated users 1-99,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,4,0,0
+1793834295497,6,01 Login,200,,Authenticated users 1-100,text,true,,340,265,1,1,http://127.0.0.1:18084/login,6,0,0
+1793834295503,3,02 Personnel query,200,,Authenticated users 1-100,text,true,,7564,320,1,1,http://127.0.0.1:18084/system/user/list,3,0,0
+1793834295506,3,03 Gate records,200,,Authenticated users 1-100,text,true,,1137,327,1,1,http://127.0.0.1:18084/system/gateInOut/listMy,3,0,0
+1793834295510,2,04 Attendance projects,200,,Authenticated users 1-100,text,true,,482,327,1,1,http://127.0.0.1:18084/system/projectInfo/list,2,0,0
+1793834295512,3,05 Attendance records,200,,Authenticated users 1-100,text,true,,771,331,1,1,http://127.0.0.1:18084/system/projectAttend/listMy,3,0,0
+1793834295515,4,06 Books,200,,Authenticated users 1-100,text,true,,738,324,1,1,http://127.0.0.1:18084/system/bookInfo/list,4,0,0
+1793834295520,2,07 Borrowing records,200,,Authenticated users 1-100,text,true,,1505,339,1,1,http://127.0.0.1:18084/system/bookBorrowRecord/listForSelf,2,0,0
+1793834295522,1,08 Wallet and transactions,200,,Authenticated users 1-100,text,true,,3202,228,1,1,http://127.0.0.1:18084/campus/wallet/data?user=880001,1,0,0
+1793834295523,1,09 Merchant query,200,,Authenticated users 1-100,text,true,,1347,227,1,1,http://127.0.0.1:18084/campus/merchant/search?page=1,1,0,0
+1793834295524,1,10 Finance overview,200,,Authenticated users 1-100,text,true,,353,253,1,1,http://127.0.0.1:18084/campus/finance/overview?start=2026-11-01&end=2026-11-05,1,0,0
+1793834295525,1,11 Roles,200,,Authenticated users 1-100,text,true,,730,221,1,1,http://127.0.0.1:18084/system/permission/roles,1,0,0
+1793834295526,4,12 Excel import page,200,,Authenticated users 1-100,text,true,,7213,216,1,1,http://127.0.0.1:18084/system/excelImport,2,0,0
+1793834295530,4,13 Card page,200,,Authenticated users 1-100,text,true,,5857,221,1,1,http://127.0.0.1:18084/system/user/card/880001,3,0,0

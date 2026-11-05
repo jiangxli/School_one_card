@@ -1,0 +1,3 @@
+PASS concurrent same-order requests debit once and return same ledger
+PASS reused local serial rejected across orders
+PASS duplicate JSON fields rejected

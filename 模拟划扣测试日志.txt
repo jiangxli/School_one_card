@@ -1,0 +1,4 @@
+PASS debit balance and duplicate request
+PASS insufficient balance rejected
+PASS negative amount rejected
+PASS TOTAL 3

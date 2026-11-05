@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.system.mapper.GateInOutMapper">
+    
+    <resultMap type="GateInOut" id="GateInOutResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="loginName"    column="login_name"    />
+        <result property="userName"    column="user_name"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="kind"    column="kind"    />
+    </resultMap>
+	
+	<sql id="selectGateInOutVo">
+        select a.id, a.user_id, a.create_time, a.kind ,u.login_name,u.user_name
+        from gate_in_out a left join sys_user u on a.user_id=u.user_id
+    </sql>
+	
+    <select id="selectGateInOutList" parameterType="GateInOut" resultMap="GateInOutResult">
+        <include refid="selectGateInOutVo"/>
+        <where>  
+            <if test="id != null "> and a.id = #{id}</if>
+             <if test="userId != null "> and a.user_id = #{userId}</if>
+             <if test="userName != null and userName!=''"> and u.user_name like concat('%',#{userName},'%')</if>
+             <if test="loginName != null and loginName!=''"> and u.login_name like concat('%',#{loginName},'%')</if>
+             <if test="createTime != null "> and a.create_time = #{createTime}</if>
+             <if test="kind != null "> and a.kind = #{kind}</if>
+            <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+                and date_format(a.create_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+                and date_format(a.create_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+         </where>
+        order by a.create_time desc
+    </select>
+    
+    <select id="selectGateInOutById" parameterType="Long" resultMap="GateInOutResult">
+        <include refid="selectGateInOutVo"/>
+        where a.id = #{id}
+    </select>
+
+    <select id="selectKindLastTime" parameterType="Long" resultType="Integer">
+        select kind from gate_in_out where user_id=#{userId} order by create_time desc limit 0,1
+    </select>
+        
+    <insert id="insertGateInOut" parameterType="GateInOut">
+        insert into gate_in_out
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null  ">id,</if>
+			<if test="userId != null  ">user_id,</if>
+			<if test="createTime != null  ">create_time,</if>
+			<if test="kind != null  ">kind,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null  ">#{id},</if>
+			<if test="userId != null  ">#{userId},</if>
+			<if test="createTime != null  ">#{createTime},</if>
+			<if test="kind != null  ">#{kind},</if>
+         </trim>
+    </insert>
+	 
+    <update id="updateGateInOut" parameterType="GateInOut">
+        update gate_in_out
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null  ">user_id = #{userId},</if>
+            <if test="createTime != null  ">create_time = #{createTime},</if>
+            <if test="kind != null  ">kind = #{kind},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteGateInOutById" parameterType="Long">
+        delete from gate_in_out where id = #{id}
+    </delete>
+	
+    <delete id="deleteGateInOutByIds" parameterType="String">
+        delete from gate_in_out where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

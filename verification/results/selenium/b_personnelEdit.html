@@ -1,0 +1,231 @@
+<html lang="zh" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"><head><meta charset="utf-8">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+	<!-- bootstrap-table 表格插件样式 -->
+	<link href="/ajax/libs/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+	<link href="/ajax/libs/bootstrap-treetable/bootstrap-treetable.css" rel="stylesheet">
+	<!--summernote-->
+	<link href="/ajax/libs/summernote/summernote.css" rel="stylesheet">
+	<link href="/ajax/libs/summernote/summernote-bs3.css" rel="stylesheet">
+
+	<link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/ajax/libs/select/select2.css" rel="stylesheet">
+	<link href="/project/css/ry-ui.css" rel="stylesheet">
+<link href="/ajax/libs/jquery-layout/jquery.layout-latest.css" rel="stylesheet"><link href="/ajax/libs/jquery-ztree/3.5/css/metro/zTreeStyle.css" rel="stylesheet"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/default/layer.css?v=3.1.1" id="layuicss-layer"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/moon/style.css" id="layuicss-thememoonstylecss"><link id="layuicss-laydate" rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layui/css/modules/laydate/default/laydate.css?v=5.0.9" media="all"></head>
+
+
+
+<body class="gray-bg">
+	<div class="container-div ui-layout-center">
+		<div class="row">
+			<div class="col-sm-12 search-collapse">
+				<form id="user-form">
+					<div class="select-list">
+						<ul>
+							<li>
+								学工号：<input type="text" name="loginName">
+							</li>
+							<li>
+								手机号码：<input type="text" name="phonenumber">
+							</li>
+							<li>
+								用户状态：<select name="status">
+									<option value="">所有</option>
+									<option value="0">正常</option>
+									<option value="1">停用</option>
+								</select>
+							</li>
+							<li>
+								身份：<select name="identity">
+								<option value="">所有</option>
+								<option value="专科生">专科生</option>
+								<option value="本科生">本科生</option>
+								<option value="研究生">研究生</option>
+								<option value="教师/职工">教师/职工</option>
+							</select>
+							</li>
+							<li class="select-time">
+								<label>创建时间： </label>
+								<input type="text" class="time-input" id="startTime" placeholder="开始时间" name="params[beginTime]" lay-key="1">
+								<span>-</span>
+								<input type="text" class="time-input" id="endTime" placeholder="结束时间" name="params[endTime]" lay-key="2">
+							</li>
+							<li>
+								<a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+							    <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</div>
+			
+	        
+	        
+	        <div class="col-sm-12 select-table table-striped">
+			    <div class="bootstrap-table"><div class="fixed-table-toolbar"><div class="bs-bars pull-left"><div class="btn-group-sm" id="toolbar" role="group">
+	        	<a class="btn btn-success" onclick="$.operate.add()">
+	                <i class="fa fa-plus"></i> 新增
+	            </a>
+	            <a class="btn btn-danger btn-del disabled" onclick="$.operate.removeAll()">
+	                <i class="fa fa-remove"></i> 删除
+	            </a>
+	        </div></div></div><div class="fixed-table-container" style="padding-bottom: 0px;"><div class="fixed-table-header" style="display: none;"><table></table></div><div class="fixed-table-body"><div class="fixed-table-loading" style="top: 42px; display: none;">正在努力地加载数据中，请稍候……</div><table id="bootstrap-table" data-mobile-responsive="true" class="table table-hover"><thead><tr><th class="bs-checkbox " style="width: 36px; " data-field="0" tabindex="0"><div class="th-inner "><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th><th style="" data-field="userName" tabindex="0"><div class="th-inner ">用户名称</div><div class="fht-cell"></div></th><th style="" data-field="loginName" tabindex="0"><div class="th-inner sortable both">学工号</div><div class="fht-cell"></div></th><th style="" data-field="assignedRoleNames" tabindex="0"><div class="th-inner ">绑定角色</div><div class="fht-cell"></div></th><th style="" data-field="cardNo" tabindex="0"><div class="th-inner ">一卡通卡号</div><div class="fht-cell"></div></th><th style="" data-field="cardWriteCount" tabindex="0"><div class="th-inner ">写卡次数</div><div class="fht-cell"></div></th><th style="" data-field="phonenumber" tabindex="0"><div class="th-inner ">手机</div><div class="fht-cell"></div></th><th style="" data-field="identity" tabindex="0"><div class="th-inner ">身份</div><div class="fht-cell"></div></th><th style="text-align: center; " data-field="status" tabindex="0"><div class="th-inner ">状态</div><div class="fht-cell"></div></th><th style="" data-field="createTime" tabindex="0"><div class="th-inner sortable both desc">创建时间</div><div class="fht-cell"></div></th><th style="text-align: center; " data-field="12" tabindex="0"><div class="th-inner ">操作</div><div class="fht-cell"></div></th></tr></thead><tbody><tr data-index="0"><td class="bs-checkbox "><input data-index="0" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>Selenium导入人员</td><td style="">seleniumimport4</td><td style="">学生</td><td style="">未开卡</td><td style="">-</td><td style="">13800000003</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">2026-11-05 07:19:45</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('2611050719450028')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('2611050719450028')">补充开卡</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('2611050719450028')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050719450028')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('2611050719450028')"><i class="fa fa-key"></i>重置</a></td></tr><tr data-index="1"><td class="bs-checkbox "><input data-index="1" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>Selenium导入人员</td><td style="">seleniumimport3</td><td style="">学生</td><td style="">未开卡</td><td style="">-</td><td style="">13800000003</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">2026-11-05 07:17:36</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('2611050717360021')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('2611050717360021')">补充开卡</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('2611050717360021')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050717360021')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('2611050717360021')"><i class="fa fa-key"></i>重置</a></td></tr><tr data-index="2"><td class="bs-checkbox "><input data-index="2" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>Selenium导入人员</td><td style="">seleniumimport2</td><td style="">学生</td><td style="">未开卡</td><td style="">-</td><td style="">13800000003</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">2026-11-05 07:15:05</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('2611050715040016')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('2611050715040016')">补充开卡</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('2611050715040016')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050715040016')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('2611050715040016')"><i class="fa fa-key"></i>重置</a></td></tr><tr data-index="3"><td class="bs-checkbox "><input data-index="3" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>Selenium导入人员</td><td style="">seleniumimport</td><td style="">学生</td><td style="">未开卡</td><td style="">-</td><td style="">13800000003</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">2026-11-05 07:13:23</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('2611050713230013')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('2611050713230013')">补充开卡</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('2611050713230013')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050713230013')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('2611050713230013')"><i class="fa fa-key"></i>重置</a></td></tr><tr data-index="4"><td class="bs-checkbox "><input data-index="4" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>JUnit修改人员</td><td style="">junitperson</td><td style="">学生</td><td style="">未开卡</td><td style="">-</td><td style="">13800000002</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">2026-11-05 07:12:01</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('2611050712010000')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('2611050712010000')">补充开卡</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('2611050712010000')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050712010000')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('2611050712010000')"><i class="fa fa-key"></i>重置</a></td></tr><tr data-index="5"><td class="bs-checkbox "><input data-index="5" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>JUnit导入人员</td><td style="">junitimport</td><td style="">学生</td><td style="">未开卡</td><td style="">-</td><td style="">13800000003</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">2026-11-05 07:12:01</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('2611050712010002')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('2611050712010002')">补充开卡</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('2611050712010002')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('2611050712010002')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('2611050712010002')"><i class="fa fa-key"></i>重置</a></td></tr><tr data-index="6"><td class="bs-checkbox "><input data-index="6" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>测试学生</td><td style="">teststudent</td><td style="">学生</td><td style="">CCD0887F8A46EE4A9CA7AD574C3DF14F8F</td><td style="">0</td><td style="">13800000001</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">-</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('880001')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('880001')">卡片管理</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('880001')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('880001')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('880001')"><i class="fa fa-key"></i>重置</a></td></tr><tr data-index="7"><td class="bs-checkbox "><input data-index="7" name="btSelectItem" type="checkbox"></td><td style=""><a class="user-panel"><span class="image"><img src="/img/user.png" class="img-circle"></span></a>Selenium修改学生</td><td style="">testother</td><td style="">JUnit测试角色37935882235600</td><td style="">未开卡</td><td style="">-</td><td style="">13800000001</td><td style="">本科生</td><td style="text-align: center; "><span class="badge badge-primary">正常</span></td><td style="">-</td><td style="text-align: center; "><a class="btn btn-default btn-xs " onclick="manageRoles('880002')">角色</a> <a class="btn btn-primary btn-xs " onclick="manageCard('880002')">补充开卡</a> <a class="btn btn-success btn-xs " href="javascript:void(0)" onclick="$.operate.edit('880002')"><i class="fa fa-edit"></i>编辑</a> <a class="btn btn-danger btn-xs " href="javascript:void(0)" onclick="$.operate.remove('880002')"><i class="fa fa-remove"></i>删除</a> <a class="btn btn-info btn-xs " href="javascript:void(0)" onclick="resetPwd('880002')"><i class="fa fa-key"></i>重置</a></td></tr></tbody></table></div><div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div><div class="fixed-table-pagination" style="display: block;"><div class="pull-left pagination-detail"><span class="pagination-info">第 1 到 8 条，共  8 条记录。</span><span class="page-list" style="display: none;"><span class="btn-group dropup"><button type="button" class="btn btn-default btn-outline dropdown-toggle" data-toggle="dropdown"><span class="page-size">10</span> <span class="caret"></span></button><ul class="dropdown-menu" role="menu"><li class="active"><a href="javascript:void(0)">10</a></li></ul></span> 条记录每页</span></div><div class="pull-right pagination" style="display: none;"><ul class="pagination pagination-outline"><li class="page-pre"><a href="javascript:void(0)">‹</a></li><li class="page-number active"><a href="javascript:void(0)">1</a></li><li class="page-next"><a href="javascript:void(0)">›</a></li></ul></div></div></div></div><div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- bootstrap-table 表格插件 -->
+	<script src="/ajax/libs/bootstrap-table/bootstrap-table.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+	<!-- jquery-validate 表单验证插件 -->
+	<script src="/ajax/libs/validate/jquery.validate.min.js"></script>
+	<script src="/ajax/libs/validate/messages_zh.min.js"></script>
+	<script src="/ajax/libs/validate/jquery.validate.extend.js"></script>
+	<!-- jquery-validate 表单树插件 -->
+	<script src="/ajax/libs/bootstrap-treetable/bootstrap-treetable.js"></script>
+	<!-- jquery-export 表格导出插件 -->
+	<script src="/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/export/tableExport.js"></script>
+	<!--summernote-->
+	<script src="/ajax/libs/summernote/summernote.min.js"></script>
+	<script src="/ajax/libs/summernote/summernote-zh-CN.js"></script>
+	<!-- form文件提交 -->
+	<script src="/ajax/libs/form/jquery.form.min.js"></script>
+	<!-- 遮罩层 -->
+	<script src="/ajax/libs/blockUI/jquery.blockUI.js"></script>
+	<script src="/ajax/libs/iCheck/icheck.min.js"></script>
+	<script src="/ajax/libs/layer/layer.min.js"></script>
+	<script src="/ajax/libs/layui/layui.js"></script>
+	<script src="/project/js/common.js?v=3.0.0"></script>
+	<script src="/project/js/ry-ui.js?v=3.0.0"></script>
+	<!--<script src="http://tajs.qq.com/stats?sId=62048022"></script>-->
+	<script> var ctx = "\/"; </script>
+</div>
+	<script src="/ajax/libs/jquery-layout/jquery.layout-latest.js"></script>
+	<script src="/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js"></script>
+	<script>
+		var assignFlag = "";
+        var editFlag = "";
+		var removeFlag = "";
+		var resetPwdFlag = "";
+		var datas = [{"searchValue":null,"createBy":"admin","createTime":"2018-03-16 11:33:00","updateBy":null,"updateTime":null,"remark":"\u6B63\u5E38\u72B6\u6001","params":{},"dictCode":1812121212130005,"dictSort":1,"dictLabel":"\u6B63\u5E38","dictValue":"0","dictType":"sys_normal_disable","cssClass":"","listClass":"primary","isDefault":"Y","status":"0"},{"searchValue":null,"createBy":"admin","createTime":"2018-03-16 11:33:00","updateBy":null,"updateTime":null,"remark":"\u505C\u7528\u72B6\u6001","params":{},"dictCode":1812121212130006,"dictSort":2,"dictLabel":"\u505C\u7528","dictValue":"1","dictType":"sys_normal_disable","cssClass":"","listClass":"danger","isDefault":"N","status":"0"}];
+		var prefix = ctx + "system/user";
+
+		$(function() {
+			queryUserList();
+		});
+
+		function queryUserList() {
+		    $("#bootstrap-table").bootstrapTable("destroy");
+		    var options = {
+		        url: prefix + "/list",
+		        createUrl: prefix + "/add",
+		        updateUrl: prefix + "/edit/{id}",
+		        removeUrl: prefix + "/remove",
+		        exportUrl: prefix + "/export",
+		        sortName: "createTime",
+		        sortOrder: "desc",
+		        modalName: "用户",
+                search: false,           // 是否显示搜索框功能
+                showSearch: false,   // 是否显示检索信息
+                showRefresh: false, // 是否显示刷新按钮
+                showColumns: false, // 是否显示隐藏某列下拉框
+                showToggle: false,   // 是否显示详细视图和列表视图的切换按钮
+                showExport: false,
+
+		        columns: [{
+		            checkbox: true
+		        },
+		        {
+		            field: 'userId',
+		            title: '用户ID',
+					visible:false
+		        },
+				{
+					field: 'userName',
+					title: '用户名称',
+					formatter: function(value, row, index) {
+						if($.common.isEmpty(row.avatar)){
+							row.avatar = "/img/user.png";
+						}
+						var img = '<a class="user-panel"><span class="image"><img src="'+row.avatar+'" class="img-circle"></span></a>';
+						return img + value;
+					}
+				},
+		        {
+		            field: 'loginName',
+		            title: '学工号',
+		            sortable: true
+		        },
+
+		        {
+		            field: 'assignedRoleNames', title:'绑定角色',formatter:function(v){return v||'未绑定';}
+                },{
+                    field: 'cardNo', title: '一卡通卡号', formatter: function(v){return v || '未开卡';}
+		        }, {field:'cardWriteCount',title:'写卡次数',formatter:function(v){return v==null?'-':v;}}, {
+		            field: 'email',
+		            title: '邮箱',
+		            visible: false
+		        },
+		        {
+		            field: 'phonenumber',
+		            title: '手机'
+		        },
+				{
+					field: 'identity',
+					title: '身份'
+				},
+		        {
+		            field: 'status',
+		            title: '状态',
+		            align: 'center',
+		            formatter: function(value, row, index) {
+		            	return $.table.selectDictLabel(datas, value);
+		            }
+		        },
+
+		        {
+		            field: 'createTime',
+		            title: '创建时间',
+		            sortable: true
+		        },
+		        {
+		            title: '操作',
+		            align: 'center',
+		            formatter: function(value, row, index) {
+		                var actions = [];
+                    actions.push('<a class="btn btn-default btn-xs '+assignFlag+'" onclick="manageRoles(\''+row.userId+'\')">角色</a> ');
+ actions.push('<a class="btn btn-primary btn-xs '+editFlag+'" onclick="manageCard(\''+row.userId+'\')">'+(row.cardNo?'卡片管理':'补充开卡')+'</a> ');
+		                actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="$.operate.edit(\'' + row.userId + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+		                actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.userId + '\')"><i class="fa fa-remove"></i>删除</a> ');
+		                actions.push('<a class="btn btn-info btn-xs ' + resetPwdFlag + '" href="javascript:void(0)" onclick="resetPwd(\'' + row.userId + '\')"><i class="fa fa-key"></i>重置</a>');
+		                return actions.join('');
+		            }
+		        }]
+		    };
+		    $.table.init(options);
+		}
+
+		function manageRoles(id){$.modal.open("用户角色绑定",ctx+"system/permission?user="+id,"1100","750");}
+        function manageCard(id){$.modal.open("一卡通卡片管理",prefix+"/card/"+id,"900","650");}
+		/*用户管理-重置密码*/
+		function resetPwd(userId) {
+		    var url = prefix + '/resetPwd/' + userId;
+		    $.modal.open("重置密码", url, '800', '300');
+		}
+	</script>
+
+</body></html>

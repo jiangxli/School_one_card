@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+    <div class="wrapper wrapper-content animated fadeInRight ibox-content">
+        <form class="form-horizontal m" id="form-bookInfo-add">
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">图书名称：</label>
+				<div class="col-sm-8">
+					<input id="bookName" name="bookName" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">作者：</label>
+				<div class="col-sm-8">
+					<input id="author" name="author" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">图书类型：</label>
+				<div class="col-sm-8">
+					<select id="kind" name="kind" class="form-control m-b" th:with="type=${@dict.getType('book_kind')}">
+						<option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">图书数量：</label>
+				<div class="col-sm-8">
+					<input id="bookNum" name="bookNum" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">出版社：</label>
+				<div class="col-sm-8">
+					<input id="publisher" name="publisher" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">出版时间：</label>
+				<div class="col-sm-8">
+					<input id="publishDate" name="publishDate" class="form-control time-input" type="text" readonly>
+				</div>
+			</div>
+		</form>
+	</div>
+    <div th:include="include::footer"></div>
+    <script th:inline="javascript">
+		var prefix = ctx + "system/bookInfo"
+		$("#form-bookInfo-add").validate({
+			rules:{
+                bookName:{
+					required:true,
+				},author:{
+					required:true,
+				},bookNum:{
+					required:true,
+					number:true
+				},
+			}
+		});
+		
+		function submitHandler() {
+	        if ($.validate.form()) {
+	            $.operate.save(prefix + "/add", $('#form-bookInfo-add').serialize());
+	        }
+	    }
+	</script>
+</body>
+</html>

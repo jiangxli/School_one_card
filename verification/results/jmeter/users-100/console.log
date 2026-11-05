@@ -1,0 +1,13 @@
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using D:\Soft\WPS Office\Cloud\WPS Cloud\WPSDrive\7289190\WPS云盘\2.个人文档\自考本科\2611-毕业设计及论文\school_one_card2\verification\full-feature.jmx
+Starting standalone test @ November 5, 2026 7:15:53 AM CST (1793834153162)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +    833 in 00:00:06 =  128.4/s Avg:     5 Min:     1 Max:    44 Err:    64 (7.68%) Active: 1 Started: 65 Finished: 64
+summary +    467 in 00:00:04 =  131.8/s Avg:     3 Min:     0 Max:     8 Err:    36 (7.71%) Active: 0 Started: 100 Finished: 100
+summary =   1300 in 00:00:10 =  129.6/s Avg:     4 Min:     0 Max:    44 Err:   100 (7.69%)
+Tidying up ...    @ November 5, 2026 7:16:03 AM CST (1793834163573)
+... end of run

@@ -1,0 +1,13 @@
+.idea/
+.local/
+target/
+target-release/
+logs/
+*.class
+verification/tools/
+verification/classes/
+verification/uploads/
+verification/environment.json
+verification/server*.log
+verification/server.pid
+.env

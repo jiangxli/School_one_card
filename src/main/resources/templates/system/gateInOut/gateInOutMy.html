@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+    <div class="container-div">
+        <div class="row">
+            <div class="col-sm-12 search-collapse">
+                <form id="user-form">
+                    <div class="select-list">
+                        <ul>
+                            <li>
+                                类型：<select name="kind">
+                                <option value="">所有</option>
+                                <option value="1">进入</option>
+                                <option value="2">外出</option>
+                            </select>
+                            </li>
+                            <li class="select-time">
+                                <label>时间： </label>
+                                <input type="text" class="time-input" name="params[beginTime]"/>
+                                <span>-</span>
+                                <input type="text" class="time-input" name="params[endTime]"/>
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                                <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="btn-group-sm hidden-xs" id="toolbar" role="group">
+                <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:role:export">
+                    <i class="fa fa-download"></i> 导出
+                </a>
+            </div>
+
+            <div class="col-sm-12 select-table table-striped">
+                <table id="bootstrap-table" data-mobile-responsive="true"></table>
+            </div>
+        </div>
+    </div>
+    <div th:include="include :: footer"></div>
+    <script th:inline="javascript">
+        var editFlag = [[${@permission.hasPermi('system:gateInOut:edit')}]];
+        var removeFlag = [[${@permission.hasPermi('system:gateInOut:remove')}]];
+        var prefix = ctx + "system/gateInOut";
+
+        // var datas = [[${@dict.getType('sys_normal_disable')}]];
+        // formatter: function(value, row, index) {
+        //     return $.table.selectDictLabel(datas, value);
+        // }
+        $(function() {
+            var options = {
+                url: prefix + "/listMy",
+                removeUrl: prefix + "/remove",
+                exportUrl: prefix + "/export",
+                modalName: "门禁记录",
+                columns: [
+				{
+					field : 'id', 
+					title : '主键' ,
+                    visible:false
+				},
+                    {
+                        field : 'loginName',
+                        title : '学工号'
+                    },
+                    {
+                        field : 'userName',
+                        title : '用户'
+                    },
+                    {
+                        field : 'createTime',
+                        title : '时间'
+                    },
+                    {
+                        field : 'kind',
+                        title : '类型' ,
+                        formatter: function(value, row, index) {
+                            return value==1?"进入":"外出";
+                        }
+                    }]
+            };
+            $.table.init(options);
+        });
+    </script>
+</body>
+</html>

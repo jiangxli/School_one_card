@@ -1,0 +1,10 @@
+{
+  "merchantId": "替换为商户UUID",
+  "merchantName": "替换为已维护商户名称",
+  "merchantSerialNo": "POS202611040001",
+  "cardNo": "替换为有效校园卡号",
+  "amount": "12.50",
+  "occurredAt": "2026-11-04T16:30:00+08:00",
+  "location": "第一食堂一号收银台",
+  "description": "午餐消费"
+}

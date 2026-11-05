@@ -1,0 +1,11 @@
+PASS dynamic category added
+PASS image upload decode and retrieval
+PASS owner saved
+PASS license saved
+PASS merchant photo linked
+PASS owner and creation date search
+PASS creation date excludes other times
+PASS invalid image rejected
+PASS oversized image rejected
+PASS missing owner rejected
+PASS TOTAL 10

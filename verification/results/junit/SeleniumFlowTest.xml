@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite tests="10" failures="0" time="40.442"><testcase classname="SeleniumFlowTest" name="a_loginAndUnifiedEntry" time="0.9822502"></testcase>
+<testcase classname="SeleniumFlowTest" name="b_personnelEdit" time="2.5663922"></testcase>
+<testcase classname="SeleniumFlowTest" name="c_excelImportAndTemplateDownload" time="3.8539442"></testcase>
+<testcase classname="SeleniumFlowTest" name="d_gateEntryExit" time="2.9544604"></testcase>
+<testcase classname="SeleniumFlowTest" name="e_attendanceJoinAndSignIn" time="6.235537"></testcase>
+<testcase classname="SeleniumFlowTest" name="f_libraryBorrowAndReturn" time="4.6405983"></testcase>
+<testcase classname="SeleniumFlowTest" name="g_cardWriteCancelIssue" time="6.6390409"></testcase>
+<testcase classname="SeleniumFlowTest" name="h_walletRechargeAndDebit" time="1.9239223"></testcase>
+<testcase classname="SeleniumFlowTest" name="i_merchantAndFinancePages" time="3.7597336"></testcase>
+<testcase classname="SeleniumFlowTest" name="j_permissionsAndUnauthorizedAccess" time="3.0789443"></testcase></testsuite>

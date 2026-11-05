@@ -1,0 +1,5 @@
+PASS missing identity blocks recharge
+PASS invalid identity rejected
+PASS completed verification allows recharge
+PASS existing identity cannot be overwritten
+PASS TOTAL 4

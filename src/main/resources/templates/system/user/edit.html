@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" >
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+	<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+		<form class="form-horizontal m" id="form-user-edit" th:object="${user}">
+			<input name="userId"  type="hidden"  th:field="*{userId}" />
+			<div class="form-group">
+				<label class="col-sm-3 control-label ">学工号：</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" readonly="true" th:field="*{loginName}"/>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-3 control-label">用户名称：</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" name="userName" id="userName" th:field="*{userName}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">邮箱：</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" name="email" id="email" th:field="*{email}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">手机：</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" name="phonenumber" id="phonenumber" th:field="*{phonenumber}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">性别：</label>
+				<div class="col-sm-8">
+					<select id="sex" name="sex"  class="form-control noselect2" th:with="type=${@dict.getType('sys_user_sex')}">
+	                    <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}" th:field="*{sex}"></option>
+	                </select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">状态：</label>
+				<div class="col-sm-8">
+					<div class="onoffswitch">
+						<input type="hidden" name="status" id="status" th:value="${user.status}">
+                         <input type="checkbox" th:checked="${user.status == '0' ? true : false}" class="onoffswitch-checkbox" id="statusCheck" >
+                         <label class="onoffswitch-label" for="statusCheck">
+                             <span class="onoffswitch-inner"></span>
+                             <span class="onoffswitch-switch"></span>
+                         </label>
+                     </div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">出生日期：</label>
+				<div class="col-sm-8">
+					<input id="birthday" name="birthday" th:field="*{birthday}" class="form-control time-input" readonly type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">民族：</label>
+				<div class="col-sm-8">
+					<input id="mz" name="mz" th:field="*{mz}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">院系：</label>
+				<div class="col-sm-8">
+					<input id="department" name="department" th:field="*{department}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">身份：</label>
+				<div class="col-sm-8">
+					<select id="identity" name="identity" class="form-control noselect2" th:with="type=${@dict.getType('user_identity')}" onchange="selectItentity()">
+						<option th:each="dict : ${type}" th:field="*{identity}"  th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group onlystudent">
+				<label class="col-sm-3 control-label">学籍状态：</label>
+				<div class="col-sm-8">
+					<select id="xjzt" name="xjzt" class="form-control noselect2" th:with="type=${@dict.getType('study_status')}">
+						<option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:field="*{xjzt}" th:value="${dict.dictValue}"></option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group onlystudent">
+				<label class="col-sm-3 control-label">专业：</label>
+				<div class="col-sm-8">
+					<input id="profession" name="profession" th:field="*{profession}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group onlystudent">
+				<label class="col-sm-3 control-label">班级：</label>
+				<div class="col-sm-8">
+					<input id="classname" name="classname" th:field="*{classname}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group onlystudent">
+				<label class="col-sm-3 control-label">学制：</label>
+				<div class="col-sm-8">
+					<div class="radio-box" >
+						<input type="radio" name="studyyear" id="studyyear1" value="3年" th:checked="*{studyyear == '3年'}">
+						<label for="studyyear1">3年</label>
+					</div>
+					<div class="radio-box" >
+						<input type="radio" name="studyyear" id="studyyear2" value="4年" th:checked="*{studyyear == '4年'}">
+						<label for="studyyear2">4年</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">住址：</label>
+				<div class="col-sm-8">
+					<input id="address" name="address" th:field="*{address}" class="form-control" type="text">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div th:include="include::footer"></div>
+	<script>
+        $("#form-user-edit").validate({
+        	rules:{
+        		userName:{
+        			required:true,
+        		},
+        		email:{
+        			required:false,
+                    email:true,
+                    remote: {
+                        url: ctx + "system/user/checkEmailUnique",
+                        type: "post",
+                        dataType: "json",
+                        data: {
+                        	"userId": function() {
+                                return $("#userId").val();
+                            },
+                			"email": function() {
+                                return $.common.trim($("#email").val());
+                            }
+                        },
+                        dataFilter: function (data, type) {
+                        	return $.validate.unique(data);
+                        }
+                    }
+        		},
+        		phonenumber:{
+        			required:false,
+        			isPhone:true,
+                    remote: {
+                        url: ctx + "system/user/checkPhoneUnique",
+                        type: "post",
+                        dataType: "json",
+                        data: {
+                        	"userId": function() {
+                        		return $("#userId").val();
+                            },
+                			"phonenumber": function() {
+                                return $.common.trim($("#phonenumber").val());
+                            }
+                        },
+                        dataFilter: function (data, type) {
+                        	return $.validate.unique(data);
+                        }
+                    }
+        		},
+        	},
+        	messages: {
+        		"email": {
+                    remote: "Email已经存在"
+                },
+        		"phonenumber":{
+                	remote: "手机号码已经存在"
+        		}
+            },
+        	submitHandler:function(form){
+        		edit();
+        	}
+        });
+        $(function () {
+            selectItentity();
+        });
+        function submitHandler() {
+            $("#status").val($("#statusCheck").is(':checked') == true ? 0 : 1);
+	        if ($.validate.form()) {
+	        	edit();
+	        }
+	    }
+
+        function edit() {
+            $.operate.save(ctx + "system/user/edit", $('#form-user-edit').serialize());
+        }
+
+        function selectItentity() {
+            if($("#identity").val() == "教师/职工"){
+                $(".onlystudent input[type='text']").val("");
+                $(".onlystudent").hide();
+            }else {
+                $(".onlystudent").show();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.system.mapper.SysUserMapper">
+
+	<select id="selectUserList" parameterType="SysUser" resultMap="SysUserResult">
+		select (select group_concat(r.role_name separator '、') from sys_user_role ur join sys_role r on r.role_id=ur.role_id where ur.user_id=u.user_id and r.del_flag='0') assigned_role_names,c.card_no,c.write_count as card_write_count,u.user_id, u.login_name, u.user_name,u.user_type, u.email, u.phonenumber, u.password, u.sex, u.salt, u.status, u.del_flag,
+		u.login_ip, u.login_date, u.create_by, u.create_time,u.role_id,u.avatar,
+		u.birthday, u.mz, u.xjzt, u.department, u.profession, u.classname, u.studyyear, u.identity, u.address, u.project_id, u.project_join_time
+		from sys_user u left join campus_card c on c.user_id=u.user_id
+
+		where u.del_flag = '0' and u.user_id!=1812120000000000
+		<if test="loginName != null and loginName != ''">
+			AND u.login_name like concat('%', #{loginName}, '%')
+		</if>
+		<if test="status != null and status != ''">
+			AND u.status = #{status}
+		</if>
+		<if test="identity != null and identity != ''">
+            AND u.identity = #{identity}
+        </if>
+        <if test="userType != null and userType != ''">
+			AND u.user_type = #{userType}
+		</if>
+		<if test="phonenumber != null and phonenumber != ''">
+			AND u.phonenumber like concat('%', #{phonenumber}, '%')
+		</if>
+		<if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+			AND date_format(u.create_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+		</if>
+		<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+			AND date_format(u.create_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+		</if>
+
+	</select>
+
+	<resultMap type="SysUser" id="SysUserResult">
+		
+		<id     property="userId"       column="user_id"      />
+		<result property="assignedRoleNames" column="assigned_role_names"/><result property="cardNo" column="card_no"/><result property="cardWriteCount" column="card_write_count"/>
+        <result property="loginName"    column="login_name"   />
+		<result property="userName"     column="user_name"    />
+		<result property="userType"    column="user_type"   />
+		<result property="email"        column="email"        />
+		<result property="phonenumber"  column="phonenumber"  />
+		<result property="sex"          column="sex"          />
+		<result property="password"     column="password"     />
+		<result property="salt"         column="salt"         />
+		<result property="status"       column="status"       />
+		<result property="delFlag"      column="del_flag"     />
+		<result property="loginIp"      column="login_ip"     />
+		<result property="loginDate"    column="login_date"   />
+		<result property="createBy"     column="create_by"    />
+		<result property="createTime"   column="create_time"  />
+		<result property="updateBy"     column="update_by"    />
+		<result property="remark"       column="remark"       />
+		<result property="roleId"       column="role_id"       />
+		<result property="avatar"       column="avatar"       />
+		<result property="birthday"    column="birthday"    />
+		<result property="mz"    column="mz"    />
+		<result property="xjzt"    column="xjzt"    />
+		<result property="department"    column="department"    />
+		<result property="profession"    column="profession"    />
+		<result property="classname"    column="classname"    />
+		<result property="studyyear"    column="studyyear"    />
+		<result property="identity"    column="identity"    />
+		<result property="address"    column="address"    />
+		<result property="projectId"    column="project_id"    />
+		<result property="projectJoinTime"    column="project_join_time"    />
+		<association  property="role"   column="role_id" resultMap="RoleResult" />
+	</resultMap>
+
+	<resultMap id="RoleResult" type="SysRole">
+		<id     property="roleId"       column="role_id"        />
+		<result property="roleName"     column="role_name"      />
+		<result property="roleKey"      column="role_key"       />
+		<result property="roleSort"     column="role_sort"      />
+		<result property="dataScope"     column="data_scope"    />
+		<result property="status"       column="role_status"    />
+	</resultMap>
+
+	<sql id="selectUserVo">
+        select  u.user_id, u.login_name, u.user_name,u.user_type, u.email, u.phonenumber, u.sex,  u.password, u.salt, u.status, u.del_flag, u.login_ip, u.login_date, u.create_time,u.avatar,
+        		u.birthday, u.mz, u.xjzt, u.department, u.profession, u.classname, u.studyyear, u.identity, u.address, u.project_id, u.project_join_time,
+       		    r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.status as role_status
+		from sys_user u
+
+			 left join sys_role r on r.role_id = u.role_id
+    </sql>
+
+	<select id="selectUserByLoginName" parameterType="String" resultMap="SysUserResult">
+	    <include refid="selectUserVo"/>
+		where u.login_name = #{userName} and u.del_flag = '0'
+	</select>
+	
+	<select id="selectUserByPhoneNumber" parameterType="String" resultMap="SysUserResult">
+		<include refid="selectUserVo"/>
+		where u.phonenumber = #{phonenumber} and u.del_flag = '0'
+	</select>
+	
+	<select id="selectUserByEmail" parameterType="String" resultMap="SysUserResult">
+	    <include refid="selectUserVo"/>
+		where u.email = #{email} and u.del_flag = '0'
+	</select>
+	
+	<select id="checkLoginNameUnique" parameterType="String" resultMap="SysUserResult">
+		select user_id,login_name from sys_user where login_name=#{loginName} and del_flag = '0'
+	</select>
+	
+	<select id="checkPhoneUnique" parameterType="String" resultMap="SysUserResult">
+		select user_id, phonenumber from sys_user where phonenumber=#{phonenumber} and del_flag = '0'
+	</select>
+	
+	<select id="checkEmailUnique" parameterType="String" resultMap="SysUserResult">
+		select user_id,login_name,email from sys_user where email=#{email} and del_flag = '0'
+	</select>
+	
+	<select id="selectUserById" parameterType="Long" resultMap="SysUserResult">
+		<include refid="selectUserVo"/>
+		where u.user_id = #{userId}
+	</select>
+	
+	<delete id="deleteUserById" parameterType="Long">
+ 		delete from sys_user where user_id = #{userId}
+ 	</delete>
+ 	
+ 	<delete id="deleteUserByIds" parameterType="Long">
+ 		update sys_user set del_flag = '2' where user_id in
+ 		<foreach collection="array" item="userId" open="(" separator="," close=")">
+ 			#{userId}
+        </foreach> 
+ 	</delete>
+ 	
+ 	<update id="updateUser" parameterType="SysUser">
+ 		update sys_user
+ 		<set>
+ 			<if test="loginName != null and loginName != ''">login_name = #{loginName},</if>
+ 			<if test="userName != null and userName != ''">
+				user_name = #{userName},email = #{email},phonenumber = #{phonenumber},
+			</if>
+ 			<if test="sex != null and sex != ''">sex = #{sex},</if>
+ 			<if test="password != null and password != ''">password = #{password},</if>
+ 			<if test="salt != null and salt != ''">salt = #{salt},</if>
+ 			<if test="status != null and status != ''">status = #{status},</if>
+ 			<if test="loginIp != null and loginIp != ''">login_ip = #{loginIp},</if>
+ 			<if test="loginDate != null">login_date = #{loginDate},</if>
+ 			<if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+ 			<if test="remark != null and remark != ''">remark = #{remark},</if>
+ 			<if test="avatar != null and avatar != ''">avatar = #{avatar},</if>
+			<if test="roleId != null">role_id=#{roleId},</if>
+			<if test="birthday != null and birthday!=''">birthday = #{birthday},</if>
+			<if test="mz != null  and mz != ''  ">mz = #{mz},</if>
+			<if test="xjzt != null  and xjzt != ''  ">xjzt = #{xjzt},</if>
+			<if test="department != null  and department != ''  ">department = #{department},</if>
+			<if test="profession != null  and profession != ''  ">profession = #{profession},</if>
+			<if test="classname != null  and classname != ''  ">classname = #{classname},</if>
+			<if test="studyyear != null  and studyyear != ''  ">studyyear = #{studyyear},</if>
+			<if test="identity != null  and identity != ''  ">identity = #{identity},</if>
+			<if test="address != null  and address != ''  ">address = #{address},</if>
+			<if test="projectId != null  ">project_id = #{projectId},</if>
+			<if test="projectJoinTime != null  ">project_join_time = #{projectJoinTime},</if>
+ 		</set>
+ 		where user_id = #{userId}
+	</update>
+ 	
+ 	<insert id="insertUser" parameterType="SysUser" useGeneratedKeys="true" keyProperty="userId">
+ 		insert into sys_user(
+ 			<if test="userId != null and userId != 0">user_id,</if>
+ 			<if test="loginName != null and loginName != ''">login_name,</if>
+ 			<if test="userName != null and userName != ''">user_name,</if>
+			
+        <if test="userType != null and userType != ''">user_type,</if>
+ 			<if test="email != null and email != ''">email,</if>
+ 			<if test="phonenumber != null and phonenumber != ''">phonenumber,</if>
+ 			<if test="sex != null and sex != ''">sex,</if>
+ 			<if test="password != null and password != ''">password,</if>
+ 			<if test="salt != null and salt != ''">salt,</if>
+ 			<if test="status != null and status != ''">status,</if>
+ 			<if test="createBy != null and createBy != ''">create_by,</if>
+ 			<if test="remark != null and remark != ''">remark,</if>
+ 			<if test="roleId != null">role_id,</if>
+			<if test="birthday != null  ">birthday,</if>
+			<if test="mz != null  and mz != ''  ">mz,</if>
+			<if test="xjzt != null  and xjzt != ''  ">xjzt,</if>
+			<if test="department != null  and department != ''  ">department,</if>
+			<if test="profession != null  and profession != ''  ">profession,</if>
+			<if test="classname != null  and classname != ''  ">classname,</if>
+			<if test="studyyear != null  and studyyear != ''  ">studyyear,</if>
+			<if test="identity != null  and identity != ''  ">identity,</if>
+			<if test="address != null  and address != ''  ">address,</if>
+			<if test="projectId != null  ">project_id,</if>
+			<if test="projectJoinTime != null  ">project_join_time,</if>
+ 			create_time
+ 		)values(
+ 			<if test="userId != null and userId != ''">#{userId},</if>
+ 			<if test="loginName != null and loginName != ''">#{loginName},</if>
+ 			<if test="userName != null and userName != ''">#{userName},</if>
+			
+        <if test="userType != null and userType != ''">#{userType},</if>
+ 			<if test="email != null and email != ''">#{email},</if>
+ 			<if test="phonenumber != null and phonenumber != ''">#{phonenumber},</if>
+ 			<if test="sex != null and sex != ''">#{sex},</if>
+ 			<if test="password != null and password != ''">#{password},</if>
+ 			<if test="salt != null and salt != ''">#{salt},</if>
+ 			<if test="status != null and status != ''">#{status},</if>
+ 			<if test="createBy != null and createBy != ''">#{createBy},</if>
+ 			<if test="remark != null and remark != ''">#{remark},</if>
+			<if test="roleId != null">#{roleId},</if>
+			<if test="birthday != null  ">#{birthday},</if>
+			<if test="mz != null  and mz != ''  ">#{mz},</if>
+			<if test="xjzt != null  and xjzt != ''  ">#{xjzt},</if>
+			<if test="department != null  and department != ''  ">#{department},</if>
+			<if test="profession != null  and profession != ''  ">#{profession},</if>
+			<if test="classname != null  and classname != ''  ">#{classname},</if>
+			<if test="studyyear != null  and studyyear != ''  ">#{studyyear},</if>
+			<if test="identity != null  and identity != ''  ">#{identity},</if>
+			<if test="address != null  and address != ''  ">#{address},</if>
+			<if test="projectId != null  ">#{projectId},</if>
+			<if test="projectJoinTime != null  ">#{projectJoinTime},</if>
+ 			sysdate()
+ 		)
+	</insert>
+
+	<select id="countUserRoleByRoleId" resultType="Integer">
+	    select count(1) from sys_user_role where role_id=#{roleId}
+	</select>
+</mapper> 

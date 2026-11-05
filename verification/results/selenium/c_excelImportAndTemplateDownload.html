@@ -1,0 +1,153 @@
+<html lang="zh" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"><head><meta charset="utf-8">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+	<!-- bootstrap-table 表格插件样式 -->
+	<link href="/ajax/libs/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+	<link href="/ajax/libs/bootstrap-treetable/bootstrap-treetable.css" rel="stylesheet">
+	<!--summernote-->
+	<link href="/ajax/libs/summernote/summernote.css" rel="stylesheet">
+	<link href="/ajax/libs/summernote/summernote-bs3.css" rel="stylesheet">
+
+	<link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/ajax/libs/select/select2.css" rel="stylesheet">
+	<link href="/project/css/ry-ui.css" rel="stylesheet">
+<link href="/ajax/libs/jquery-layout/jquery.layout-latest.css" rel="stylesheet"><link href="/ajax/libs/jquery-ztree/3.5/css/metro/zTreeStyle.css" rel="stylesheet"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/default/layer.css?v=3.1.1" id="layuicss-layer"><link rel="stylesheet" href="http://127.0.0.1:18084/ajax/libs/layer/theme/moon/style.css" id="layuicss-thememoonstylecss"></head>
+
+
+
+<body class="gray-bg" style="">
+	<div class="container-div ui-layout-center">
+		<div class="row">
+			<div class="col-sm-12 search-collapse">
+				<form class="form-horizontal m" id="excelImport-form" enctype="multipart/form-data">
+						<ul>
+							<li style="width: 50%;">
+								<label class="col-sm-3 control-label">导入类型：</label>
+								<div class="col-sm-8">
+									<div class="radio-box">
+										<input type="file" style="display: none;width: auto;" id="excelFile" name="excelFile" accept=".xls,.xlsx">
+										<div class="iradio-blue checked"><input type="radio" id="importType1" name="importType" value="1" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+										<label for="importType1">用户导入</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="btn btn-primary btn-rounded btn-sm" id="downloadExcelModel"><i class="fa fa-download"></i>&nbsp;模板下载</a>
+								<a class="btn btn-warning btn-sm" id="importSave">
+									<i class="fa fa-download"></i> 导入
+								</a>
+							</li>
+						</ul>
+				</form>
+			</div>
+	        
+	        <div class="col-sm-12 select-table table-striped">
+			    <div class="bootstrap-table"><div class="fixed-table-toolbar"><div class="bs-bars pull-left"></div></div><div class="fixed-table-container" style="padding-bottom: 0px;"><div class="fixed-table-header" style="display: none;"><table></table></div><div class="fixed-table-body"><div class="fixed-table-loading" style="top: 42px;">正在努力地加载数据中，请稍候……</div><table id="bootstrap-table" data-mobile-responsive="true" class="table table-hover"><thead><tr><th style="" data-field="rowNum" tabindex="0"><div class="th-inner ">行号</div><div class="fht-cell"></div></th><th style="" data-field="name" tabindex="0"><div class="th-inner ">主要信息</div><div class="fht-cell"></div></th><th style="" data-field="code" tabindex="0"><div class="th-inner ">状态</div><div class="fht-cell"></div></th><th style="" data-field="msg" tabindex="0"><div class="th-inner ">信息</div><div class="fht-cell"></div></th></tr></thead><tbody><tr data-index="0"><td style="">第1行</td><td style="">seleniumimport5</td><td style=""><span class="badge badge-primary">成功</span></td><td style="">添加成功！</td></tr></tbody></table></div><div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div><div class="fixed-table-pagination" style="display: none;"></div></div></div><div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- bootstrap-table 表格插件 -->
+	<script src="/ajax/libs/bootstrap-table/bootstrap-table.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+	<!-- jquery-validate 表单验证插件 -->
+	<script src="/ajax/libs/validate/jquery.validate.min.js"></script>
+	<script src="/ajax/libs/validate/messages_zh.min.js"></script>
+	<script src="/ajax/libs/validate/jquery.validate.extend.js"></script>
+	<!-- jquery-validate 表单树插件 -->
+	<script src="/ajax/libs/bootstrap-treetable/bootstrap-treetable.js"></script>
+	<!-- jquery-export 表格导出插件 -->
+	<script src="/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+	<script src="/ajax/libs/bootstrap-table/extensions/export/tableExport.js"></script>
+	<!--summernote-->
+	<script src="/ajax/libs/summernote/summernote.min.js"></script>
+	<script src="/ajax/libs/summernote/summernote-zh-CN.js"></script>
+	<!-- form文件提交 -->
+	<script src="/ajax/libs/form/jquery.form.min.js"></script>
+	<!-- 遮罩层 -->
+	<script src="/ajax/libs/blockUI/jquery.blockUI.js"></script>
+	<script src="/ajax/libs/iCheck/icheck.min.js"></script>
+	<script src="/ajax/libs/layer/layer.min.js"></script>
+	<script src="/ajax/libs/layui/layui.js"></script>
+	<script src="/project/js/common.js?v=3.0.0"></script>
+	<script src="/project/js/ry-ui.js?v=3.0.0"></script>
+	<!--<script src="http://tajs.qq.com/stats?sId=62048022"></script>-->
+	<script> var ctx = "\/"; </script>
+</div>
+	<script src="/ajax/libs/jquery-layout/jquery.layout-latest.js"></script>
+	<script src="/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js"></script>
+	<script>
+		var submitUrl = ctx +"system/excelImport/save";
+        var datas = [{"searchValue":null,"createBy":"admin","createTime":"2020-05-27 21:55:05","updateBy":null,"updateTime":null,"remark":"","params":{},"dictCode":2005272155050003,"dictSort":1,"dictLabel":"\u6210\u529F","dictValue":"0","dictType":"sys_common_status","cssClass":"","listClass":"primary","isDefault":"Y","status":"0"},{"searchValue":null,"createBy":"admin","createTime":"2020-05-27 21:55:26","updateBy":null,"updateTime":null,"remark":"","params":{},"dictCode":2005272155260004,"dictSort":2,"dictLabel":"\u5931\u8D25","dictValue":"1","dictType":"sys_common_status","cssClass":"","listClass":"danger","isDefault":"Y","status":"0"}];
+		$(function () {
+			$("#downloadExcelModel").click(downloadExcelModel);
+            $("#importSave").click(importSave);
+            $("#excelFile").change(selectFile);
+            $.table.initHead({
+                columns:[
+                    {
+                        field: 'rowNum',
+                        title: '行号',
+                        formatter: function(value, row, index) {
+                            return "第"+value+"行";
+                        }
+                    },
+                    {
+                        field: 'name',
+                        title: '主要信息'
+                    },
+                    {
+                        field: 'code',
+                        title: '状态',
+                        formatter: function(value, row, index) {
+                            return $.table.selectDictLabel(datas, value);
+                        }
+                    },
+                    {
+                        field: 'msg',
+                        title: '信息'
+                    }]
+			});
+            $.form.init({
+                url:submitUrl,
+                beforeSubmit:function(){
+                    if($("#excelFile").val()){
+                        return true;
+					}
+                    $.modal.msgError("请选择excel！");
+					return false;
+				},
+				success:function (data) {
+                    $.modal.alertSuccess("数据共解析"+data.data.details.length+"条，其中导入成功"+data.data.successNum+"条，详情请看以下列表！");
+                    $.table.loadData(data.data.details);
+                }
+			})
+
+        });
+		function downloadExcelModel() {
+            $.table.exportExcel("excelImport-form",ctx+"system/excelImport/downloadExcelModel")
+        }
+        function importSave() {
+            $("#excelFile").val("").click();
+        }
+		function selectFile() {
+			if($("#excelFile").val()!=""){
+                $("#excelImport-form").submit();
+			}
+        }
+	</script>
+
+<div class="layui-layer-shade" id="layui-layer-shade1" times="1" style="z-index: 19891014; background-color: rgb(0, 0, 0); opacity: 0.3;"></div><div class="layui-layer layui-layer-dialog layer-ext-moon" id="layui-layer1" type="dialog" times="1" showtime="0" contype="string" style="z-index: 19891015; width: 360px; top: 352.5px; left: 527px;"><div class="layui-layer-title" style="cursor: move;">系统提示</div><div id="" class="layui-layer-content layui-layer-padding"><i class="layui-layer-ico layui-layer-ico1"></i>数据共解析1条，其中导入成功1条，详情请看以下列表！</div><span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"></a></span><div class="layui-layer-btn layui-layer-btn-"><a class="layui-layer-btn0">确认</a></div><span class="layui-layer-resize"></span></div><div class="layui-layer-move"></div></body></html>

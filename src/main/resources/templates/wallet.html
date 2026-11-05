@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org"><head><meta charset="utf-8"><title>校园一卡通钱包</title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"><style>body{padding:24px;color:#222}label{margin-right:16px}button{margin:8px 4px}table{width:100%;margin-top:16px}td,th{padding:8px;border-bottom:1px solid #ddd}input,select{padding:6px}#message{white-space:pre-wrap}</style></head>
+<body><h2>校园一卡通钱包</h2><p>模拟充值与校园消费，不产生外部支付或银行转账。</p>
+<label th:if="${finance}">用户ID <input id="user" placeholder="留空为本人"></label><button onclick="loadData()">查询</button>
+<button onclick="action('status',{status:'LOST'})">挂失</button><button th:if="${finance}" onclick="action('status',{status:'ACTIVE'})">解挂</button>
+<p id="balance"></p><hr><label>业务 <select id="kind"><option value="PAY">消费</option><option th:if="${finance}" value="RECHARGE">模拟充值</option><option th:if="${finance}" value="REFUND">退款</option></select></label>
+<label>金额（元） <input id="amount" type="number" min="0.01" max="100000" step="0.01"></label>
+<label>消费商户 <select id="merchant"></select></label><label>退款原流水ID <input id="original"></label>
+<button id="submit" onclick="trade()">提交交易</button><p>响应不明确时，请保持交易参数不变后重试；成功后自动生成下一个请求编号。</p>
+<button th:if="${finance}" onclick="reconcile()">核对全部钱包余额</button><button onclick="exportData()">导出当前流水</button><p id="message" role="status"></p>
+<table><thead><tr><th>流水ID</th><th>类型</th><th>金额</th><th>余额</th><th>商户</th><th>原流水</th><th>时间</th></tr></thead><tbody id="rows"></tbody></table>
+<script th:src="@{/js/jquery.min.js}"></script><script th:inline="javascript">
+var token=/*[[${token}]]*/'', base=/*[[@{/campus/wallet}]]*/'/campus/wallet',pending=null,ledger=[];
+function user(){return document.getElementById('user')?$('#user').val():'';}
+function message(t){$('#message').text(t);}
+function failure(xhr){message(xhr.responseJSON&&xhr.responseJSON.error?xhr.responseJSON.error:'请求未确认，请查询流水或保持参数重试');}
+function loadData(){$.getJSON(base+'/data',{user:user()}).done(function(d){$('#balance').text(d.wallet.student_no?'钱包学工号：'+d.wallet.student_no+'　状态：'+d.wallet.status+'　余额：'+d.wallet.balance+' 元':'钱包未初始化，请联系管理员');$('#merchant').empty();d.merchants.forEach(function(m){$('<option>').val(m.id).text(m.name).appendTo('#merchant');});ledger=d.ledger;$('#rows').empty();ledger.forEach(function(r){var tr=$('<tr>');['id','kind','amount','balance_after','merchant_name','original_id','created_at'].forEach(function(k){$('<td>').text(r[k]==null?'':r[k]).appendTo(tr);});tr.appendTo('#rows');});}).fail(failure);}
+function action(path,data){data.user=user();data.token=token;$.post(base+'/'+path,data).done(function(){message('操作成功');loadData();}).fail(failure);}
+function trade(){var kind=$('#kind').val(),data={user:user(),kind:kind,amount:$('#amount').val()};if(kind==='PAY')data.merchant=$('#merchant').val();if(kind==='REFUND')data.original=$('#original').val();var signature=JSON.stringify(data);if(pending&&pending.signature!==signature){message('上一交易尚未确认，请先恢复原参数重试或刷新后核对流水');return;}if(!pending)pending={signature:signature,key:Date.now().toString(16)+'-'+Math.random().toString(16).slice(2)+'-'+Math.random().toString(16).slice(2)};data.key=pending.key;data.token=token;$('#submit').prop('disabled',true);$.post(base+'/trade',data).done(function(r){pending=null;message('交易成功，流水ID：'+r.id);loadData();}).fail(function(xhr){if(xhr.status===400)pending=null;failure(xhr);}).always(function(){$('#submit').prop('disabled',false);});}
+function reconcile(){$.getJSON(base+'/reconcile').done(function(rows){message(JSON.stringify(rows,null,2));}).fail(failure);}
+function exportData(){var keys=['id','kind','amount','balance_after','merchant_name','original_id','created_at'];var csv='\ufeff'+keys.join(',')+'\r\n'+ledger.map(function(r){return keys.map(function(k){var v=String(r[k]==null?'':r[k]);if(/^[=+@-]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"';}).join(',');}).join('\r\n');var url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='校园钱包流水.csv';a.click();URL.revokeObjectURL(url);}
+loadData();
+</script></body></html>

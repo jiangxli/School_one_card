@@ -1,0 +1,25 @@
+START a_loginAndUnifiedEntry
+PASS a_loginAndUnifiedEntry
+START b_personnelEdit
+PASS b_personnelEdit
+START c_excelImportAndTemplateDownload
+PASS c_excelImportAndTemplateDownload
+START d_gateEntryExit
+PASS d_gateEntryExit
+START e_attendanceJoinAndSignIn
+PASS e_attendanceJoinAndSignIn
+START f_libraryBorrowAndReturn
+PASS f_libraryBorrowAndReturn
+START g_cardWriteCancelIssue
+PASS g_cardWriteCancelIssue
+START h_walletRechargeAndDebit
+PASS h_walletRechargeAndDebit
+START i_merchantAndFinancePages
+PASS i_merchantAndFinancePages
+START j_permissionsAndUnauthorizedAccess
+PASS j_permissionsAndUnauthorizedAccess
+JUnit: tests=10 failures=0
+11月 05, 2026 7:21:41 上午 org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+警告: Unable to find CDP implementation matching 156
+11月 05, 2026 7:21:41 上午 org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+警告: Unable to find version of CDP to use for 156.0.8078.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.

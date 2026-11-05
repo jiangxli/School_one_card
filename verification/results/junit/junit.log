@@ -1,0 +1,19 @@
+START a_loginAndAuthentication
+PASS a_loginAndAuthentication
+START b_userMaintenanceAndAutomaticWallet
+PASS b_userMaintenanceAndAutomaticWallet
+START c_excelTemplateImportExport
+PASS c_excelTemplateImportExport
+START d_gateEntryExitAndExport
+PASS d_gateEntryExitAndExport
+START e_attendanceCodeAndSignIn
+PASS e_attendanceCodeAndSignIn
+START f_libraryBorrowReturnAndRepeatReturn
+PASS f_libraryBorrowReturnAndRepeatReturn
+START g_cardIssueWriteCancelReissue
+PASS g_cardIssueWriteCancelReissue
+START h_walletRechargePayLostRestoreAndLedger
+PASS h_walletRechargePayLostRestoreAndLedger
+START i_permissionAndCrossUserAccess
+PASS i_permissionAndCrossUserAccess
+JUnit: tests=9 failures=0

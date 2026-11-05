@@ -1,0 +1,3 @@
+PASS number matches transaction time and unique sequence
+PASS retry preserves accounting number
+PASS existing and new numbers unique

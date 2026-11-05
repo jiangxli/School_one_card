@@ -1,0 +1,22 @@
+PASS signed card balance lookup
+PASS balance lookup creates no payment order
+PASS single pay call allocates campus order and returns completed result
+PASS merchant serial and campus order are distinct external identifiers
+PASS success response follows actual debit commit
+PASS same merchant serial retry returns original order without double debit
+PASS query by merchant serial supports timeout reconciliation
+PASS query by campus order supported
+PASS same merchant serial cannot change amount
+PASS insufficient funds synchronously returns failed campus order
+PASS failed consumption leaves wallet intact
+PASS lost wallet balance query marks no payable funds
+PASS lost wallet rejects merchant consumption
+PASS recharge requires separate authorization
+PASS authorized recharge synchronously completes while lost
+PASS recharge reuses internal ledger logic and campus order
+PASS concurrent direct pay requests debit once
+PASS no asynchronous result push is created
+PASS cancelled card balance lookup rejected
+PASS failure logs persisted
+PASS signed nonce replay still rejected
+PASS TOTAL 21
