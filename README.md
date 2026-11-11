@@ -1,6 +1,6 @@
 # 校园一卡通系统
 
-2026-11-05 最新开发快照，来源于本机 `school_one_card2`。
+2026-11-05 `school_one_card2` 最新版本。
 
 ## 技术与功能
 
@@ -16,7 +16,7 @@ Java 8、Spring Boot 2.1.1、Spring MVC、MyBatis / JdbcTemplate、MySQL 5.7、T
 
 `sql/` 保存初始化及增量迁移脚本。历史初始化脚本含 DROP 语句，只能用于空数据库；人员及业务历史 INSERT 已从基础脚本移除，管理员账号需另行初始化。不要对已有业务数据库直接执行所有脚本。`verification/schema.sql` 是本轮测试所用最新表结构快照。
 
-## 测试证据
+## 测试报告
 
 下载仓库后，使用浏览器打开 [完整测试报告](verification/results/index.html)。GitHub 页面不直接运行 HTML 报告。
 
